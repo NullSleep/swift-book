@@ -13,6 +13,7 @@
 		2370BC3D20E892BE00823494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2370BC3C20E892BE00823494 /* Assets.xcassets */; };
 		2370BC4020E892BE00823494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2370BC3E20E892BE00823494 /* LaunchScreen.storyboard */; };
 		2370BC4820E893F800823494 /* chapter1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370BC4720E893F800823494 /* chapter1.swift */; };
+		2370BC4A20E8994300823494 /* Philosopher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370BC4920E8994300823494 /* Philosopher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2370BC3F20E892BE00823494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2370BC4120E892BE00823494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2370BC4720E893F800823494 /* chapter1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapter1.swift; sourceTree = "<group>"; };
+		2370BC4920E8994300823494 /* Philosopher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Philosopher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2370BC3E20E892BE00823494 /* LaunchScreen.storyboard */,
 				2370BC4120E892BE00823494 /* Info.plist */,
 				2370BC4720E893F800823494 /* chapter1.swift */,
+				2370BC4920E8994300823494 /* Philosopher.swift */,
 			);
 			path = "swift-book";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2370BC3820E892BC00823494 /* ViewController.swift in Sources */,
+				2370BC4A20E8994300823494 /* Philosopher.swift in Sources */,
 				2370BC4820E893F800823494 /* chapter1.swift in Sources */,
 				2370BC3620E892BC00823494 /* AppDelegate.swift in Sources */,
 			);
