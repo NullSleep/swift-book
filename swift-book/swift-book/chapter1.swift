@@ -311,4 +311,287 @@ class chapter1 {
         let sideLenght = optionalSquare?.sideLength
         print(sideLenght ?? "")
         print("\n---\n")
+        
+        // Enumerations and Structures
+        let ace = Rank.ace
+        print(ace)
+        let aceRawValue = ace.rawValue
+        print(aceRawValue)
+        print("\n---\n")
+        
+        // Compare the rank enumeration
+        print(compareRankValues(rank1: Rank.queen, rank2: Rank.jack))
+        print(compareRankValues(rank1: Rank.five, rank2: Rank.king))
+        print("\n---\n")
+        
+        // Using the init?(rawValue:) initializer to make an instance of an enumeration from a raw value. It returns
+        // either the enumeration case matching the raw value or nil if there is no matching rank
+        if let convertedRank = Rank(rawValue: 3) {
+            let threeDescription = convertedRank.simpleDescription()
+            print(threeDescription)
+            print(convertedRank)
+        }
+        print("\n---\n")
+        
+        // The case values of an enumartion are actual values, not just another way of writing raw values.
+        // In fact, in cases where there isn't a meaningful raw value, you don't have to provide one.
+        enum Suit {
+            case spades, hearts, diamonds, clubs
+            
+            func simpleDescription() -> String {
+                switch self {
+                case .spades:
+                    return "Spades"
+                case .hearts:
+                    return "hearts"
+                case .diamonds:
+                    return "diamonds"
+                case .clubs:
+                    return "clubs"
+                }
+            }
+            
+            func color() -> String {
+                switch self {
+                case .spades, .clubs:
+                    return "black"
+                case .hearts, .diamonds:
+                    return "red"
+                }
+            }
+        }
+        let hearts = Suit.hearts
+        let heartsDescription = hearts.simpleDescription()
+        print(heartsDescription)
+        print(hearts.color())
+        print("\n---\n")
+        
+        // Another choice for enumeration cases is to have values associated with the case - these values are
+        // determined when you make the instance, and they can be different for each instance of an enumeration case.
+        enum ServerResponse {
+            case result(String, String)
+            case failure(String)
+            case noResponse(String, String)
+        }
+        
+        let success = ServerResponse.result("6:56 am", "7:09 pm")
+        print(success)
+        let failure = ServerResponse.failure("Out of cheese")
+        print(failure)
+        let noResponse = ServerResponse.noResponse("Server down", "600")
+        print(noResponse)
+        
+        // Using each of the parameters passed and asgigning them a variable
+        //        switch success {
+        //        case let .result(sunrise, sunset):
+        //            print("Sunrise is at \(sunrise) and sunset is at \(sunset).")
+        //        case let .noResponse(errorDescription, errorCode):
+        //            print("The error is \(errorDescription) with error code \(errorCode)")
+        //        case let .failure(message):
+        //            print("Failure... \(message)")
+        //        }
+        print("\n---\n")
+        
+        // Struct (Structures) support many of the same behaviors as classes, including methods and initializer.
+        // One of the most important differences between structures and classes is that structures are always copied
+        // when they are passed around in your code, but classes are passed by reference.
+        struct Card {
+            var rank: Rank
+            var suit: Suit
+            
+            func simpleDescription() -> String {
+                return "The \(rank.simpleDescription()) of \(suit.simpleDescription())"
+            }
+            
+            func fullDeck() -> [Card]{
+                return [
+                    Card(rank: .ace, suit: .spades),
+                    Card(rank: .two, suit: .hearts),
+                    Card(rank: .three, suit: .diamonds),
+                ]
+            }
+        }
+        let threeOfSapdes = Card(rank: .three, suit: .spades)
+        print(threeOfSapdes.simpleDescription())
+        let deck = threeOfSapdes.fullDeck()
+        print(deck)
+        print("\n---\n")
+        
+        // Classes, enumerations and structs can all adopt protocols
+        // Class that conform with 'ExampleProtocol' protocol.
+        class SimpleClass: ExampleProtocol {
+            var simpleDescription: String = "A very simple class ->> Work like you don’t need money, love like you’ve never been hurt, and dance like no one’s watching."
+            var anotherProperty: Int = 21344
+            
+            func adjust() {
+                simpleDescription += "- Now 100% adjusted"
+            }
+        }
+        let a = SimpleClass()
+        a.adjust()
+        print(a.simpleDescription)
+        print("\n---\n")
+        
+        // Structure that conforms with the 'ExampleProtocol' protocol.
+        struct SimpleStrucutre: ExampleProtocol {
+            var simpleDescription: String = "A simple structure ->> Originality is the talent for seeing things that have no name. Nietzsche"
+            
+            // The use of 'mutating' marks a method that modifies the structure. Classes don't need methods to be marked
+            // as mutating because methods on a class can always modify it.
+            mutating func adjust() {
+                simpleDescription += " ->> The secret for taking the greatest enjoyment in Life is- to live dangerously!  Nietzsche"
+            }
+        }
+        var b = SimpleStrucutre()
+        b.adjust()
+        print(b.simpleDescription)
+        print("\n---\n")
+        
+        // Enum that conforms with the 'ExampleProtocol' protocol
+        enum simpleEnum: ExampleProtocol {
+            case Base, Adjusted
+            var simpleDescription: String {
+                return self.getDescription()
+            }
+            
+            func getDescription() -> String {
+                switch self {
+                case .Base:
+                    return "- Pain is temporary. Quitting last forever."
+                case .Adjusted:
+                    return "- It only hurts when you stop moving"
+                }
+                
+            }
+            
+            mutating func adjust() {
+                self = simpleEnum.Adjusted
+            }
+        }
+        var c = simpleEnum.Base
+        c.adjust()
+        print(c.simpleDescription)
+        print("\n---\n")
+        
+        // Simple description an extension that conforms to a protocol.
+        print(6.simpleDescription)
+        print("\n---\n")
+        
+        // Using another extension that complies with the 'ExampleProtocol'
+        print(88.9.absoluteValue)
+        // print(88.9.adjust()) // ERROR: Cannot use mutating member on immutable value: literals are not mutable
+        var coolDouble = -6.4
+        print(coolDouble.absoluteValue)
+        print(coolDouble.simpleDescription)
+        coolDouble.adjust()
+        print(coolDouble)
+        print("\n---\n")
+        
+        // Protocols names can be used like any other named tyoe.
+        // The variable protocolValue has a runtime type of SimpleClass, the compiler treats it as the given type of example protocol.
+        let protocolValue: ExampleProtocol = a
+        print(protocolValue.simpleDescription)
+        
+        // -- Error Handling --
+        // You represent errors using any type that adopts the Error protocol
+        enum PrinterError: Error {
+            case outOfPaper
+            case noToner
+            case onFire
+        }
+        // Use 'throw' to throw an error and throws to mark a function that can throw an error.
+        func send(job: Int, toPrinter printerName: String) throws -> String {
+            if printerName == "Printer 666" {
+                throw PrinterError.noToner
+            } else if printerName == "Printer On Fire" {
+                throw PrinterError.onFire
+            }
+            return "Job sent to printer: \(printerName)"
+        }
+        // There are several ways to hanlde errors. One way is to use do-catch. Inside the 'do' block, you mark code that
+        // can throw an error by writing try in front of it. Inside the catch block, the error is automatically give the
+        // name 'error' unless you give it a different name
+        do {
+            let printerResponse = try send(job: 1024, toPrinter: "Printer 1") // Works as intended
+            // let printerResponse = try send(job: 1024, toPrinter: "Printer 666") // throws an error as expected
+            print(printerResponse)
+        } catch {
+            print(error)
+        }
+        
+        // You can provide multiple catch blocks that handle specific errors. You write a pattern after catch just as you
+        // do after case in a switch.
+        do {
+            let printerResponse = try send(job: 1024, toPrinter: "Printer XLS")
+            //let printerResponse = try send(job: 1024, toPrinter: "Printer On Fire")
+            print(printerResponse)
+            //throw PrinterError.onFire // Testing throwing errors inside the do block
+            
+            // Testing throwing errors that aren't specifically being looked for.
+            // This works if the catch 'PrinterError.onFire' isn't triggered first
+            // throw PrinterError.outOfPaper
+        } catch PrinterError.onFire {
+            print("DANGER the printer is on Fire!!! -> Everything that is worth doing is worth doing right.")
+        } catch let printerError as PrinterError {
+            print("Printer error: \(printerError)")
+        } catch {
+            print(error)
+        }
+        print("\n---\n")
+        
+        // Handling error using try? to convert the result to an optional
+        let printerSuccess = try? send(job: 256, toPrinter: "To be is to do")
+        print(printerSuccess ?? "")
+        let printerFailure = try? send(job: 64, toPrinter: "Printer 666")
+        print(printerFailure ?? "The real value of 'printerFailure' is never printed because an error is thrown and the value of the variable is nil.")
+        print("\n---\n")
+        
+        // Use 'defer' to wirte a block of code that is executed after all other code in the function,
+        // just before the function returns. The code is executed regardless of wheter the function throws and error.
+        // You can use defere to wirte setup and cleanup code next to each other, even though they need to be
+        // executed at different times
+        var fridgeIsOpen = false
+        let fridgeContent = ["milk", "eggs", "leftovers"]
+        
+        func firdgeContains(_ food: String) -> Bool {
+            fridgeIsOpen = true
+            defer {
+                fridgeIsOpen = false
+            }
+            
+            let result = fridgeContent.contains(food)
+            return result
+        }
+        print(firdgeContains("maracuyá"))
+        print(fridgeIsOpen)
+        print("\n---\n")
+        
+        // -- Generics --
+        // Wirte a name inside angle bracktes to make a generic function or type.
+        func makeArray<Item>(repeating item: Item, numberOfTimes: Int) -> [Item] {
+            var result = [Item]()
+            for _ in 0..<numberOfTimes {
+                result.append(item)
+            }
+            return result
+        }
+        print(makeArray(repeating: "Ramstein!", numberOfTimes: 6))
+        print("\n---\n")
+        
+        // Making generic forms of functions and methods, as well as classes, enumerations, and structures.
+        // Reimplementing the swift standard library's optional type.
+        enum OptionalValue<Wrapped> {
+            case none
+            case some(Wrapped)
+        }
+        var possibleInteger: OptionalValue<Int> = .none
+        print(possibleInteger)
+        possibleInteger = .some(100)
+        print(possibleInteger)
+        print("\n---\n")
+        
+        // User 'where' right before the body to specify a list of requirements, such as to require the type to
+        // implement a protocol, to require two types to be the same, or to require a class to have a particular
+        // superclass.
+    }
 }
