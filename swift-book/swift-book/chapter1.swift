@@ -594,4 +594,268 @@ class chapter1 {
         // implement a protocol, to require two types to be the same, or to require a class to have a particular
         // superclass.
     }
+    
+    func greet(person: String, quote: String) -> String {
+        return "Sup \(person). Quote: \(quote)"
+    }
+    
+    // Custom argument label that effectively removes the need for am explecit paramenter when invoked.
+    func secondGreet(_ person: String, quote: String) -> String {
+        return "Sup \(person). Quote: \(quote)"
+    }
+    
+    // Using a tuple to make a compound value to return multiples values in a fuction.
+    // The elements of a tuple can be referred tp either by name or by number.
+    func calculateStatistics(scores: [Int]) -> (min: Int, max: Int, sum:Int) {
+        
+        var min = scores[0]
+        var max = scores[0]
+        var sum = 0
+        
+        for score in scores {
+            if score > max {
+                max = score
+            } else if score < min {
+                min = score
+            }
+            sum += score
+        }
+        
+        return (min, max, sum)
+    }
+    
+    // Nested functions have access to variables that were declared in the outer function
+    func returnFifteen() -> Int {
+        var y = 10
+        
+        func add() {
+            y += 5
+        }
+        add()
+        return y
+    }
+    
+    // Functions are a first-class type. This means that a function can return another function as its value
+    func makeIncrement() -> ((Int) -> Int) {
+        func addOne(number: Int) -> Int {
+            return 1 + number
+        }
+        return addOne
+    }
+    
+    // A function can take another function as one of its arguments
+    func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
+        for item in list {
+            if condition(item) {
+                return true
+            }
+        }
+        return false
+    }
+    
+    // Second function to be passed as an argument in 'hasAnyMatches'
+    func lessThanTen(number: Int) -> Bool {
+        return number < 10
+    }
+    
+    // We can add classes inside classes
+    class Shape {
+        var numSides = 0
+        let numToAdd = 10
+        
+        func simpleDescription() -> String {
+            return "A shape with \(numSides) sides."
+        }
+        
+        func runTests() {
+            // Using a function that returns another function
+            print("~ RUNNING TESTS FOR CLASS SHAPE ~")
+            let incNum = increaseNumber()
+            print(incNum(6))
+            print("\n---\n")
+        }
+        
+        func increaseNumber() -> ((Int) -> Int) {
+            func addNumber(number: Int) -> Int {
+                return numToAdd + number
+            }
+            return addNumber
+        }
+    }
+    
+    // A class with an init
+    class NamedShape {
+        var numSides = 0
+        var name: String
+        
+        init(name: String) {
+            self.name = name
+        }
+        
+        func simpleDescription() -> String {
+            return "A shape with \(numSides) sides."
+        }
+        
+        // Use 'deinit' to create a deinitializer if you need to perfom som cleanup before the object is deallocated.
+    }
+    
+    // Creating a subclass. Methods on a subclass that override the superclass's implementation are marked with override.
+    class Square: NamedShape {
+        var sideLength: Double
+        
+        init(sideLength: Double, name: String) {
+            self.sideLength = sideLength
+            super.init(name: name)
+            numSides = 4 // A square has 4 sides.
+        }
+        
+        func area() -> Double {
+            // The equation for calculating the are of a square
+            return sideLength * sideLength
+        }
+        
+        override func simpleDescription() -> String {
+            return "A square with sides of length \(sideLength)."
+        }
+    }
+    
+    // More subclassing and overriding function
+    class Circle: NamedShape {
+        var radius: Double
+        var cname: String
+        
+        init(radius: Double, name: String) {
+            self.radius = radius
+            self.cname = name
+            super.init(name: name)
+        }
+        
+        func area() -> Double {
+            let pi = Double.pi //.pi also works
+            return pi * radius
+        }
+        
+        override func simpleDescription() -> String {
+            return "The circle has a radius of \(radius) and an area of \(area())"
+        }
+    }
+    
+    // In addition to simple properties (variables) that are stored, properties can have a getter and setter.
+    class EquilateralTriangle: NamedShape {
+        var sideLength: Double = 0.0
+        
+        init(sideLength: Double, name: String) {
+            self.sideLength = sideLength
+            super.init(name: name)
+            numSides = 3
+        }
+        
+        var perimeter: Double {
+            get {
+                return 3.0 * sideLength
+            }
+            set {
+                sideLength = newValue / 3.0
+            }
+        }
+        
+        override func simpleDescription() -> String {
+            return "An equilateral triangle with side lenght \(sideLength)."
+        }
+    }
+    
+    
+    // If we don't need to compute the property but still need to provide code that is run before and after setting a
+    // new vale, use willSet and didSet. The code you provide is run any time the value changes outside of the
+    // initializer.
+    // This class ensures that eh side of the triangle is always the same as the side lenght of its square
+    class TriangleAndSquare {
+        
+        var triangle: EquilateralTriangle {
+            willSet {
+                square.sideLength = newValue.sideLength
+            }
+        }
+        
+        var square: Square {
+            willSet {
+                triangle.sideLength = newValue.sideLength
+            }
+        }
+        
+        init(size: Double, name: String) {
+            square = Square(sideLength: size, name: name)
+            triangle = EquilateralTriangle(sideLength: size, name: name)
+        }
+    }
+    
+    // Use enum to create enumeration. Like classes and all other name tyopes, enumerations can have methods associated
+    // with them.
+    enum Rank: Int {
+        case ace = 1
+        case two = 2, three = 3, four = 4, five = 5, six = 6, seven = 7, eight = 8, nine = 9, ten = 10
+        case jack = 11, queen = 12, king = 13
+        
+        func simpleDescription() -> String {
+            switch self {
+            case .ace:
+                return "ace"
+            case .jack:
+                return "jack"
+            case .queen:
+                return "queen"
+            case .king:
+                return "king"
+            default:
+                return String(self.rawValue)
+            }
+        }
+    }
+    
+    // Comparing enums with their respective rawValues
+    func compareRankValues(rank1: Rank, rank2: Rank) -> Rank {
+        if rank1.rawValue >= rank2.rawValue {
+            return rank1
+        } else {
+            return rank2
+        }
+    }
+}
+
+// Protocols
+protocol ExampleProtocol {
+    var simpleDescription: String { get }
+    mutating func adjust()
+}
+
+// EXTENSIONS
+// Using extension to add functionality to an exisiting type, such as new methods and computed properties.
+extension Int: ExampleProtocol {
+    var simpleDescription: String {
+        return "Run the number. The numnber selected \(self)"
+    }
+    
+    // Since this is function that will operate on 'self' it needs to be mutating.
+    mutating func adjust() {
+        self += 64
+    }
+}
+
+extension Double: ExampleProtocol {
+    // New method
+    var absoluteValue: Double {
+        if self > 0 {
+            return self
+        } else {
+            return self * -1
+        }
+    }
+    
+    var simpleDescription: String {
+        return "Glory to the brave. The number selected \(absoluteValue)"
+    }
+    
+    mutating func adjust() {
+        self += 666.0
+    }
 }
