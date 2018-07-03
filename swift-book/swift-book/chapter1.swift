@@ -595,8 +595,17 @@ class chapter1 {
         // superclass.
         func anyCommonElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> Bool
             where T.Iterator.Element: Equatable,  T.Iterator.Element == U.Iterator.Element {
-                return falseto
+                for lhsItem in lhs {
+                    for rhsItem in rhs {
+                        if lhsItem == rhsItem {
+                            return true
+                        }
+                    }
+                }
+                return false
         }
+        print(anyCommonElements([1, 2, 3], [3]))
+        print(anyCommonElements([1, 2, 3], [666]))
     }
     
     func greet(person: String, quote: String) -> String {
