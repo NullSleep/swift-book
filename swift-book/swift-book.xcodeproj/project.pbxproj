@@ -60,10 +60,10 @@
 		2370BC3420E892BC00823494 /* swift-book */ = {
 			isa = PBXGroup;
 			children = (
+				2370BC3520E892BC00823494 /* AppDelegate.swift */,
 				23D5D5BE20EB3C8100413515 /* Chapters */,
 				23D5D5BF20EB3C8F00413515 /* Models */,
 				23D5D5C020EB3C9E00413515 /* UI */,
-				2370BC3520E892BC00823494 /* AppDelegate.swift */,
 				2370BC3C20E892BE00823494 /* Assets.xcassets */,
 				2370BC4120E892BE00823494 /* Info.plist */,
 			);

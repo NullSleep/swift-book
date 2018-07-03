@@ -24,7 +24,7 @@ class chapter1 {
     
     var philosopher: Philosopher?
     
-    func coreFeatures() {
+    func execute() {
         print("He who is brave is free.")
         print("\n---\n")
         

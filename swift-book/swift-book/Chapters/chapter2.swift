@@ -16,4 +16,10 @@ class chapter2 {
     // - var arr = Array<Int>() // Array Initializer
     // - var arr:[Int] = [] // Array with an array literal
     // - var arr:Array<Int> = []
+    
+    // MARK: - Sub Chapter: The Basics
+    
+    func execute() {
+        
+    }
 }
