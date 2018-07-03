@@ -6,17 +6,22 @@
 //  Copyright © 2018 Carlos Arenas. All rights reserved.
 //
 
-// Swift features:
-// - Variables are always intialized before use.
-// - Array indices are checked for out-of-bounds errors.
-// - Integers are checked for overflow.
-// - Optionals ensure that the nil values are handled explicitly.
-// - Memory is managed automatically.
-// - Error handling allows controlled recovery from unexpected failures.
-
 import Foundation
 
 class chapter1 {
+    
+    // MARK: -  General notes
+    
+    // Swift features:
+    // - Variables are always intialized before use.
+    // - Array indices are checked for out-of-bounds errors.
+    // - Integers are checked for overflow.
+    // - Optionals ensure that the nil values are handled explicitly.
+    // - Memory is managed automatically.
+    // - Error handling allows controlled recovery from unexpected failures.
+    
+    // MARK: - Sub-Chapter: Swift Tour
+    
     var philosopher: Philosopher?
     
     func coreFeatures() {
