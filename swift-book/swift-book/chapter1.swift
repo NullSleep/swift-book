@@ -597,23 +597,30 @@ class chapter1 {
         // This function recieves two Sequence of elements (T and U) and iterates throw them looking for similar element.
         // The use 'where' makes the function to make Elements in the lists are Equatable and elements in both list can be compared
         func anyCommonElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> Bool
-            where T.Iterator.Element: Equatable, T.Iterator.Element == U.Iterator.Element {
-                for lhsItem in lhs {
-                    for rhsItem in rhs {
-                        if lhsItem == rhsItem {
-                            return true
-                        }
+        where T.Iterator.Element: Equatable, T.Iterator.Element == U.Iterator.Element {
+            for lhsItem in lhs {
+                for rhsItem in rhs {
+                    if lhsItem == rhsItem {
+                        return true
                     }
                 }
-                return false
+            }
+            return false
         }
         print(anyCommonElements([1, 2, 3], [3]))
         print(anyCommonElements([1, 2, 3], [666]))
         
         // EXP: Create a similar function to anyCommonElements(_:_:) that retuns an array of the elements that any two sequences have in common.
         func listOfCommonElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> Bool
-            where T.Iterator.Element: Equatable, T.Iterator.Element == U.Iterator.Element {
-                return false
+        where T.Iterator.Element: Equatable, T.Iterator.Element == U.Iterator.Element {
+            for lhsItem in lhs {
+                for rhsItem in rhs {
+                    if lhsItem == rhsItem {
+                        return true
+                    }
+                }
+            }
+            return false
         }
     }
     
