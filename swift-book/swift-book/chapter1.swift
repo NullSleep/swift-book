@@ -609,19 +609,24 @@ class chapter1 {
         }
         print(anyCommonElements([1, 2, 3], [3]))
         print(anyCommonElements([1, 2, 3], [666]))
+        print("\n---\n")
         
         // EXP: Create a similar function to anyCommonElements(_:_:) that retuns an array of the elements that any two sequences have in common.
-        func listOfCommonElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> Bool
+        func listOfCommonElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> Array<Any>
         where T.Iterator.Element: Equatable, T.Iterator.Element == U.Iterator.Element {
+            var response = Array<Any>()
             for lhsItem in lhs {
                 for rhsItem in rhs {
                     if lhsItem == rhsItem {
-                        return true
+                        response.append(lhsItem)
                     }
                 }
             }
-            return false
+            return response
         }
+        print(listOfCommonElements([1, 2, 3, 7, 10, 29], [3, 10]))
+        print(listOfCommonElements([1, 2, 3, 7, 10, 29], [3, 10, 776]))
+        print(listOfCommonElements([1, 2, 3, 7, 10, 29], [43, 776]))
     }
     
     func greet(person: String, quote: String) -> String {
