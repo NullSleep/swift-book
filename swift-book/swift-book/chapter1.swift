@@ -593,6 +593,10 @@ class chapter1 {
         // User 'where' right before the body to specify a list of requirements, such as to require the type to
         // implement a protocol, to require two types to be the same, or to require a class to have a particular
         // superclass.
+        func anyCommonElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> Bool
+            where T.Iterator.Element: Equatable,  T.Iterator.Element == U.Iterator.Element {
+                return falseto
+        }
     }
     
     func greet(person: String, quote: String) -> String {
