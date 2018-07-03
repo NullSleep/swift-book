@@ -595,8 +595,9 @@ class chapter1 {
         // superclass.
         // Writting '<T: Equatable>' is the same as writing '<T>... where T:Equatable'
         // This function recieves two Sequence of elements (T and U) and iterates throw them looking for similar element.
+        // The use 'where' makes the function to make Elements in the lists are Equatable and elements in both list can be compared
         func anyCommonElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> Bool
-            where T.Iterator.Element: Equatable,  T.Iterator.Element == U.Iterator.Element {
+            where T.Iterator.Element: Equatable, T.Iterator.Element == U.Iterator.Element {
                 for lhsItem in lhs {
                     for rhsItem in rhs {
                         if lhsItem == rhsItem {
@@ -608,6 +609,12 @@ class chapter1 {
         }
         print(anyCommonElements([1, 2, 3], [3]))
         print(anyCommonElements([1, 2, 3], [666]))
+        
+        // EXP: Create a similar function to anyCommonElements(_:_:) that retuns an array of the elements that any two sequences have in common.
+        func listOfCommonElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> Bool
+            where T.Iterator.Element: Equatable, T.Iterator.Element == U.Iterator.Element {
+                return false
+        }
     }
     
     func greet(person: String, quote: String) -> String {
