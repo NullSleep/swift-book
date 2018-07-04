@@ -25,9 +25,21 @@ class chapter2 {
     // they work for any type, not just classes. Not only are optionals safer and more expressive than nil pointer in
     // Obj-C they are at the heart of many Swift's most powerful features
     
+    // Swift is a 'type-safe' language, which means the language helps you to be clear about the types of values your code
+    // can work with. If part of your code expects a String, type safety prevents you from passing it an Int by mistake.
+    // Likewise, type safety prevents you from accidentally passing an optional String to a piece of code that expect an
+    // nonoptional string.
+    
     // MARK: - Sub Chapter: The Basics
     
     func execute() {
         
+        // Constants
+        let maxNumberOfLoginsAttempts = 10
+        print(maxNumberOfLoginsAttempts)
+        
+        // Variables
+        var currentLoginAttempt = 0
+        print(currentLoginAttempt)
     }
 }
