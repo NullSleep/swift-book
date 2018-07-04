@@ -40,6 +40,7 @@ class chapter2 {
         
         // Variables
         var currentLoginAttempt = 0
+        currentLoginAttempt = 666
         print(currentLoginAttempt)
     }
 }
