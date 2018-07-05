@@ -54,5 +54,10 @@ class chapter2 {
         welcomeMessage = "Consentiousness is the one-trait-to-rule-them-all in terms of future success, both career wise and personal. 'Efficient, organized, neat, systematic, committed and always on top of everything.'"
         print(welcomeMessage)
         
+        var red, green, blue: Double
+        red = 65.8
+        green = 24.3
+        blue = 98.0
+        print("RGB: " + String(red+green+blue))
     }
 }
