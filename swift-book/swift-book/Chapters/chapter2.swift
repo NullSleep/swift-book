@@ -71,5 +71,12 @@ class chapter2 {
         print(friendlyWelcome)
         friendlyWelcome = "Keep to yourself, be the absolute best, don’t mix life with work, be funny, un-afraid, humble, train yourself in your free time."
         print(friendlyWelcome)
+        
+        // Printing Constants and Variables
+        // The print(_:separator:terminator:) function is a global function that prints one or more values to an
+        // appropiate output. The 'separator' and 'terminator' parameters have default values and can be omitted.
+        // By default the function terminates the line it prints by adding a line break.
+        // Printing a value with a line break after it
+        print("Nothing worth having comes easy.", terminator: "")
     }
 }
