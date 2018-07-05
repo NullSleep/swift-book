@@ -42,5 +42,9 @@ class chapter2 {
         var currentLoginAttempt = 0
         currentLoginAttempt = 666
         print(currentLoginAttempt)
+        
+        var x = 3.0, y = 0.14, z = 0.15
+        x += y + z
+        print(String(x))
     }
 }
