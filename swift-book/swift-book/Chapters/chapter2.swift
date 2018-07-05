@@ -78,5 +78,9 @@ class chapter2 {
         // By default the function terminates the line it prints by adding a line break.
         // Printing a value with a line break after it
         print("Nothing worth having comes easy.", terminator: "")
+        print("***** there wasn't a line break")
+        
+        // Swift uses string interpolation
+        print("This is an awesome thought: \(friendlyWelcome)")
     }
 }
