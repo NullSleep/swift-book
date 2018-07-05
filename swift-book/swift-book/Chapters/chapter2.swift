@@ -46,5 +46,13 @@ class chapter2 {
         var x = 3.0, y = 0.14, z = 0.15
         x += y + z
         print(String(x))
+        
+        // Type Annotations
+        // Type annotations can be provided when a constant or variable is declared to be clear about the kind of vlaues
+        // the constant or variable can sotre. The colon (:) means '... of type ...'
+        var welcomeMessage: String
+        welcomeMessage = "Consentiousness is the one-trait-to-rule-them-all in terms of future success, both career wise and personal. 'Efficient, organized, neat, systematic, committed and always on top of everything.'"
+        print(welcomeMessage)
+        
     }
 }
