@@ -61,10 +61,15 @@ class chapter2 {
         print("RGB: " + String(red+green+blue))
         
         // Naming Constants and Variables
-        // Any constant or variable can be named using any Unicode character
+        // Any constant or variable can be named using almost any Unicode character
         let π = 3.141559
         let 大和 = "倭国"
-        let 💁👌🎍😍 = "Happy Happy Joy"
+        let 💁👌🎍😍 = "Happy Happy Joy Joy"
         print(String(π) + " " + 大和 + " " + 💁👌🎍😍)
+        
+        var friendlyWelcome = "You must stash the surplus. There is no need to spend on outside things."
+        print(friendlyWelcome)
+        friendlyWelcome = "Keep to yourself, be the absolute best, don’t mix life with work, be funny, un-afraid, humble, train yourself in your free time."
+        print(friendlyWelcome)
     }
 }
