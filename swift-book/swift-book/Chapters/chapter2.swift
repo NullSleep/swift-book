@@ -80,7 +80,14 @@ class chapter2 {
         print("Nothing worth having comes easy.", terminator: "")
         print("***** there wasn't a line break")
         
-        // Swift uses string interpolation
+        // Swift uses string interpolation tio incliude the name of a constant or variable as a placeholder in a longer
+        // string, and to prompt Swift to replace it with the current value of that constant or variable.
         print("This is an awesome thought: \(friendlyWelcome)")
+        
+        // Comments.
+        // Swift supports multiline comments that nested in other multiline comments.
+        /* If someone offers you an amazing opportunity and you are not sure you can do it, say yes - then do it later.
+            /* Si no cobro lo justo no solo devaluó mi trabajo si no el de todos mis colegas. */
+            And only by admitting what we are, we get what we want. */
     }
 }
