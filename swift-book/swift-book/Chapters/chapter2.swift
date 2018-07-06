@@ -109,5 +109,10 @@ class chapter2 {
         // - On a 64 bit platform, Int and UInt is the same size as Int64 - UInt64
         // UInt should only be used when an unsiged integer is specifically need. If is not needed Int is prefered
         // even if the values stored are known to be non-negative.
+        
+        // Floating-point numbers are numbers with a fractional component (3.141559, 0.1, -356.75)
+        // Swift provides two signed floating-point number types:
+        // Double represents a 64-bit floating-point number. Has the precision of at least 15 decimal digits
+        // Float represents a 32-bit floating-point number. Has the precision of at least 6 decimal digits
     }
 }
