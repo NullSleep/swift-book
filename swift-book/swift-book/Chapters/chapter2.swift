@@ -89,5 +89,10 @@ class chapter2 {
         /* If someone offers you an amazing opportunity and you are not sure you can do it, say yes - then do it later.
             /* Si no cobro lo justo no solo devaluó mi trabajo si no el de todos mis colegas. */
             And only by admitting what we are, we get what we want. */
+        
+        // Semicolons (;) are not required in Swift but they can be used to write multiple separate statements on
+        // a single line
+        let cat = "🐻"; print(cat)
+        
     }
 }
