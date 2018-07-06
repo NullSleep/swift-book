@@ -103,9 +103,11 @@ class chapter2 {
         let maxValue = UInt32.max
         print(maxValue)
         
-        // Int is used when an specific size is not needed. The Int size has the same size as the current platform's
+        // Int and UInt is used when an specific size is not needed. The Int size has the same size as the current platform's
         // native word size:
-        // - On a 32 bit platform, Int is rhe same size as Int32
-        // - On a 64 bit platform, Int is rhe same size as Int64
+        // - On a 32 bit platform, Int and UInt is the same size as Int32 - UInt32
+        // - On a 64 bit platform, Int and UInt is the same size as Int64 - UInt64
+        // UInt should only be used when an unsiged integer is specifically need. If is not needed Int is prefered
+        // even if the values stored are known to be non-negative.
     }
 }
