@@ -92,7 +92,15 @@ class chapter2 {
         
         // Semicolons (;) are not required in Swift but they can be used to write multiple separate statements on
         // a single line
-        let cat = "🐻"; print(cat)
+        let bear = "🐻"; print(bear)
         
+        // Integers are whole numbers with no fractional component. Interger are either signed (positeve, zero,
+        // or negative) or unsigned (positive or zero)
+        // Integars can be 8, 16, 32 and 64 bit. 8 bit unsigned integers are of type UInt8 and 32 bit singed integers
+        // is of type Int32
+        let minValue = UInt8.min
+        print(minValue)
+        let maxValue = UInt32.max
+        print(maxValue)
     }
 }
