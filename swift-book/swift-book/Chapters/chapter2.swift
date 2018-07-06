@@ -102,5 +102,10 @@ class chapter2 {
         print(minValue)
         let maxValue = UInt32.max
         print(maxValue)
+        
+        // Int is used when an specific size is not needed. The Int size has the same size as the current platform's
+        // native word size:
+        // - On a 32 bit platform, Int is rhe same size as Int32
+        // - On a 64 bit platform, Int is rhe same size as Int64
     }
 }
