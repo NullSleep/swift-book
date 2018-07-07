@@ -131,5 +131,12 @@ class chapter2 {
         let hexadecimalInteger = 0x11 // Hexadecimal uses a 0x prefix
         print(hexadecimalInteger)
         
+        // all of the floating-point leterals have a decimal value of 12.875
+        let decimalDouble = 12.875
+        print(decimalDouble)
+        let exponentDouble = 12.21875e1
+        print(exponentDouble)
+        let hexadecimalDouble = 0xC.3p0
+        print(hexadecimalDouble)
     }
 }
