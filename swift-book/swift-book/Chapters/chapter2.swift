@@ -119,5 +119,17 @@ class chapter2 {
         // Swift is a type-sage language meaning that it encourages you to be clear about the types the code can work with.
         // If part of you code expects a String, you can't pass in an Int by mistake.
         // Swift inferes values using type inference to work out the appropiate type.
+        // Swift always chooses Double (rahter than Float) when inferring the type of floating-point numbers.
+        
+        // Numeric Literals
+        let decimalInteger = 17
+        print(decimalInteger)
+        let binaryInteger = 0b10001 // Binaries need a 0b prefix
+        print(binaryInteger)
+        let octalInteger = 0o21 // Octal uses a 0o prefix
+        print(octalInteger)
+        let hexadecimalInteger = 0x11 // Hexadecimal uses a 0x prefix
+        print(hexadecimalInteger)
+        
     }
 }
