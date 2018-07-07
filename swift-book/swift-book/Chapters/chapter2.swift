@@ -138,5 +138,14 @@ class chapter2 {
         print(exponentDouble)
         let hexadecimalDouble = 0xC.3p0
         print(hexadecimalDouble)
+        
+        // Thanks to numerical literals both integers and floats can be padded with extra zeros and can contain
+        // underscores to help with readability.
+        let paddedDouble = 0000123.456
+        print(paddedDouble)
+        let oneMillion = 1_000_000
+        print(oneMillion)
+        let justOverOneMillion = 1_000_000.000_000_1
+        print(justOverOneMillion)
     }
 }
