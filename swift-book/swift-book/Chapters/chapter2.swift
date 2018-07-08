@@ -150,5 +150,9 @@ class chapter2 {
         
         //Numeric Type Conversion
         
+        // UInt8 cannot be store negaive numbers and so this will report an error
+        let cannotBeNegative: UInt8 = -1
+        
+        
     }
 }
