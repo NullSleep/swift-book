@@ -151,8 +151,8 @@ class chapter2 {
         //Numeric Type Conversion
         
         // UInt8 cannot be store negaive numbers and so this will report an error
-        let cannotBeNegative: UInt8 = -1
-        
-        
+        //let cannotBeNegative: UInt8 = -1
+        //Int8 cannot store a number larger than its maximum value and therefor this will report an error
+        //let tooBig: Int8 = Int8.max + 1
     }
 }
