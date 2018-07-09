@@ -182,14 +182,23 @@ class chapter2 {
         // Both values are infered as Bool from the fact taht they were initialized with Boolean literal values.
         let orangesAreOrange = true
         print(orangesAreOrange)
-        let turnipsAreDelicious = false
+        var turnipsAreDelicious = false
         print(turnipsAreDelicious)
         
+        turnipsAreDelicious = true
         if turnipsAreDelicious {
             print("Never forget what you are. The rest of the world will not. Wear it like an amor, and it can never be used to hurt you.")
         } else {
-            print("Virtue is in the middle of two extremes")
-            
+            // print("Virtue is in the middle of two extremes") // Warning because this will never executed.
         }
+        
+        let i = 1
+        // This will not compile because i is not a Boolean
+        //if i {
+        //}
+        if i == 1 {
+            print("All is paradox. For every idea, there is an equally valid “anti-idea”. All is everything. All is nothing in the end… Paradox is everything.")
+        }
+        
     }
 }
