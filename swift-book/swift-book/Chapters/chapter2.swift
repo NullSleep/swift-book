@@ -177,5 +177,12 @@ class chapter2 {
         typealias AudioSample = UInt16
         let maxAmplitudeFound = AudioSample.min
         print(maxAmplitudeFound)
+        
+        // Booleans
+        // Both values are infered as Bool from the fact taht they were initialized with Boolean literal values.
+        let orangesAreOrange = true
+        print(orangesAreOrange)
+        let turnipsAreDelicious = false
+        print(turnipsAreDelicious)
     }
 }
