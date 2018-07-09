@@ -184,5 +184,12 @@ class chapter2 {
         print(orangesAreOrange)
         let turnipsAreDelicious = false
         print(turnipsAreDelicious)
+        
+        if turnipsAreDelicious {
+            print("Never forget what you are. The rest of the world will not. Wear it like an amor, and it can never be used to hurt you.")
+        } else {
+            print("Virtue is in the middle of two extremes")
+            
+        }
     }
 }
