@@ -167,5 +167,9 @@ class chapter2 {
         let pi = Double(three) + pointOneFourOneFiveNine // pi is inferred to be of type Double
         print(pi)
         
+        let integerPi = Int(pi)
+        print(integerPi) // it is inferred integerPi is of type Int
+        
+        
     }
 }
