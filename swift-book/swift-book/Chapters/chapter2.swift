@@ -170,6 +170,12 @@ class chapter2 {
         let integerPi = Int(pi)
         print(integerPi) // it is inferred integerPi is of type Int
         
-        
+        // Type Aliases
+        // Type aliases define an alternative name for an existing type. They are useful to refer to an exisiting
+        // type by a name that is contextually more appropiate, such as when working with data of a specific size
+        // form an external source
+        typealias AudioSample = UInt16
+        let maxAmplitudeFound = AudioSample.min
+        print(maxAmplitudeFound)
     }
 }
