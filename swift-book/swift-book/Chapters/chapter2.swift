@@ -196,9 +196,12 @@ class chapter2 {
         // This will not compile because i is not a Boolean
         //if i {
         //}
+        // The result of the comparison i == 1 is of type Bool and so it passes the type-check
         if i == 1 {
             print("All is paradox. For every idea, there is an equally valid “anti-idea”. All is everything. All is nothing in the end… Paradox is everything.")
         }
         
+        // Tuples
+        // Tuples grouo multiple values into a sigle compound value.
     }
 }
