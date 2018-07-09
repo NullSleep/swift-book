@@ -148,7 +148,7 @@ class chapter2 {
         let justOverOneMillion = 1_000_000.000_000_1
         print(justOverOneMillion)
         
-        //Numeric Type Conversion
+        // Numeric Type Conversion
         
         // UInt8 cannot be store negaive numbers and so this will report an error
         //let cannotBeNegative: UInt8 = -1
@@ -160,5 +160,12 @@ class chapter2 {
         let one: UInt8 = 1
         let twoThousandAndOne = twoThousand + UInt16(one)
         print(twoThousandAndOne)
+        
+        // Integer and Floating-Point Conversion
+        let three = 3
+        let pointOneFourOneFiveNine = 0.14159
+        let pi = Double(three) + pointOneFourOneFiveNine // pi is inferred to be of type Double
+        print(pi)
+        
     }
 }
