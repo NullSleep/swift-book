@@ -231,6 +231,9 @@ class chapter2 {
         let (statusCode, statusMessage) = http404Error
         print("The status code is \(statusCode)")
         print("The status message is \(statusMessage)")
+        
+        
+        
         print("\n---\n")
     }
 }
