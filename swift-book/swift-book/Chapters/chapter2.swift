@@ -37,7 +37,6 @@ class chapter2 {
         // Constants
         let maxNumberOfLoginsAttempts = 10
         print(maxNumberOfLoginsAttempts)
-        print("\n---\n")
         
         // Variables
         var currentLoginAttempt = 0
@@ -48,7 +47,6 @@ class chapter2 {
         var x = 3.0, y = 0.14, z = 0.15
         x += y + z
         print(String(x))
-        print("\n---\n")
         
         // Type Annotations
         // Type annotations can be provided when a constant or variable is declared to be clear about the kind of vlaues
@@ -224,7 +222,7 @@ class chapter2 {
         // do not have to be of the same type as each other.
         // Tuples can have any permutation of types and can contains as many different types as required (Int, Int, Int),
         // (String, Bool), etc
-        let http404Error = (404, "Not Found2") // A tuple of type (Int, String)
+        let http404Error = (404, "Not Found.") // A tuple of type (Int, String)
         print(http404Error)
         
         // A tuple's contents can be decomposed into separate constants or variables
