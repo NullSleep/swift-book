@@ -37,15 +37,18 @@ class chapter2 {
         // Constants
         let maxNumberOfLoginsAttempts = 10
         print(maxNumberOfLoginsAttempts)
+        print("\n---\n")
         
         // Variables
         var currentLoginAttempt = 0
         currentLoginAttempt = 666
         print(currentLoginAttempt)
+        print("\n---\n")
         
         var x = 3.0, y = 0.14, z = 0.15
         x += y + z
         print(String(x))
+        print("\n---\n")
         
         // Type Annotations
         // Type annotations can be provided when a constant or variable is declared to be clear about the kind of vlaues
@@ -53,12 +56,14 @@ class chapter2 {
         var welcomeMessage: String
         welcomeMessage = "Consentiousness is the one-trait-to-rule-them-all in terms of future success, both career wise and personal. 'Efficient, organized, neat, systematic, committed and always on top of everything.'"
         print(welcomeMessage)
+        print("\n---\n")
         
         var red, green, blue: Double
         red = 65.8
         green = 24.3
         blue = 98.0
         print("RGB: " + String(red+green+blue))
+        print("\n---\n")
         
         // Naming Constants and Variables
         // Any constant or variable can be named using almost any Unicode character
@@ -66,11 +71,13 @@ class chapter2 {
         let 大和 = "倭国"
         let 💁👌🎍😍 = "Happy Happy Joy Joy"
         print(String(π) + " " + 大和 + " " + 💁👌🎍😍)
+        print("\n---\n")
         
         var friendlyWelcome = "You must stash the surplus. There is no need to spend on outside things."
         print(friendlyWelcome)
         friendlyWelcome = "Keep to yourself, be the absolute best, don’t mix life with work, be funny, un-afraid, humble, train yourself in your free time."
         print(friendlyWelcome)
+        print("\n---\n")
         
         // Printing Constants and Variables
         // The print(_:separator:terminator:) function is a global function that prints one or more values to an
@@ -79,10 +86,12 @@ class chapter2 {
         // Printing a value with a line break after it
         print("Nothing worth having comes easy.", terminator: "")
         print("***** there wasn't a line break")
+        print("\n---\n")
         
         // Swift uses string interpolation tio incliude the name of a constant or variable as a placeholder in a longer
         // string, and to prompt Swift to replace it with the current value of that constant or variable.
         print("This is an awesome thought: \(friendlyWelcome)")
+        print("\n---\n")
         
         // Comments.
         // Swift supports multiline comments that nested in other multiline comments.
@@ -93,6 +102,7 @@ class chapter2 {
         // Semicolons (;) are not required in Swift but they can be used to write multiple separate statements on
         // a single line
         let bear = "🐻"; print(bear)
+        print("\n---\n")
         
         // Integers are whole numbers with no fractional component. Interger are either signed (positeve, zero,
         // or negative) or unsigned (positive or zero)
@@ -102,6 +112,7 @@ class chapter2 {
         print(minValue)
         let maxValue = UInt32.max
         print(maxValue)
+        print("\n---\n")
         
         // Int and UInt is used when an specific size is not needed. The Int size has the same size as the current platform's
         // native word size:
@@ -130,6 +141,7 @@ class chapter2 {
         print(octalInteger)
         let hexadecimalInteger = 0x11 // Hexadecimal uses a 0x prefix
         print(hexadecimalInteger)
+        print("\n---\n")
         
         // all of the floating-point leterals have a decimal value of 12.875
         let decimalDouble = 12.875
@@ -138,6 +150,7 @@ class chapter2 {
         print(exponentDouble)
         let hexadecimalDouble = 0xC.3p0
         print(hexadecimalDouble)
+        print("\n---\n")
         
         // Thanks to numerical literals both integers and floats can be padded with extra zeros and can contain
         // underscores to help with readability.
@@ -147,6 +160,7 @@ class chapter2 {
         print(oneMillion)
         let justOverOneMillion = 1_000_000.000_000_1
         print(justOverOneMillion)
+        print("\n---\n")
         
         // Numeric Type Conversion
         
@@ -160,6 +174,7 @@ class chapter2 {
         let one: UInt8 = 1
         let twoThousandAndOne = twoThousand + UInt16(one)
         print(twoThousandAndOne)
+        print("\n---\n")
         
         // Integer and Floating-Point Conversion
         let three = 3
@@ -169,6 +184,7 @@ class chapter2 {
         
         let integerPi = Int(pi)
         print(integerPi) // it is inferred integerPi is of type Int
+        print("\n---\n")
         
         // Type Aliases
         // Type aliases define an alternative name for an existing type. They are useful to refer to an exisiting
@@ -177,6 +193,7 @@ class chapter2 {
         typealias AudioSample = UInt16
         let maxAmplitudeFound = AudioSample.min
         print(maxAmplitudeFound)
+        print("\n---\n")
         
         // Booleans
         // Both values are infered as Bool from the fact taht they were initialized with Boolean literal values.
@@ -200,6 +217,7 @@ class chapter2 {
         if i == 1 {
             print("All is paradox. For every idea, there is an equally valid “anti-idea”. All is everything. All is nothing in the end… Paradox is everything.")
         }
+        print("\n---\n")
         
         // Tuples
         // Tuples group multiple values into a sigle compound value. The values within a tuple can be of any type and
@@ -213,5 +231,6 @@ class chapter2 {
         let (statusCode, statusMessage) = http404Error
         print("The status code is \(statusCode)")
         print("The status message is \(statusMessage)")
+        print("\n---\n")
     }
 }
