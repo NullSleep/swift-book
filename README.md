@@ -1,2 +1,2 @@
 # swift-book
-Notes and experiments on the book Swift 4.0 Programming language book by Apple.
+Notes and experiments on the Swift 4.0 Programming Language book by Apple Inc.
