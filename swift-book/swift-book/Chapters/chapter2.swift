@@ -202,6 +202,9 @@ class chapter2 {
         }
         
         // Tuples
-        // Tuples grouo multiple values into a sigle compound value.
+        // Tuples group multiple values into a sigle compound value. The values within a tuple can be of any type and
+        // do not have to be of the same type as each other.
+        let http404Error = (404, "Not Found2") // A tuple of type (Int, String)
+        print(http404Error)
     }
 }
