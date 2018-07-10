@@ -236,6 +236,9 @@ class chapter2 {
         let (justTheStatusCode, _) = http404Error
          print("Just the status \(justTheStatusCode)")
         
+        // Also individual element values on a tuple can be accessed using index
+        print("The status code using index is \(http404Error.0)")
+        print("The status code message index is \(http404Error.1)")
         print("\n---\n")
     }
 }
