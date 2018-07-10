@@ -204,7 +204,14 @@ class chapter2 {
         // Tuples
         // Tuples group multiple values into a sigle compound value. The values within a tuple can be of any type and
         // do not have to be of the same type as each other.
+        // Tuples can have any permutation of types and can contains as many different types as required (Int, Int, Int),
+        // (String, Bool), etc
         let http404Error = (404, "Not Found2") // A tuple of type (Int, String)
         print(http404Error)
+        
+        // A tuple's contents can be decomposed into separate constants or variables
+        let (statusCode, statusMessage) = http404Error
+        print("The status code is \(statusCode)")
+        print("The status message is \(statusMessage)")
     }
 }
