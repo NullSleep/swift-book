@@ -232,7 +232,9 @@ class chapter2 {
         print("The status code is \(statusCode)")
         print("The status message is \(statusMessage)")
         
-        
+        // Values of the tuple can be ignored with an underscore (_) when decomposing the tuple
+        let (justTheStatusCode, _) = http404Error
+         print("Just the status \(justTheStatusCode)")
         
         print("\n---\n")
     }
