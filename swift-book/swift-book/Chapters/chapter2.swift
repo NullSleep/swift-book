@@ -243,5 +243,10 @@ class chapter2 {
         print("The status code is \(http200Status.statusCode)")
         print("The status message is \(http200Status.description)")
         
+        // Tuples are particularly useful as the return values of functions. They are not suited to the creation of
+        // complex data structures. If the data structure is likely to persist beyond a temporary scope, modeling it
+        // as class or a strucutre is much prefered.
+        
+        
     }
 }
