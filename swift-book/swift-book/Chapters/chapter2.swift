@@ -237,6 +237,11 @@ class chapter2 {
         // Also individual element values on a tuple can be accessed using index
         print("The status code using index is \(http404Error.0)")
         print("The status code message index is \(http404Error.1)")
-        print("\n---\n")
+        
+        // If the elements in a tuple are named they can be used using those names
+        let http200Status = (statusCode: 200, description: "OK")
+        print("The status code is \(http200Status.statusCode)")
+        print("The status message is \(http200Status.description)")
+        
     }
 }
