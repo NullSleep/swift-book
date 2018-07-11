@@ -247,6 +247,14 @@ class chapter2 {
         // complex data structures. If the data structure is likely to persist beyond a temporary scope, modeling it
         // as class or a strucutre is much prefered.
         
+        // Optionals
+        // Used when a value may be absent. An optional represent two  poaibilities: Either there is a value,
+        // and the optional can be unwrapped to acces the value, or there ins't a value at all.
         
+        let possibleNumber = "123"
+        // convertedNumber is infered to be of type 'Int?' or 'optional Int' because the initializer might fail
+        // since not all string can be converted to Int. There might be an Int value or no value at all.
+        let convertedNumber = Int(possibleNumber)
+        print(convertedNumber ?? "")
     }
 }
