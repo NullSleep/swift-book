@@ -232,7 +232,7 @@ class chapter2 {
         
         // Values of the tuple can be ignored with an underscore (_) when decomposing the tuple
         let (justTheStatusCode, _) = http404Error
-         print("Just the status \(justTheStatusCode)")
+        print("Just the status \(justTheStatusCode)")
         
         // Also individual element values on a tuple can be accessed using index
         print("The status code using index is \(http404Error.0)")
@@ -256,5 +256,11 @@ class chapter2 {
         // since not all string can be converted to Int. There might be an Int value or no value at all.
         let convertedNumber = Int(possibleNumber)
         print(convertedNumber ?? "")
+        
+        // nil
+        // Variables can be set to a valueless state by assigning it the special value nil
+        var serverResponseCode: Int? = 404
+        serverResponseCode = nil
+        print(serverResponseCode)
     }
 }
