@@ -271,5 +271,9 @@ class chapter2 {
         // surveryAnswer is automatically set to nil. It can't be printed or used until it is initialized
         // let surveyAnswer: String?
         
+        // Swift's nil is not the same as nil in Obj-C. In Obj-C nil is a pointer to a nonexistent object. In Swift,
+        // nil is not a pointer it is the absence of a value of a certain type. Optionals of any type can be set to nil,
+        // not just object types.
+        
     }
 }
