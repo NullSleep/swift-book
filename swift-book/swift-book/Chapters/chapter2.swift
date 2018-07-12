@@ -256,6 +256,7 @@ class chapter2 {
         // since not all string can be converted to Int. There might be an Int value or no value at all.
         let convertedNumber = Int(possibleNumber)
         print(convertedNumber ?? "")
+        print("\n---\n")
         
         // nil
         // Variables can be set to a valueless state by assigning it the special value nil
@@ -265,5 +266,10 @@ class chapter2 {
         var serverResponseCode: Int? = 404
         serverResponseCode = nil
         print(serverResponseCode ?? "Nil value therefore it prints this default value")
+        
+        // An optional vraible definied without providing a default value, the variable is automatically set to nil
+        // surveryAnswer is automatically set to nil. It can't be printed or used until it is initialized
+        // let surveyAnswer: String?
+        
     }
 }
