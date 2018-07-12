@@ -266,6 +266,7 @@ class chapter2 {
         var serverResponseCode: Int? = 404
         serverResponseCode = nil
         print(serverResponseCode ?? "Nil value therefore it prints this default value")
+        print("\n---\n")
         
         // An optional vraible definied without providing a default value, the variable is automatically set to nil
         // surveryAnswer is automatically set to nil. It can't be printed or used until it is initialized
@@ -274,6 +275,16 @@ class chapter2 {
         // Swift's nil is not the same as nil in Obj-C. In Obj-C nil is a pointer to a nonexistent object. In Swift,
         // nil is not a pointer it is the absence of a value of a certain type. Optionals of any type can be set to nil,
         // not just object types.
+        
+        // If statements and forced unwrapping
+        // if statements can be used to find wheter and optional contains a value by comparing the optional against nil.
+        if convertedNumber != nil {
+            // Forced unwrapping
+            // If there is certanty thate optional does contain a value it can be used by adding an exclamation mark (!)
+            // To the end of the optional's name. The exclamation makr effectively says "I know that this optional
+            // definitely has a value, please use it"
+            print("convertedNumber contains some integer value of \(convertedNumber!)")
+        }
         
     }
 }
