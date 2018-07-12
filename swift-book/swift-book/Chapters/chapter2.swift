@@ -259,8 +259,11 @@ class chapter2 {
         
         // nil
         // Variables can be set to a valueless state by assigning it the special value nil
+        // nil cannot be used with nonoptional constants and variables. If a constant or variable in the code needs to
+        // work with the absence of a value under certain conditions, always declare it as an optional value of the
+        // appropiate type.
         var serverResponseCode: Int? = 404
         serverResponseCode = nil
-        print(serverResponseCode)
+        print(serverResponseCode ?? "Nil value therefore it prints this default value")
     }
 }
