@@ -286,5 +286,14 @@ class chapter2 {
             print("convertedNumber contains some integer value of \(convertedNumber!)")
         }
         
+        // Optional Binding
+        // It is used to find out wheter an optional contains a value, and if so, to make that value available as a
+        // temporary constant or variable. Optional binding can be used with if and while statements to check for a value
+        // inside an optional, and to extract that value into a constant or a variable, as part of a single action.
+        if let actualNumber = Int(possibleNumber) {
+            print("\(possibleNumber) has an integer value of \(actualNumber)")
+        } else {
+            print("\(possibleNumber) couldn't be be converted to an integer")
+        }
     }
 }
