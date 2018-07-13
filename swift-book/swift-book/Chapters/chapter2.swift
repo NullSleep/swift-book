@@ -285,6 +285,7 @@ class chapter2 {
             // definitely has a value, please use it"
             print("convertedNumber contains some integer value of \(convertedNumber!)")
         }
+        print("\n---\n")
         
         // Optional Binding
         // It is used to find out wheter an optional contains a value, and if so, to make that value available as a
@@ -294,6 +295,13 @@ class chapter2 {
             print("\(possibleNumber) has an integer value of \(actualNumber)")
         } else {
             print("\(possibleNumber) couldn't be be converted to an integer")
+        }
+        
+        // Multiple optional bindings and Boolean conditions in a single statements can be added (they must be separarated
+        // by commas) If any of the values in the optional bindings are nil or any Boolean condition evaluates to false,
+        // the whole if statements is considered false.
+        if let first = Int("4"), let second = Int("666"), first < second && second < 1000 {
+            print("\(first) < \(second) < 1000")
         }
     }
 }
