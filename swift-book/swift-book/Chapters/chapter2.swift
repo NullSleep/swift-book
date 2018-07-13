@@ -336,5 +336,8 @@ class chapter2 {
         // Implicitly unwrapped optionals can be thought of as giving permission for the optional to be unwrapped
         // automatically whenever it is used. Rahter than placing an exclamation mark after the optional's name each time
         // it is used, the exclamation mark is placed afther optional's type when it is declatred.
+        if assumedString != nil {
+            print(assumedString)
+        }
     }
 }
