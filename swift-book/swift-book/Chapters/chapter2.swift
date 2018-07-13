@@ -316,5 +316,13 @@ class chapter2 {
         // IMPORTANT: Constants and variables created with optional binding in an if statement are available only
         // within the body of the if statement. In contrast, the constants and variables created with a 'guard'
         // statement are available in the lines of code that follow the guard statement.
+        print("\n---\n")
+        
+        // Implicitly Unwrapped Optionals
+        // Optionals indicate if a constant or variable is allowed to have a "no value". Optionals can be checked with
+        // an 'if' statement to sse if a value exists, and can be conditionally unwrapped with optional binding to
+        // access the optional's value if it does exist.
+        // Sometimes it is clear from a program's structure that an optional will always have a value, after that value
+        // is first set
     }
 }
