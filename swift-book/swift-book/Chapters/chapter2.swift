@@ -332,5 +332,9 @@ class chapter2 {
         let assumedString: String! = "An implicitly unwrapped optional string: Better to loose a lover than love a looser."
         let implicitString: String = assumedString
         print(implicitString)
+        
+        // Implicitly unwrapped optionals can be thought of as giving permission for the optional to be unwrapped
+        // automatically whenever it is used. Rahter than placing an exclamation mark after the optional's name each time
+        // it is used, the exclamation mark is placed afther optional's type when it is declatred.
     }
 }
