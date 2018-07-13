@@ -325,6 +325,12 @@ class chapter2 {
         // Sometimes it is clear from a program's structure that an optional will always have a value, after that value
         // is first set. In this cases it is useful to remove the need to check and unwrap the optional's valye every
         // time it is accessed, because it can be safely assumed to have a value all of the time.
-        let possibleString: String? = ""
+        let possibleString: String? = "An optional string: No matter how you feel, get up. Dress up. Show up. And never give up."
+        let forcedString: String = possibleString!
+        print(forcedString)
+        
+        let assumedString: String! = "An implicitly unwrapped optional string: Better to loose a lover than love a looser."
+        let implicitString: String = assumedString
+        print(implicitString)
     }
 }
