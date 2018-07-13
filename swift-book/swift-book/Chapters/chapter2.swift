@@ -303,5 +303,15 @@ class chapter2 {
         if let first = Int("4"), let second = Int("666"), first < second && second < 1000 {
             print("\(first) < \(second) < 1000")
         }
+        
+        // Same example old fashioned way (much larger)
+        if let first = Int("4") {
+            if let second = Int("666") {
+                if first < second && second < 1000 {
+                    print("\(first) < \(second) < 1000")
+                }
+            }
+        }
+        
     }
 }
