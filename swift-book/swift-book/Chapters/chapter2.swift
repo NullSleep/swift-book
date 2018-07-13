@@ -323,6 +323,8 @@ class chapter2 {
         // an 'if' statement to sse if a value exists, and can be conditionally unwrapped with optional binding to
         // access the optional's value if it does exist.
         // Sometimes it is clear from a program's structure that an optional will always have a value, after that value
-        // is first set
+        // is first set. In this cases it is useful to remove the need to check and unwrap the optional's valye every
+        // time it is accessed, because it can be safely assumed to have a value all of the time.
+        let possibleString: String? = ""
     }
 }
