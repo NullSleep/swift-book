@@ -313,5 +313,8 @@ class chapter2 {
             }
         }
         
+        // IMPORTANT: Constants and variables created with optional binding in an if statement are available only
+        // within the body of the if statement. In contrast, the constants and variables created with a 'guard'
+        // statement are available in the lines of code that follow the guard statement.
     }
 }
