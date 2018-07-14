@@ -339,5 +339,11 @@ class chapter2 {
         if assumedString != nil {
             print(assumedString)
         }
+        
+        // Implicitly unwrapped optionals can also be used with optional binding, to check and unwrap it's value in a
+        // single statement
+        if let definiteString = assumedString {
+            print(definiteString)
+        }
     }
 }
