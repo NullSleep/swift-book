@@ -34,11 +34,11 @@ class chapter2 {
     
     func execute() {
         
-        // Constants
+        // ** Constants **
         let maxNumberOfLoginsAttempts = 10
         print(maxNumberOfLoginsAttempts)
         
-        // Variables
+        // ** Variables **
         var currentLoginAttempt = 0
         currentLoginAttempt = 666
         print(currentLoginAttempt)
@@ -48,7 +48,7 @@ class chapter2 {
         x += y + z
         print(String(x))
         
-        // Type Annotations
+        // ** Type Annotations **
         // Type annotations can be provided when a constant or variable is declared to be clear about the kind of vlaues
         // the constant or variable can sotre. The colon (:) means '... of type ...'
         var welcomeMessage: String
@@ -63,7 +63,7 @@ class chapter2 {
         print("RGB: " + String(red+green+blue))
         print("\n---\n")
         
-        // Naming Constants and Variables
+        // ** Naming Constants and Variables **
         // Any constant or variable can be named using almost any Unicode character
         let π = 3.141559
         let 大和 = "倭国"
@@ -77,7 +77,7 @@ class chapter2 {
         print(friendlyWelcome)
         print("\n---\n")
         
-        // Printing Constants and Variables
+        // ** Printing Constants and Variables **
         // The print(_:separator:terminator:) function is a global function that prints one or more values to an
         // appropiate output. The 'separator' and 'terminator' parameters have default values and can be omitted.
         // By default the function terminates the line it prints by adding a line break.
@@ -91,7 +91,7 @@ class chapter2 {
         print("This is an awesome thought: \(friendlyWelcome)")
         print("\n---\n")
         
-        // Comments.
+        // Comments
         // Swift supports multiline comments that nested in other multiline comments.
         /* If someone offers you an amazing opportunity and you are not sure you can do it, say yes - then do it later.
             /* Si no cobro lo justo no solo devaluó mi trabajo si no el de todos mis colegas. */
@@ -124,13 +124,13 @@ class chapter2 {
         // Double represents a 64-bit floating-point number. Has the precision of at least 15 decimal digits
         // Float represents a 32-bit floating-point number. Has the precision of at least 6 decimal digits.
         
-        // Type Safety and Type Inference
+        // ** Type Safety and Type Inference **
         // Swift is a type-sage language meaning that it encourages you to be clear about the types the code can work with.
         // If part of you code expects a String, you can't pass in an Int by mistake.
         // Swift inferes values using type inference to work out the appropiate type.
         // Swift always chooses Double (rahter than Float) when inferring the type of floating-point numbers.
         
-        // Numeric Literals
+        // ** Numeric Literals **
         let decimalInteger = 17
         print(decimalInteger)
         let binaryInteger = 0b10001 // Binaries need a 0b prefix
@@ -160,12 +160,11 @@ class chapter2 {
         print(justOverOneMillion)
         print("\n---\n")
         
-        // Numeric Type Conversion
-        
+        // ** Numeric Type Conversion **
         // UInt8 cannot be store negaive numbers and so this will report an error
-        //let cannotBeNegative: UInt8 = -1
+        // let cannotBeNegative: UInt8 = -1
         // Int8 cannot store a number larger than its maximum value and therefor this will report an error
-        //let tooBig: Int8 = Int8.max + 1
+        // let tooBig: Int8 = Int8.max + 1
         
         // Conversions to operate with values of the same type.
         let twoThousand: UInt16 = 2_000
@@ -184,7 +183,7 @@ class chapter2 {
         print(integerPi) // it is inferred integerPi is of type Int
         print("\n---\n")
         
-        // Type Aliases
+        // ** Type Aliases **
         // Type aliases define an alternative name for an existing type. They are useful to refer to an exisiting
         // type by a name that is contextually more appropiate, such as when working with data of a specific size
         // form an external source
@@ -193,7 +192,7 @@ class chapter2 {
         print(maxAmplitudeFound)
         print("\n---\n")
         
-        // Booleans
+        // ** Booleans **
         // Both values are infered as Bool from the fact taht they were initialized with Boolean literal values.
         let orangesAreOrange = true
         print(orangesAreOrange)
@@ -217,7 +216,7 @@ class chapter2 {
         }
         print("\n---\n")
         
-        // Tuples
+        // ** Tuples **
         // Tuples group multiple values into a sigle compound value. The values within a tuple can be of any type and
         // do not have to be of the same type as each other.
         // Tuples can have any permutation of types and can contains as many different types as required (Int, Int, Int),
@@ -247,7 +246,7 @@ class chapter2 {
         // complex data structures. If the data structure is likely to persist beyond a temporary scope, modeling it
         // as class or a strucutre is much prefered.
         
-        // Optionals
+        // ** Optionals **
         // Used when a value may be absent. An optional represent two  poaibilities: Either there is a value,
         // and the optional can be unwrapped to acces the value, or there ins't a value at all.
         
@@ -258,7 +257,7 @@ class chapter2 {
         print(convertedNumber ?? "")
         print("\n---\n")
         
-        // nil
+        // ** nil **
         // Variables can be set to a valueless state by assigning it the special value nil
         // nil cannot be used with nonoptional constants and variables. If a constant or variable in the code needs to
         // work with the absence of a value under certain conditions, always declare it as an optional value of the
@@ -287,7 +286,7 @@ class chapter2 {
         }
         print("\n---\n")
         
-        // Optional Binding
+        // ** Optional Binding **
         // It is used to find out wheter an optional contains a value, and if so, to make that value available as a
         // temporary constant or variable. Optional binding can be used with if and while statements to check for a value
         // inside an optional, and to extract that value into a constant or a variable, as part of a single action.
@@ -318,7 +317,7 @@ class chapter2 {
         // statement are available in the lines of code that follow the guard statement.
         print("\n---\n")
         
-        // Implicitly Unwrapped Optionals
+        // ** Implicitly Unwrapped Optionals **
         // Optionals indicate if a constant or variable is allowed to have a "no value". Optionals can be checked with
         // an 'if' statement to sse if a value exists, and can be conditionally unwrapped with optional binding to
         // access the optional's value if it does exist.
