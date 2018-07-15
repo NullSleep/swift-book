@@ -344,5 +344,12 @@ class chapter2 {
         if let definiteString = assumedString {
             print(definiteString)
         }
+        
+        // ** Error Handling **
+        // Error hanlding, allows to determine the underlying case of failure, and, if necessary, to propagate
+        // the error to another part of the program. When a function encounters an error condition, it throws an error.
+        func canThrowAnError() throws {
+            
+        }
     }
 }
