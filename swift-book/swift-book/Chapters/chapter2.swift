@@ -359,5 +359,24 @@ class chapter2 {
         } catch {
             print("An error was thrown")
         }
+        
+        // A 'do' statement creates a new containing scope, which allows error to be propagated to one or more catch
+        // clauses.
+        func makeASandwich() throws {
+        }
+        
+        func eatASandwich (){
+        }
+        
+        do {
+            try makeASandwich()
+            eatASandwich()
+        } catch SandwichError.outOfCleanDishes {
+            washDishes()
+        } catch SandichError.outOfCleanDishes {
+            washDishes()
+        } catch SandichError.missingIngredients(let ingredients) {
+            buyGroceries(ingredients)
+        }
     }
 }
