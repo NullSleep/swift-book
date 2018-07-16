@@ -364,10 +364,10 @@ class chapter2 {
         // clauses.
 //        func makeASandwich() throws {
 //        }
-//        
+//
 //        func eatASandwich (){
 //        }
-//        
+//
 //        do {
 //            try makeASandwich()
 //            eatASandwich()
@@ -378,5 +378,11 @@ class chapter2 {
 //        } catch SandichError.missingIngredients(let ingredients) {
 //            buyGroceries(ingredients)
 //        }
+        
+        // ** Assertions and Preconditions **
+        // Assertions and preconditions are checks that happen at runtime. You use them to make sure an essential
+        // condition is satisfied before executing any further code. If the Boolean condition in the assertion or
+        // precondition evaluates to true, code execution continues as usual. If the condition evaluates to false
+        // the current state of the program is invalid; code excution ends and the app is terminated
     }
 }
