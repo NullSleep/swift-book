@@ -391,5 +391,16 @@ class chapter2 {
         // so they can be included as part of the code. Assertions help finding mistakes and incorrect assumptions
         // during development, and preconditions help detect issues in production. Thy can also be useful for documenting
         // the code.
+        //
+        // Using them to enforce valid data and state causes the app to terminate more predictably if an invalid state
+        // occura, and helps make the problem easier to debug. Stopping the execution as soon as an invalid state is
+        // detected also helps limit the damage caused by that invalid state.
+        //
+        // Assertions are only checked in debug builds, but preconditions are checked in both debug and production builds.
+        // In production builds, the condition inside an assertion isn't evaluated. This means assertions can be
+        // used freely during the development process without impacting the performance in production.
+        
+        
+        
     }
 }
