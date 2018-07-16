@@ -386,5 +386,10 @@ class chapter2 {
         // condition is satisfied before executing any further code. If the Boolean condition in the assertion or
         // precondition evaluates to true, code execution continues as usual. If the condition evaluates to false
         // the current state of the program is invalid; code excution ends and the app is terminated
+        //
+        // Assertions and preconditions are used to express the assumptions and expectations that are made while coding
+        // so they can be included as part of the code. Assertions help finding mistakes and incorrect assumptions
+        // during development, and preconditions help detect issues in production. Thy can also be useful for documenting
+        // the code.
     }
 }
