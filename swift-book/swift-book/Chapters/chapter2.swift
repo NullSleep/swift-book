@@ -349,7 +349,14 @@ class chapter2 {
         // Error hanlding, allows to determine the underlying case of failure, and, if necessary, to propagate
         // the error to another part of the program. When a function encounters an error condition, it throws an error.
         func canThrowAnError() throws {
-            
+            print("This function may or may not throw an error")
+        }
+        
+        do {
+            // When a function that can throw an error is called the 'try' keyword is prepend to the expresion
+            try canThrowAnError()
+        } catch {
+            print("An error was thrown")
         }
     }
 }
