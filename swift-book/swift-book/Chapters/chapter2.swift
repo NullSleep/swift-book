@@ -399,12 +399,15 @@ class chapter2 {
         // Assertions are only checked in debug builds, but preconditions are checked in both debug and production builds.
         // In production builds, the condition inside an assertion isn't evaluated. This means assertions can be
         // used freely during the development process without impacting the performance in production.
+        print("\n---\n")
         
         // ** Debugging with Assertiongs
         // 'assertion': assert(_:_:file:line) You pass this function an expression that evaluates to true or false
         // and a message to display if the result of the condition is false
         let age = -3
         // This assertion fails because -3 is not >= 0
-        assert(age >= 0, "A person's age can't be less than zero. - People will remember what you made them feel. Turn the hatred, the bitterness and smugness into comedy.")
+        // Since it fails it's need to be commented otherwise the app crashes
+//        assert(age >= 0, "A person's age can't be less than zero. - People will remember what you made them feel. Turn the hatred, the bitterness and smugness into comedy.")
+        print("\n---\n")
     }
 }
