@@ -352,6 +352,7 @@ class chapter2 {
             print("This function may or may not throw an error")
         }
         
+        // Swift automatically propagates errors out of their current scope until they are handled by a catch clause
         do {
             // When a function that can throw an error is called the 'try' keyword is prepend to the expresion
             try canThrowAnError()
