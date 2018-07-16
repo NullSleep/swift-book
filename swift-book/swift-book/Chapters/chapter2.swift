@@ -344,6 +344,7 @@ class chapter2 {
         if let definiteString = assumedString {
             print(definiteString)
         }
+        print("\n---\n")
         
         // ** Error Handling **
         // Error hanlding, allows to determine the underlying case of failure, and, if necessary, to propagate
@@ -378,6 +379,7 @@ class chapter2 {
 //        } catch SandichError.missingIngredients(let ingredients) {
 //            buyGroceries(ingredients)
 //        }
+        print("\n---\n")
         
         // ** Assertions and Preconditions **
         // Assertions and preconditions are checks that happen at runtime. You use them to make sure an essential
