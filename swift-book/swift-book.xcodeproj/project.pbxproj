@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235820AE20FDA8020035C9F9 /* chapter2_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235820AD20FDA8020035C9F9 /* chapter2_2.swift */; };
 		2370BC3620E892BC00823494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370BC3520E892BC00823494 /* AppDelegate.swift */; };
 		2370BC3820E892BC00823494 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370BC3720E892BC00823494 /* ViewController.swift */; };
 		2370BC3B20E892BC00823494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2370BC3920E892BC00823494 /* Main.storyboard */; };
@@ -14,10 +15,11 @@
 		2370BC4020E892BE00823494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2370BC3E20E892BE00823494 /* LaunchScreen.storyboard */; };
 		2370BC4820E893F800823494 /* chapter1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370BC4720E893F800823494 /* chapter1.swift */; };
 		2370BC4A20E8994300823494 /* Philosopher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370BC4920E8994300823494 /* Philosopher.swift */; };
-		23D5D5BD20EB3C6E00413515 /* chapter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5D5BC20EB3C6E00413515 /* chapter2.swift */; };
+		23D5D5BD20EB3C6E00413515 /* chapter2_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5D5BC20EB3C6E00413515 /* chapter2_1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		235820AD20FDA8020035C9F9 /* chapter2_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapter2_2.swift; sourceTree = "<group>"; };
 		2370BC3220E892BC00823494 /* swift-book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2370BC3520E892BC00823494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2370BC3720E892BC00823494 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +29,7 @@
 		2370BC4120E892BE00823494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2370BC4720E893F800823494 /* chapter1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapter1.swift; sourceTree = "<group>"; };
 		2370BC4920E8994300823494 /* Philosopher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Philosopher.swift; sourceTree = "<group>"; };
-		23D5D5BC20EB3C6E00413515 /* chapter2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapter2.swift; sourceTree = "<group>"; };
+		23D5D5BC20EB3C6E00413515 /* chapter2_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapter2_1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				2370BC3520E892BC00823494 /* AppDelegate.swift */,
+				23D5D5C020EB3C9E00413515 /* UI */,
 				23D5D5BE20EB3C8100413515 /* Chapters */,
 				23D5D5BF20EB3C8F00413515 /* Models */,
-				23D5D5C020EB3C9E00413515 /* UI */,
 				2370BC3C20E892BE00823494 /* Assets.xcassets */,
 				2370BC4120E892BE00823494 /* Info.plist */,
 			);
@@ -74,7 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				2370BC4720E893F800823494 /* chapter1.swift */,
-				23D5D5BC20EB3C6E00413515 /* chapter2.swift */,
+				23D5D5BC20EB3C6E00413515 /* chapter2_1.swift */,
+				235820AD20FDA8020035C9F9 /* chapter2_2.swift */,
 			);
 			path = Chapters;
 			sourceTree = "<group>";
@@ -169,7 +172,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2370BC3820E892BC00823494 /* ViewController.swift in Sources */,
-				23D5D5BD20EB3C6E00413515 /* chapter2.swift in Sources */,
+				235820AE20FDA8020035C9F9 /* chapter2_2.swift in Sources */,
+				23D5D5BD20EB3C6E00413515 /* chapter2_1.swift in Sources */,
 				2370BC4A20E8994300823494 /* Philosopher.swift in Sources */,
 				2370BC4820E893F800823494 /* chapter1.swift in Sources */,
 				2370BC3620E892BC00823494 /* AppDelegate.swift in Sources */,

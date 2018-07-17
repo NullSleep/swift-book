@@ -8,7 +8,8 @@
 
 import Foundation
 
-class chapter2 {
+class chapter2_1 {
+    
     // MARK: - General notes
     
     // 4 Ways of initializing an empty array in Swift:
@@ -30,7 +31,7 @@ class chapter2 {
     // Likewise, type safety prevents you from accidentally passing an optional String to a piece of code that expect an
     // nonoptional string.
     
-    // MARK: - Sub Chapter: The Basics
+    // MARK: - SUB CHAPTER: THE BASICS
     
     func execute() {
         
