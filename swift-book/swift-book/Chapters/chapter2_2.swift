@@ -20,5 +20,14 @@ class chapter2_2 {
         // · Unary - Operates on a single target: -a, !b, c!
         // · Binary - Operates on two targets: 2 + 3
         // · Ternary - Operates on three targets. Swift has only one ternary operator: a ? b : c
+        
+        // ** Assignment Operator **
+        
+        let b = 10
+        var a = 5
+        a = b
+        print(a)
+        
+        
     }
 }
