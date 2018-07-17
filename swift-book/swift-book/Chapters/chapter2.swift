@@ -404,11 +404,12 @@ class chapter2 {
         // ** Debugging with Assertiongs
         // 'assertion': assert(_:_:file:line) You pass this function an expression that evaluates to true or false
         // and a message to display if the result of the condition is false
-        let age = -3
+        var age = -3
+        age = 1 // Leave it as -3 to test the assertions
+        
         // This assertion fails because -3 is not >= 0
         // Since it fails it's need to be commented otherwise the app crashes
-//        assert(age >= 0, "A person's age can't be less than zero. - People will remember what you made them feel. Turn the hatred, the bitterness and smugness into comedy.")
-//        assert(age >= 0) // The message can be omited
+//        assert(age >= 0, "Age can't be less than zero. - People will remember what you made them feel.")
         
         // Using the assertionFailure(_:file:line) functiom
         if age > 10 {
@@ -419,5 +420,13 @@ class chapter2 {
             assertionFailure("A person's age can't be less than zero.")
         }
         print("\n---\n")
+        
+        // ** Enforcing Preconditions **
+        // Use a precondition whenever a condition has the potential to be false, but must be definitely be true fot your
+        // code to continue exectuion. Use preconditions for example to check if a subscript is not our of bounds, or to
+        // check that a function has been passed a valid value.
+        var indice = 0
+        indice = 1 // Leave it as 0 to test the precondition
+        precondition(indice > 0, "Index must be greater than zero.")
     }
 }
