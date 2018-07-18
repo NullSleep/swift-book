@@ -43,5 +43,11 @@ class chapter2_2 {
         
         // String concatenation
         print("One of the best ways to find happiness and success in life is to strip" + " away the unnecessary things and focus only on what is needed.")
+        
+        // ** Remainder operator **
+        // The reminder operator (a % b) works out how many multiples of b will fit inside a and returns the the value
+        // that is left over (known as the remainder)
+        // The reminder operator (%) is also knwon as a modulo operator in other languages. However, its behavior in Swift
+        // for negative numbers means that it is, strictly speaking, a remainder rather than a modulo operator.
     }
 }
