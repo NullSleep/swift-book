@@ -28,6 +28,9 @@ class chapter2_2 {
         a = b
         print(a)
         
+        let (x, y) = (1, 2)
+        print((x, y))
+        print("\n---\n")
         
     }
 }
