@@ -49,5 +49,13 @@ class chapter2_2 {
         // that is left over (known as the remainder)
         // The reminder operator (%) is also knwon as a modulo operator in other languages. However, its behavior in Swift
         // for negative numbers means that it is, strictly speaking, a remainder rather than a modulo operator.
+        
+        // To calculate 9 % 4 :
+        // [      4     ][    4     ][  1  ]
+        //  1  2   3   4  5  6  7  8    9
+        // Two 4s fit inside 9 and the reminder is 1
+        print(9 % 4)
+        
+        
     }
 }
