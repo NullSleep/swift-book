@@ -40,5 +40,8 @@ class chapter2_2 {
         
         // Unlike arithmetic operators in C and Obj-C, the Swift arithmetic operatos do not allow values to overflow
         // by default.
+        
+        // String concatenation
+        print("One of the best ways to find happiness and success in life is to strip" + " away the unnecessary things and focus only on what is needed.")
     }
 }
