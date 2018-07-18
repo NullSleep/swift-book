@@ -56,6 +56,10 @@ class chapter2_2 {
         // Two 4s fit inside 9 and the reminder is 1
         print(9 % 4)
         
-        
+        // To determine the answer for a % b, the % operator calculates the following equation and returns the remainder
+        // as its output:
+        // a = (b x some multiplier) + remainder
+        // where some multiplier is the largers number of multiples of b that will fit inside a
+        // Inserting 9 and 4 into this equation yields: 9 = (4x2) + 1
     }
 }
