@@ -80,5 +80,12 @@ class chapter2_2 {
         let minusSix = -6
         let alsoMinusSix = +minusSix
         print(alsoMinusSix)
+        print("\n---\n")
+        
+        // ** Compound Assigment Operators **
+        // a += 2 is shorthand for a = a + 2
+        var a = 1
+        a += 2
+        print(a)
     }
 }
