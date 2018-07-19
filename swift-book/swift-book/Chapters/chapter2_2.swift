@@ -43,6 +43,7 @@ class chapter2_2 {
         
         // String concatenation
         print("One of the best ways to find happiness and success in life is to strip" + " away the unnecessary things and focus only on what is needed.")
+        print("\n---\n")
         
         // ** Remainder operator **
         // The reminder operator (a % b) works out how many multiples of b will fit inside a and returns the the value
@@ -55,6 +56,7 @@ class chapter2_2 {
         //  1  2   3   4  5  6  7  8    9
         // Two 4s fit inside 9 and the reminder is 1
         print(9 % 4)
+        print("\n---\n")
         
         // To determine the answer for a % b, the % operator calculates the following equation and returns the remainder
         // as its output:
@@ -62,7 +64,12 @@ class chapter2_2 {
         // where some multiplier is the largers number of multiples of b that will fit inside a
         // Inserting 9 and 4 into this equation yields: 9 = (4x2) + 1
         
-        // **  **
+        // The reminder of a negative value
+        // The sign of b is ignored for negative values pof b. This means that a % b and a % -b always gives the
+        // same answer.
+        // -9 % 4 // -9 = (4 * -2) + -1
+        
+        // ** Unary Minus Operator **
         let three = 3
         let minusThree = -three
         let plustThree = -minusThree
