@@ -74,5 +74,11 @@ class chapter2_2 {
         let minusThree = -three
         let plustThree = -minusThree
         print(plustThree)
+        
+        // ** Unary Plus Operator **
+        // The unary operator doesn't do anything but it is provided for symmetry with the minus operator
+        let minusSix = -6
+        let alsoMinusSix = +minusSix
+        print(alsoMinusSix)
     }
 }
