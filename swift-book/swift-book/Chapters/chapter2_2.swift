@@ -61,5 +61,11 @@ class chapter2_2 {
         // a = (b x some multiplier) + remainder
         // where some multiplier is the largers number of multiples of b that will fit inside a
         // Inserting 9 and 4 into this equation yields: 9 = (4x2) + 1
+        
+        // **  **
+        let three = 3
+        let minusThree = -three
+        let plustThree = -minusThree
+        print(plustThree)
     }
 }
