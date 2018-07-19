@@ -84,8 +84,8 @@ class chapter2_2 {
         
         // ** Compound Assigment Operators **
         // a += 2 is shorthand for a = a + 2
-        var a = 1
-        a += 2
-        print(a)
+        var ax = 1
+        ax += 2
+        print(ax)
     }
 }
