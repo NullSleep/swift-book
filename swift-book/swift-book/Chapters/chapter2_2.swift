@@ -96,5 +96,12 @@ class chapter2_2 {
         print(1 < 2)
         print(1 >= 1)
         print(2 <= 1)
+        
+        let name = "world"
+        if name == "world" {
+            print("Rule your mind or it will rule you” ~ Buddha")
+        } else {
+            print("If you want to grow up, you have to stop apologizing.")
+        }
     }
 }
