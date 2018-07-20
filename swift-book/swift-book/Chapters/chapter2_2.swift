@@ -87,5 +87,14 @@ class chapter2_2 {
         var ax = 1
         ax += 2
         print(ax)
+        print("\n---\n")
+        
+        // ** Comparison Operators **
+        print(1 == 1)
+        print(2 != 1)
+        print(2 > 1)
+        print(1 < 2)
+        print(1 >= 1)
+        print(2 <= 1)
     }
 }
