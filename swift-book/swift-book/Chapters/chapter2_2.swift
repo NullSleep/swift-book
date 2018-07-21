@@ -123,5 +123,12 @@ class chapter2_2 {
         // If 'question' is true, it evaluates answer1 and returns its value; otherwise, it evaluates answer2 and
         // returns it value; otherwise, it evaluates answer2 and returns its value.
         
+        // The ternary conditional operator is shorthand for the code below
+//        if question {
+//            answer1
+//        } else {
+//            answer2
+//        }
+        
     }
 }
