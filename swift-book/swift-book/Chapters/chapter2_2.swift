@@ -116,5 +116,12 @@ class chapter2_2 {
         // elements, you must implement the comparison operators yourself.
         print("\n---\n")
         
+        // ** Ternary Conditional Operator **
+        // The ternary conditional operator is a special operator with three parts, which takes the form
+        // question ? answer1 : answer 2
+        // It is a shortcut for evaluating one of two expressions based on whether 'question' is true or false.
+        // If 'question' is true, it evaluates answer1 and returns its value; otherwise, it evaluates answer2 and
+        // returns it value; otherwise, it evaluates answer2 and returns its value.
+        
     }
 }
