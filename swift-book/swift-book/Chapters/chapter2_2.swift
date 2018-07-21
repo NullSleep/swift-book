@@ -137,5 +137,20 @@ class chapter2_2 {
         let hasHeader = true
         let rowHeight = contentHeight + (hasHeader ? 50 : 20)
         print(rowHeight)
+        
+        // The preceding example is shorthand for the code below:
+        let contentHeightL = 40
+        let hasHeaderL = someBoolean()
+        var rowHeightL: Int
+        if hasHeaderL {
+            rowHeightL = contentHeightL + 50
+        }  else {
+            rowHeightL = contentHeightL + 20
+        }
+        print(rowHeightL)
+    }
+    
+    func someBoolean() -> Bool {
+        return true
     }
 }
