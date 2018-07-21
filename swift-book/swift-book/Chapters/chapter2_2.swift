@@ -130,5 +130,12 @@ class chapter2_2 {
 //            answer2
 //        }
         
+        // Example that calculates the height for a table row. The row height should be 50 points taller than the
+        // content height for the table row. The row height should be 50 point taller than the content height if the
+        // row has a header, and 20 points taller if the row doesn't have a header:
+        let contentHeight = 40
+        let hasHeader = true
+        let rowHeight = contentHeight + (hasHeader ? 50 : 20)
+        print(rowHeight)
     }
 }
