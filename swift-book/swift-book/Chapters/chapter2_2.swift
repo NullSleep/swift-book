@@ -148,6 +148,10 @@ class chapter2_2 {
             rowHeightL = contentHeightL + 20
         }
         print(rowHeightL)
+        
+        // The ternary conditional is an efficeint shorthand for deciding which of two expressions to consider. But the
+        // conciseness of the operator can lead to hard to read code if overused. Avoid combining multiple instances of
+        // the ternary conditional operator into one compound statement.
     }
     
     func someBoolean() -> Bool {
