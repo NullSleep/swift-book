@@ -169,7 +169,13 @@ class chapter2_2 {
         print(colorNameToUse)
         userDefinedColorName = ""; colorNameToUse = "" // Added only to avoid the warning
         // If userDefinedColorName where not nil by default userDefinedColorName would be set to userDefinedColorName
+        print("\n---\n")
         
+        // ** Range Operators **
+        // Swift includes serveral range operators which are shortcuts for expressing a range of values.
+        // * Closed range operator *
+        // The closed range operator (a..b) defines a range that runs from a to b, and includes the values a and b. The
+        // value of a must not be greater than b.
     }
     
     func someBoolean() -> Bool {
