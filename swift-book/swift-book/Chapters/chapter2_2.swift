@@ -163,6 +163,12 @@ class chapter2_2 {
         // The nil-coalescing operator provides a more elegant way to encapsulate this conditional checking and
         // unwrapping in a concise and readable form.
         
+        let defaultColorName = "red"
+        var userDefinedColorName: String? // defaults to nil
+        var colorNameToUse = userDefinedColorName ?? defaultColorName
+        print(colorNameToUse)
+        userDefinedColorName = ""; colorNameToUse = "" // Added only to avoid the warning
+        
     }
     
     func someBoolean() -> Bool {
