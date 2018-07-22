@@ -153,6 +153,10 @@ class chapter2_2 {
         // conciseness of the operator can lead to hard to read code if overused. Avoid combining multiple instances of
         // the ternary conditional operator into one compound statement.
         print("\n---\n")
+        
+        // ** Nil-Coalescing Operator **
+        // The nil-coalescing operator (a ?? b) unwraps an optional 'a' if it contains a value, or returns a default
+        // value 'b' if 'a' is nil.
     }
     
     func someBoolean() -> Bool {
