@@ -176,7 +176,7 @@ class chapter2_2 {
         // * Closed range operator *
         // The closed range operator (a..b) defines a range that runs from a to b, and includes the values a and b. The
         // value of a must not be greater than b.
-        for index in 1..5 {
+        for index in 1...5 {
             print("\(index) times 5 is \(index * 5)")
         }
     }
