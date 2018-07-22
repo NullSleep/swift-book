@@ -168,6 +168,7 @@ class chapter2_2 {
         var colorNameToUse = userDefinedColorName ?? defaultColorName
         print(colorNameToUse)
         userDefinedColorName = ""; colorNameToUse = "" // Added only to avoid the warning
+        // If userDefinedColorName where not nil by default userDefinedColorName would be set to userDefinedColorName
         
     }
     
