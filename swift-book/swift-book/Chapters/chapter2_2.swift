@@ -156,7 +156,13 @@ class chapter2_2 {
         
         // ** Nil-Coalescing Operator **
         // The nil-coalescing operator (a ?? b) unwraps an optional 'a' if it contains a value, or returns a default
-        // value 'b' if 'a' is nil.
+        // value 'b' if 'a' is nil. The expression 'a' is always of an optional type. The expresion 'b' must match
+        // the type that is stored inside 'a'.
+        // The nil-coalescing operator is shorthand for the code below
+        // a != nil ? a! : b
+        // The nil-coalescing operator provides a more elegant way to encapsulate this conditional checking and
+        // unwrapping in a concise and readable form.
+        
     }
     
     func someBoolean() -> Bool {
