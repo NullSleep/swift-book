@@ -179,6 +179,9 @@ class chapter2_2 {
         for index in 1...5 {
             print("\(index) times 5 is \(index * 5)")
         }
+        
+        // ** Half Range Operator **
+        // The half range operator (a..<b) defines a range that runs from a to b, but does not include b.
     }
     
     func someBoolean() -> Bool {
