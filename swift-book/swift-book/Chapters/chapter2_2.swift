@@ -181,7 +181,10 @@ class chapter2_2 {
         }
         
         // ** Half Range Operator **
-        // The half range operator (a..<b) defines a range that runs from a to b, but does not include b.
+        // The half range operator (a..<b) defines a range that runs from a to b, but does not include b. The is called
+        // half open because it contains its first value, but not the final value.
+        // Half open ranges are useful when working with zero based lists such as arrays, where it is useful to count up
+        // to (but no including) the leng of the list.
     }
     
     func someBoolean() -> Bool {
