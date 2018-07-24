@@ -194,7 +194,7 @@ class chapter2_2 {
         }
         print("\n---\n")
         
-        // * One-Sided Ranges*
+        // * One-Sided Ranges *
         // The closed range operator has an alternate form for ranges that continue as far as possible in one direction,
         // for example, a range that inclides all the elements of an array, from index 2 to the end of the array.
         for name in names[2...] {
@@ -215,6 +215,22 @@ class chapter2_2 {
         print(range.contains(4))
         print(range.contains(-1))
         print("\n---\n")
+        
+        // ** Logical Operators **
+        // Logical operators modify or combine the Boolean logic values true and false. Swift supports the three standard
+        // logical operator found in C-based languages:
+        // Logical NOT (!a)
+        // Logical AND (a && b)
+        // Logical OR (a || b)
+        
+        // * Logical NOT Operator *
+        // (!a) inverts a Boolean value (true becomes false, and false becomes true)
+        let allowedEntry = false
+        if !allowedEntry { // If not allowedEntrey
+            print("ACCESS DENIED")
+        }
+        // As in this example, careful choice of Boolean constant and variable names can help to keep code readable and
+        // concise, while avoiding double negatives or confusing logic statements.
     }
     
     func someBoolean() -> Bool {
