@@ -204,6 +204,17 @@ class chapter2_2 {
         for name in names[...2] {
             print(name)
         }
+        
+        // The half open range operator also has a one-sided form that is written with only its final value.
+        for name in names[..<2] {
+            print(name)
+        }
+        
+        let range = ...5
+        print(range.contains(7))
+        print(range.contains(4))
+        print(range.contains(-1))
+        print("\n---\n")
     }
     
     func someBoolean() -> Bool {
