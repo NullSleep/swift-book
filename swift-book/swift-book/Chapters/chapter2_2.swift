@@ -231,6 +231,18 @@ class chapter2_2 {
         }
         // As in this example, careful choice of Boolean constant and variable names can help to keep code readable and
         // concise, while avoiding double negatives or confusing logic statements.
+        
+        // * Logical AND Operator *
+        // The logical AND operator (a && b) creates logical expression where both values must be true for the overall
+        // expression to also be true. If either value is false, the overall expression will also be false. In fact,
+        // if the first value is false, the second value won't even be evaluated. This is known as shot-circuit evaluation.
+        let enteredDoorCode = true
+        let passedRetinaScan = false
+        if enteredDoorCode && passedRetinaScan {
+            print("Welcome")
+        } else {
+            print("ACCESS DENIED")
+        }
     }
     
     func someBoolean() -> Bool {
