@@ -185,6 +185,11 @@ class chapter2_2 {
         // half open because it contains its first value, but not the final value.
         // Half open ranges are useful when working with zero based lists such as arrays, where it is useful to count up
         // to (but no including) the leng of the list.
+        let names = ["Anna", "Alex", "Brian", "Jack"]
+        let count = names.count
+        for i in 0..<count {
+            print("Person \(i + 1) is called \(names[i])")
+        }
     }
     
     func someBoolean() -> Bool {
