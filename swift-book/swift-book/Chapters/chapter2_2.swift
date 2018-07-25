@@ -243,6 +243,10 @@ class chapter2_2 {
         } else {
             print("ACCESS DENIED")
         }
+        
+        // * Logical OR Operator *
+        // Use it to create logical expression in which only one of the two values hasto be true for the overall
+        // expression to be true
     }
     
     func someBoolean() -> Bool {
