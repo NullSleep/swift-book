@@ -239,7 +239,7 @@ class chapter2_2 {
         let enteredDoorCode = true
         let passedRetinaScan = false
         if enteredDoorCode && passedRetinaScan {
-            print("Welcome")
+            print("Welcome!")
         } else {
             print("ACCESS DENIED")
         }
@@ -251,6 +251,13 @@ class chapter2_2 {
         let hasDoorKey = false
         let knowsOverridePassword = true
         if hasDoorKey || knowsOverridePassword {
+            print("Welcome!")
+        } else {
+            print("ACCESS DENIED")
+        }
+        
+        // * Combining Logical Operators *
+        if enteredDoorCode && passedRetinaScan || hasDoorKey || knowsOverridePassword {
             print("Welcome!")
         } else {
             print("ACCESS DENIED")
