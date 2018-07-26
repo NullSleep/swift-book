@@ -245,8 +245,9 @@ class chapter2_2 {
         }
         
         // * Logical OR Operator *
-        // Use it to create logical expression in which only one of the two values hasto be true for the overall
-        // expression to be true
+        // Use it to create logical expression in which only one of the two values has to be true for the overall
+        // expression to be true. If the left side of a Logical OR expresion is true the right side is not evaluated,
+        // because it cannot change the outcome of the overall expression.
     }
     
     func someBoolean() -> Bool {
