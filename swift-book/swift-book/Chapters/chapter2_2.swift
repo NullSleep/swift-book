@@ -248,6 +248,13 @@ class chapter2_2 {
         // Use it to create logical expression in which only one of the two values has to be true for the overall
         // expression to be true. If the left side of a Logical OR expresion is true the right side is not evaluated,
         // because it cannot change the outcome of the overall expression.
+        let hasDoorKey = false
+        let knowsOverridePassword = true
+        if hasDoorKey || knowsOverridePassword {
+            print("Welcome!")
+        } else {
+            print("ACCESS DENIED")
+        }
     }
     
     func someBoolean() -> Bool {
