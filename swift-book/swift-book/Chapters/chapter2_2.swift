@@ -266,11 +266,16 @@ class chapter2_2 {
         }
         
         // * Explicit Parentheses *
+        // Readability is always preferred over brevity.
         if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword {
             print("Welcome!")
         } else {
             print("ACCESS DENIED")
         }
+        
+        // ** String and Characters **
+        // Series of characters and its contents can be accessed in various ways, including as a collection of Character
+        // values.
     }
     
     func someBoolean() -> Bool {
