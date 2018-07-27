@@ -257,6 +257,8 @@ class chapter2_2 {
         }
         
         // * Combining Logical Operators *
+        // If we've entered trhe correct door code and passed the retina scan, or if we have a valid door key,
+        // or if we know rhe emergency override password, then allow access.
         if enteredDoorCode && passedRetinaScan || hasDoorKey || knowsOverridePassword {
             print("Welcome!")
         } else {
