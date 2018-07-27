@@ -264,6 +264,13 @@ class chapter2_2 {
         } else {
             print("ACCESS DENIED")
         }
+        
+        // * Explicit Parentheses *
+        if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword {
+            print("Welcome!")
+        } else {
+            print("ACCESS DENIED")
+        }
     }
     
     func someBoolean() -> Bool {
