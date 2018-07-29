@@ -300,9 +300,23 @@ class chapter2_2 {
 
         """
         print(quotations)
+        
+        print(quotations == generateQuotation())
     }
     
     func someBoolean() -> Bool {
         return true
+    }
+    
+    func generateQuotation() -> String {
+        // The lines in the indentation are ignored.
+        let quotation = """
+            
+            "Success is not about being intelligent or talented, is about having relentless focus, drive and pushing things forward."
+
+            "The ability to express yourself very well, specially about technical issues is key."
+
+        """
+        return quotation
     }
 }
