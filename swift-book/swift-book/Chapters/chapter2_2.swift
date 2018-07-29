@@ -272,6 +272,7 @@ class chapter2_2 {
         } else {
             print("ACCESS DENIED")
         }
+        print("\n---\n")
         
         // ** String and Characters **
         // Series of characters and its contents can be accessed in various ways, including as a collection of Character
@@ -281,6 +282,11 @@ class chapter2_2 {
         // String wihout casting.
         
         // * String Literals *
+        // A string literal is a sequence of characters sorrounded by double quotes (").
+        // Swift infers a type of String for the someString constant, becase it is initialized with a string literal value.
+        let someString = "Some string literal value"
+        print(someString)
+        
     }
     
     func someBoolean() -> Bool {
