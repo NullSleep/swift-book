@@ -276,6 +276,11 @@ class chapter2_2 {
         // ** String and Characters **
         // Series of characters and its contents can be accessed in various ways, including as a collection of Character
         // values.
+        // Swift String type is bridged with Foundation's NSString class. Foundation also extends String to expose
+        // methods defined by NSString. This means, if you import Foundation, you can access those NSString methods on
+        // String wihout casting.
+        
+        // * String Literals *
     }
     
     func someBoolean() -> Bool {
