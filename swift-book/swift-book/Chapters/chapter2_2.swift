@@ -287,6 +287,13 @@ class chapter2_2 {
         let someString = "Some string literal value"
         print(someString)
         
+        // For a string that spans several lines, use a multiline string literal (""")
+        let quotations = """
+        "Most of the financial success is due to your personality and ability to communicate, negotiate and lead. Shockingly only very little is due to technical knowledge."
+        "No man has the right to be an amateur in the matter of physical training. It is a shame for a man to grow old without seeing the beauty and strength of which his body is capable."
+        “My formula for greatness in a human being is amor fati. That one wants nothing to be different., not forward, not backwards, not in all eternity, not nearly bear what is necessary, still less conceal it, but love it.”
+        """
+        print(quotations)
     }
     
     func someBoolean() -> Bool {
