@@ -341,6 +341,11 @@ class chapter2_2 {
             print(character)
         }
         
+        // Stand-alone Character constants or variables can be created
+        let exclamationMark: Character = "!"
+        print(exclamationMark)
+        
+        
     }
     
     func someBoolean() -> Bool {
