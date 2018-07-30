@@ -353,9 +353,20 @@ class chapter2_2 {
         
         // * Concatenating Strings and Characters *
         let string1 = "In order to be irreplaceable, one must always be different"
-        let string2 = "- Don't make someone a priority, when they only make you an option"
-        let bigString = string1 + string2
+        let string2 = "\n\nDon't make someone a priority, when they only make you an option"
+        var bigString = string1 + string2
         print(bigString)
+        
+        let string3 = "\n\nMinimize your options to minimize the number of decision to take in the day and therefore the draining of will."
+        bigString += string3
+        print(bigString)
+        
+        let asterisk: Character = "*"
+        bigString.append(asterisk)
+        print(bigString)
+        
+        // String or Character can't be appended to an existing Character because a Character value must only contain a
+        // single character.
     }
     
     func someBoolean() -> Bool {
