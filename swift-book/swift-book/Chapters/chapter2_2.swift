@@ -303,7 +303,6 @@ class chapter2_2 {
         
         // Comparing strings
         print(quotations == generateQuotation())
-        print("\n---\n")
         
         // * Initializing an Empty String *
         // These two string are both empty, and are equivalent to each other.
@@ -335,6 +334,12 @@ class chapter2_2 {
         // Swift's copy by default String behaviour ensure that when a function or method passes you a String value,
         // it is clear that you own that exact String value, regardless of where it came from. You can be confident
         // that the string you passed will not be modified unless you modify it yourself.
+        
+        // * Working with Characters *
+        // Individual Characters values for a String can be accessed by iterating over the string with a for-in loop:
+        for character in "To do two things at once is to do neither ~ Publilius Syrus 😬" {
+            print(character)
+        }
         
     }
     
