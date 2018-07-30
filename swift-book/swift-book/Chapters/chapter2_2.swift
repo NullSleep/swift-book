@@ -311,6 +311,10 @@ class chapter2_2 {
         print(emptyString)
         let anotherEmptyString = String() // Initializer syntax
         print(anotherEmptyString)
+        
+        if emptyString.isEmpty {
+            print("Empty string - To play a wrong note is insignificant. To play without passion is inexcusable")
+        }
     }
     
     func someBoolean() -> Bool {
