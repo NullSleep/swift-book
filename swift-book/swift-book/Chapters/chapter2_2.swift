@@ -367,6 +367,15 @@ class chapter2_2 {
         
         // String or Character can't be appended to an existing Character because a Character value must only contain a
         // single character.
+        
+        // * String Interpolation *
+        // String interpolation is a way to construct a new String value from a mix of constants, variables, literals
+        // and expressions by including their values inside a string literal. String interpolation can be used in both
+        // single line and multiline string literals. Each item that you insert into the string literal is wrapped
+        // in a pair of parentheses, prefixed by a backlash (\)
+        let multiplier = 3
+        let message = "\(multiplier) times 2*5 is \(Double(multiplier) * 2.5)"
+        print(message)
     }
     
     func someBoolean() -> Bool {
