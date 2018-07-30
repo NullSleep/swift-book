@@ -327,6 +327,14 @@ class chapter2_2 {
 //        constantString += "another string"
         print(constantString)
         
+        // * String Are Value Types *
+        // Swift String type is a value type. When creating a new String value, that String value is copied when it is
+        // passed to a function or methods, or when it is assigned to a constant or variable. In each case, a new copy
+        // of the exisiting String value is created, and the new copy is passed or assigned, no the original version.
+    
+        // Swift's copy by default String behaviour ensure that when a function or method passes you a String value,
+        // it is clear that you own that exact String value, regardless of where it came from. You can be confident
+        // that the string you passed will not be modified unless you modify it yourself.
         
     }
     
