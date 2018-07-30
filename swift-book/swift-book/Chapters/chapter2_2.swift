@@ -315,6 +315,19 @@ class chapter2_2 {
         if emptyString.isEmpty {
             print("Empty string - To play a wrong note is insignificant. To play without passion is inexcusable")
         }
+        
+        // * String Mutability *
+        // Use var so the string can be modified
+        var variableStirng = "Everything that is new is everything that is good. If that new thing is bad it’s good and if it’s good it’s good."
+        variableStirng += " - The heart is great which shows moderation in the midst of prosperity."
+        print(variableStirng)
+        
+        let constantString = "Confidence: Body language and competence in what you do."
+        // Needs to be comented because this report a compile-time error: A constant string cannot be modified
+//        constantString += "another string"
+        print(constantString)
+        
+        
     }
     
     func someBoolean() -> Bool {
