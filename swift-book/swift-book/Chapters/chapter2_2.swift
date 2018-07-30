@@ -341,11 +341,15 @@ class chapter2_2 {
             print(character)
         }
         
-        // Stand-alone Character constants or variables can be created
+        // Stand-alone Character constants or variables can be created. It has to be extrictly 1 character otherwise
+        // it will report an error
         let exclamationMark: Character = "!"
         print(exclamationMark)
         
-        
+        // String values can be constructed by passing an array of Character values as an argument to its initializer
+        let catCharacters: [Character] = ["C", "a", "t", "!", "😺"]
+        let catSring = String(catCharacters)
+        print(catSring)
     }
     
     func someBoolean() -> Bool {
