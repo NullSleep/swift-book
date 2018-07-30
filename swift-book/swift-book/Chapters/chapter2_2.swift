@@ -301,8 +301,16 @@ class chapter2_2 {
         """
         print(quotations)
         
-        // Comparing string
+        // Comparing strings
         print(quotations == generateQuotation())
+        print("\n---\n")
+        
+        // * Initializing an Empty String *
+        // These two string are both empty, and are equivalent to each other.
+        let emptyString = "" // Empty string literal
+        print(emptyString)
+        let anotherEmptyString = String() // Initializer syntax
+        print(anotherEmptyString)
     }
     
     func someBoolean() -> Bool {
