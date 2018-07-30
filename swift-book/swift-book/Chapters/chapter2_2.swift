@@ -350,6 +350,12 @@ class chapter2_2 {
         let catCharacters: [Character] = ["C", "a", "t", "!", "😺"]
         let catSring = String(catCharacters)
         print(catSring)
+        
+        // * Concatenating Strings and Characters *
+        let string1 = "In order to be irreplaceable, one must always be different"
+        let string2 = "- Don't make someone a priority, when they only make you an option"
+        let bigString = string1 + string2
+        print(bigString)
     }
     
     func someBoolean() -> Bool {
