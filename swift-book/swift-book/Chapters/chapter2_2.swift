@@ -376,6 +376,15 @@ class chapter2_2 {
         let multiplier = 3
         let message = "\(multiplier) times 2*5 is \(Double(multiplier) * 2.5)"
         print(message)
+        
+        // * Unicode *
+        // Unicode: International standard for enconding, representing, and processing text in different wirtting systems.
+        // It enables to represent almost any character for any language in a standarized form, and to read and write
+        // those chracters to and from an external soruce such as a text file or web page.
+        // Swift native String type is built from Unicode Scalar values. A Unicode scalar is a unique 21-bit number
+        // for a character or modifier. No all 21-bit Unicode scalars are assigned to a character, some schalar
+        // are reserver for future assigment.
+        
     }
     
     func someBoolean() -> Bool {
