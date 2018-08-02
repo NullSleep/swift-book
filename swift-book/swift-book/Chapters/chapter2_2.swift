@@ -413,6 +413,10 @@ class chapter2_2 {
         // The letter é can be represented as the single Unicode scalar é (LATIN SMALL LETTER E WITH ACUTE, or U+00E9)
         // However, the same letter can also be represented as a pair of scalars, a standard letter e (LATIN SMALL
         // LETTER E, or U+0065), followed by the COMBINING ACUTE ACCENT scalar (U+0301)
+        let eAcute: Character = "\u{E9}"
+        print(eAcute)
+        let combinedEAcute: Character = "\u{65}\u{301}"
+        print(combinedEAcute)
         
     }
     
