@@ -394,6 +394,16 @@ class chapter2_2 {
         // \" double quote
         // \' double quote
         
+        // An arbitrary Unicode scalar, written as \u{n}, where n is a 1-8 digit hexadecimal number with a value
+        // equal to a valid Unicode code oint
+        let wiseWords = "\"Imagination is more important than knowledge\" - Einstein"
+        print(wiseWords)
+        let dollarSign = "\u{24}"
+        print(dollarSign)
+        let blackHeart = "\u{2665}"
+        print(blackHeart)
+        let sparklingHeart = "\u{1F496}"
+        print(sparklingHeart)
     }
     
     func someBoolean() -> Bool {
