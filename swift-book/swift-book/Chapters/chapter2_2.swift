@@ -383,7 +383,16 @@ class chapter2_2 {
         // those chracters to and from an external soruce such as a text file or web page.
         // Swift native String type is built from Unicode Scalar values. A Unicode scalar is a unique 21-bit number
         // for a character or modifier. No all 21-bit Unicode scalars are assigned to a character, some schalar
-        // are reserver for future assigment.
+        // are reserved for future assigment.
+        
+        // String literals cna include the following special characterts:
+        // \0 null character
+        // \\ backslash
+        // \t horizontal tab
+        // \n line feed
+        // \r carriage return
+        // \" double quote
+        // \' double quote
         
     }
     
