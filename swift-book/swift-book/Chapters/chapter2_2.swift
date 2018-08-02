@@ -409,6 +409,11 @@ class chapter2_2 {
         // Every instance of Swift's Character type represents a single extended grapheme cluster. An extended
         // grapheme cluster is a sequence of one or more Unicode scalars that (when combined) produce a single human-
         // readable character.
+        
+        // The letter é can be represented as the single Unicode scalar é (LATIN SMALL LETTER E WITH ACUTE, or U+00E9)
+        // However, the same letter can also be represented as a pair of scalars, a standard letter e (LATIN SMALL
+        // LETTER E, or U+0065), followed by the COMBINING ACUTE ACCENT scalar (U+0301)
+        
     }
     
     func someBoolean() -> Bool {
