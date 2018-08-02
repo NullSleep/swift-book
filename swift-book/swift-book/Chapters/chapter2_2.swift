@@ -404,6 +404,11 @@ class chapter2_2 {
         print(blackHeart)
         let sparklingHeart = "\u{1F496}"
         print(sparklingHeart)
+        
+        // * Extended Grapheme Clusters *
+        // Every instance of Swift's Character type represents a single extended grapheme cluster. An extended
+        // grapheme cluster is a sequence of one or more Unicode scalars that (when combined) produce a single human-
+        // readable character.
     }
     
     func someBoolean() -> Bool {
