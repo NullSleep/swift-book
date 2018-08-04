@@ -449,6 +449,12 @@ class chapter2_2 {
         word += "\u{301}"
         // even thoud word is now café it still prints word.count = 4
         print("The number of characters in \(word) is \(word.count)")
+        
+        // Extended grapheme clusters can be composed of multiple Unicode scalars. This means that different characters,
+        // and different representations of the same chracter, can require different amounts of memory to store. Because
+        // of this, characters in Swift do not each take up the same amount of memory within a string's representation.
+        // As a result, the number of characters in a string cannot be calculated without iterating through the string to
+        // deteremine its extended grapheme cluster boundaries.
     }
     
     func someBoolean() -> Bool {
