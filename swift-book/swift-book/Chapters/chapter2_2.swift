@@ -426,6 +426,10 @@ class chapter2_2 {
         let decomposed: Character = "\u{1112}\u{1161}\u{11AB}"
         print(decomposed)
         
+        // Extended grapheme clusters enable scalars for enclosing marks (such as COMBINING ENCLOSING CIRCLE, or U+20DD)
+        // to enclosed other Unicode scalars as part of a single Character value:
+        let enclosedEAcute: Character = "\u{E9}\u{20DD}"
+        print(enclosedEAcute)
     }
     
     func someBoolean() -> Bool {
