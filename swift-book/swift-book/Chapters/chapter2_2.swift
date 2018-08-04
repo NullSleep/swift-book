@@ -454,7 +454,14 @@ class chapter2_2 {
         // and different representations of the same chracter, can require different amounts of memory to store. Because
         // of this, characters in Swift do not each take up the same amount of memory within a string's representation.
         // As a result, the number of characters in a string cannot be calculated without iterating through the string to
-        // deteremine its extended grapheme cluster boundaries.
+        // deteremine its extended grapheme cluster boundaries. If you are working with particularly long string values,
+        // be aware that the count property muest iterate over the Unicode scalars in the entiner string in order to
+        // determine the characters for that string.
+        //
+        // The count of the characters returned by the count porperty is not always the same as the lenght property
+        // of an NSString that contains the same characters. The lenght of an NSString is based on the number of
+        // 16-bit code units withing the string's UTF-16 representation and no the number of Unicode extended grapheme
+        // clusters within the string.
     }
     
     func someBoolean() -> Bool {
