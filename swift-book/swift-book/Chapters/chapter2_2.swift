@@ -443,6 +443,12 @@ class chapter2_2 {
         
         // Note that Swift's use of extended grapheme culsters for Character values means that string concatenation and
         // modification may not always affect a string's character count.
+        var word = "cafe"
+        // word.count = 4
+        print("The number of characters in \(word) is \(word.count)")
+        word += "\u{301}"
+        // even thoud word is now café it still prints word.count = 4
+        print("The number of characters in \(word) is \(word.count)")
     }
     
     func someBoolean() -> Bool {
