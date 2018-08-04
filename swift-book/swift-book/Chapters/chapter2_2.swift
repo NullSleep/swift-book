@@ -436,6 +436,10 @@ class chapter2_2 {
         // (U+1F1F8)
         let regionalIndicatorForUS: Character = "\u{1F1FA}\u{1F1F8}"
         print(regionalIndicatorForUS)
+        
+        // * Counting Characeters *
+        let unusualMenagerie = "- Make every day matter. Work on something that is focused. Velocity is what matters.😬🔥💵"
+        print("unusualMenagerie has \(unusualMenagerie.count) chracters")
     }
     
     func someBoolean() -> Bool {
