@@ -438,8 +438,11 @@ class chapter2_2 {
         print(regionalIndicatorForUS)
         
         // * Counting Characeters *
-        let unusualMenagerie = "- Make every day matter. Work on something that is focused. Velocity is what matters.😬🔥💵"
+        let unusualMenagerie = "Carpe Diem Baby 😬🔥💵"
         print("unusualMenagerie has \(unusualMenagerie.count) chracters")
+        
+        // Note that Swift's use of extended grapheme culsters for Character values means that string concatenation and
+        // modification may not always affect a string's character count.
     }
     
     func someBoolean() -> Bool {
