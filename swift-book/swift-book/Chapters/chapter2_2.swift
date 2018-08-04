@@ -430,6 +430,12 @@ class chapter2_2 {
         // to enclosed other Unicode scalars as part of a single Character value:
         let enclosedEAcute: Character = "\u{E9}\u{20DD}"
         print(enclosedEAcute)
+        
+        // Unicode scalars for regional indicator symbols can be combined in pairs to make a single Character value, such
+        // as this combination of REGIONAL INDICATION SYMBOL LETTER U (U+1F1FA) and REGIONAL INDICATOR SYBOL LETTER S
+        // (U+1F1F8)
+        let regionalIndicatorForUS: Character = "\u{1F1FA}\u{1F1F8}"
+        print(regionalIndicatorForUS)
     }
     
     func someBoolean() -> Bool {
