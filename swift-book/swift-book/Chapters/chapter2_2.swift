@@ -418,6 +418,14 @@ class chapter2_2 {
         let combinedEAcute: Character = "\u{65}\u{301}"
         print(combinedEAcute)
         
+        // Extended grapheme clusters are a flexible way to represent many complex script characters as a single value.
+        // For example Hangul syllables from the Korean alpahbet can be repsented as either a precomposed or decompsed
+        // sequence.
+        let precomposed: Character = "\u{D55C}"
+        print(precomposed)
+        let decomposed: Character = "\u{1112}\u{1161}\u{11AB}"
+        print(decomposed)
+        
     }
     
     func someBoolean() -> Bool {
