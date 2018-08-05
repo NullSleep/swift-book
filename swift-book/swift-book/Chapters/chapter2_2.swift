@@ -492,6 +492,11 @@ class chapter2_2 {
         // range will trigger a runtime error
 //        print(greeting[greeting.endIndex]) // Error
 //        print(greeting.index(after: greeting.endIndex)) // Error
+        
+        // Using the indices property to access all of the indices of individual characters in a string
+        for index in greeting.indices {
+            print("\(greeting[index]) ", terminator: "")
+        }
     }
     
     func someBoolean() -> Bool {
