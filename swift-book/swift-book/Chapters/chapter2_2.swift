@@ -478,6 +478,15 @@ class chapter2_2 {
         // character in a String. As a result, the endIndex property isn't a valid argument to a string's subscript. If
         // a String is empty, startIndex and endIndex are equal.
         
+        // You access the indices before and after a five index using the index(before:) and index(after:) methods for
+        // String. To access an index farther away from the given index, you can use the index(_:offsetBy:) method
+        // instead of calling one of these methods multiple times.
+        let greeting = "Our greatest fears lie in anticipation. Patience is the greatest of all virtues."
+        print(greeting.startIndex)
+        print(greeting[greeting.index(before: greeting.endIndex)])
+        print(greeting[greeting.index(after: greeting.startIndex)])
+        let index = greeting.index(greeting.startIndex, offsetBy: 13)
+        print(greeting[index])
     }
     
     func someBoolean() -> Bool {
