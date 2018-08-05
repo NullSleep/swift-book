@@ -462,6 +462,17 @@ class chapter2_2 {
         // of an NSString that contains the same characters. The lenght of an NSString is based on the number of
         // 16-bit code units withing the string's UTF-16 representation and no the number of Unicode extended grapheme
         // clusters within the string.
+        print("\n---\n")
+        
+        // ** Accessing and Modifying a String **
+        
+        // * String Indices *
+        // Each String value has an associated index type, String.Index, which corresponds to the position of each
+        // Character in the string.
+        // Since different characters can require different amounts of memory to store, so in order to determine which
+        // Character is at a particular position, you must iterate over each Unicode scalar from the start or end of
+        // that String. For this reason, Swift string cannot be indexed by integer values.
+        
     }
     
     func someBoolean() -> Bool {
