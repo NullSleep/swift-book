@@ -473,6 +473,11 @@ class chapter2_2 {
         // Character is at a particular position, you must iterate over each Unicode scalar from the start or end of
         // that String. For this reason, Swift string cannot be indexed by integer values.
         
+        // Use the startIndex property to access the position of the first Character of a String. The endIndex property
+        // is the position after the last character in a String. The endIndex property is the position after the last
+        // character in a String. As a result, the endIndex property isn't a valid argument to a string's subscript. If
+        // a String is empty, startIndex and endIndex are equal.
+        
     }
     
     func someBoolean() -> Bool {
