@@ -487,6 +487,11 @@ class chapter2_2 {
         print(greeting[greeting.index(after: greeting.startIndex)])
         let index = greeting.index(greeting.startIndex, offsetBy: 13)
         print(greeting[index])
+        
+        // Attempting to access and index outisde of a string's range or a Character at an index outside of a string's
+        // range will trigger a runtime error
+//        print(greeting[greeting.endIndex]) // Error
+//        print(greeting.index(after: greeting.endIndex)) // Error
     }
     
     func someBoolean() -> Bool {
