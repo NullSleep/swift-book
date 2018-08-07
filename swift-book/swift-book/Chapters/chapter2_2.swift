@@ -520,6 +520,14 @@ class chapter2_2 {
         // insert(_:at:), insert(contentsOf:at:), remove(at:) and removeSubrange(_:) methods can be used on any type
         // that confroms to the RageReplaceableCollection protocol. This includes String, as well as collection types
         // such as Array, Dictionary and set.
+        
+        // * Substrings *
+        // Substrings in Swift have most of the same methods as string, which means uou can work with substrings like
+        // strings. Unlike string, substrings are used only for a short amount of time.
+        let greetings = "Weakness of attitude becomes weakness of character"
+        let indexg = greetings.index(of: "b") ?? greetings.endIndex
+        let begining = greetings[..<indexg]
+        print(begining)
     }
     
     func someBoolean() -> Bool {
