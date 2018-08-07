@@ -501,6 +501,13 @@ class chapter2_2 {
         // The startIndex and endIndex properties and the index(before:), index(after:) and index(_:offsetBy) mehtods can
         // be used on any type that conforms to the Collection protocol. String and collection types such as Array,
         // Dictionary and Set all conform to the Collection protocol.
+        
+        // * Inserting and Removing *
+        var welcome = "The key to happiness and confidence is progress."
+        welcome.insert("!", at: welcome.endIndex) // Insert(,) only inserts a Character
+        print(welcome)
+        welcome.insert(contentsOf: " ***", at: welcome.index(before: welcome.endIndex))
+        print(welcome)
     }
     
     func someBoolean() -> Bool {
