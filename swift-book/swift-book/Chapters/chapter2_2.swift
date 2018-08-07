@@ -531,6 +531,14 @@ class chapter2_2 {
         // Convert the result to a String for long-term storage
         let newString = String(begining)
         print(newString)
+        
+        // Like strings, each substring has a region of memmory where the chracters that make up the substring are stored.
+        // The difference between strings and substrings is that, as a performance optimization, a substring can re-use
+        // part of the memory that's used to store the original string, or part of the memory that's used to store another
+        // substring. This performance optimization means you don't have to pay the performance cost of copying memory
+        // until you modify either the string or substring. Substrings aren't suitable for long-term storage--because they
+        // re-use the storage of the original string, the entire original string must be kept in memory as long as any
+        // of its substrings are being used.
     }
     
     func someBoolean() -> Bool {
