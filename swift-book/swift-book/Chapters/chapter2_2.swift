@@ -528,6 +528,9 @@ class chapter2_2 {
         let indexg = greetings.index(of: "b") ?? greetings.endIndex
         let begining = greetings[..<indexg]
         print(begining)
+        // Convert the result to a String for long-term storage
+        let newString = String(begining)
+        print(newString)
     }
     
     func someBoolean() -> Bool {
