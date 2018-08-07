@@ -497,6 +497,7 @@ class chapter2_2 {
         for index in greeting.indices {
             print("\(greeting[index]) ", terminator: "")
         }
+        print("\n")
         
         // The startIndex and endIndex properties and the index(before:), index(after:) and index(_:offsetBy) mehtods can
         // be used on any type that conforms to the Collection protocol. String and collection types such as Array,
@@ -507,6 +508,13 @@ class chapter2_2 {
         welcome.insert("!", at: welcome.endIndex) // Insert(,) only inserts a Character
         print(welcome)
         welcome.insert(contentsOf: " ***", at: welcome.index(before: welcome.endIndex))
+        print(welcome)
+        
+        // Removing strings
+        welcome.remove(at: welcome.index(before: welcome.endIndex))
+        print(welcome)
+        let stringRange = welcome.index(welcome.endIndex, offsetBy: -5) ..< welcome.endIndex
+        welcome.removeSubrange(stringRange)
         print(welcome)
     }
     
