@@ -497,6 +497,10 @@ class chapter2_2 {
         for index in greeting.indices {
             print("\(greeting[index]) ", terminator: "")
         }
+        
+        // The startIndex and endIndex properties and the index(before:), index(after:) and index(_:offsetBy) mehtods can
+        // be used on any type that conforms to the Collection protocol. String and collection types such as Array,
+        // Dictionary and Set all conform to the Collection protocol.
     }
     
     func someBoolean() -> Bool {
