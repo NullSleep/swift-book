@@ -516,6 +516,10 @@ class chapter2_2 {
         let stringRange = welcome.index(welcome.endIndex, offsetBy: -5) ..< welcome.endIndex
         welcome.removeSubrange(stringRange)
         print(welcome)
+        
+        // insert(_:at:), insert(contentsOf:at:), remove(at:) and removeSubrange(_:) methods can be used on any type
+        // that confroms to the RageReplaceableCollection protocol. This includes String, as well as collection types
+        // such as Array, Dictionary and set.
     }
     
     func someBoolean() -> Bool {
