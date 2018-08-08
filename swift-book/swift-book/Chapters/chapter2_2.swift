@@ -550,6 +550,10 @@ class chapter2_2 {
         if quotation1 == quotation2 {
             print("These two strings are considered equal")
         }
+        
+        // Two string values (or two Character values) are considered equal if they extended grapheme clusters are
+        // canonically equivalent. Extended grapheme clusters are canonically equivalent if they have the same linguistic
+        // meaning and appearance, even if they are composed from different Unicode scalars behind the scnees.
     }
     
     func someBoolean() -> Bool {
