@@ -554,6 +554,10 @@ class chapter2_2 {
         // Two string values (or two Character values) are considered equal if they extended grapheme clusters are
         // canonically equivalent. Extended grapheme clusters are canonically equivalent if they have the same linguistic
         // meaning and appearance, even if they are composed from different Unicode scalars behind the scnees.
+        
+        // For example, LATIN SMALL LETTER E WITH ACUTE (U+00E9) is canonically equivalent to LATIN SMALL LETTER E
+        // (u+0065) followed by COMBINING ACUTE ACCENT (U+0301). Both of these extended grapheme clusters are valid ways
+        // to represent the character é, and so they are considered to be canonically equivalent:
     }
     
     func someBoolean() -> Bool {
