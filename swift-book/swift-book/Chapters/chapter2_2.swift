@@ -543,6 +543,13 @@ class chapter2_2 {
         // In the example above, greeting is a string, which means it has a region of memory where the charcaters that
         // make up the string are stored. Because beginning is a substring of greetings, it re-uses the memory thtat
         // greeting uses. In contrats, newString is a string--when it's created from the substring, it has its own storage.
+        
+        // ** Comparing Strings **
+        let quotation1 = "The lion and tiger might be stronger, but the wolf does not perform in the circus."
+        let quotation2 = "The lion and tiger might be stronger, but the wolf does not perform in the circus."
+        if quotation1 == quotation2 {
+            print("These two strings are considered equal")
+        }
     }
     
     func someBoolean() -> Bool {
