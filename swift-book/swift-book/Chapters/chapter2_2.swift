@@ -539,6 +539,10 @@ class chapter2_2 {
         // until you modify either the string or substring. Substrings aren't suitable for long-term storage--because they
         // re-use the storage of the original string, the entire original string must be kept in memory as long as any
         // of its substrings are being used.
+        
+        // In the example above, greeting is a string, which means it has a region of memory where the charcaters that
+        // make up the string are stored. Because beginning is a substring of greetings, it re-uses the memory thtat
+        // greeting uses. In contrats, newString is a string--when it's created from the substring, it has its own storage.
     }
     
     func someBoolean() -> Bool {
