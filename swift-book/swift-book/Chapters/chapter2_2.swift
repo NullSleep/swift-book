@@ -558,6 +558,14 @@ class chapter2_2 {
         // For example, LATIN SMALL LETTER E WITH ACUTE (U+00E9) is canonically equivalent to LATIN SMALL LETTER E
         // (u+0065) followed by COMBINING ACUTE ACCENT (U+0301). Both of these extended grapheme clusters are valid ways
         // to represent the character é, and so they are considered to be canonically equivalent:
+        let eAcuteQuestion = "Voulez-vous un caf\u{E9}"
+        let combinedEAcuteQuestion = "Voulez-vous un caf\u{E65}\u{301}"
+        if eAcuteQuestion == combinedEAcuteQuestion {
+            print("These two strings are considered equal")
+        }
+        
+        // Conversely, LATIN CAPITAL LETTER A (U+0041), as used in English, is not equivalent to CYRILLIC CAPITAL LETTER A
+        // (U+0410) as used in Russian. The characters are visually similar, but do not have the same lingustic meaning
     }
     
     func someBoolean() -> Bool {
