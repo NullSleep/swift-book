@@ -577,17 +577,20 @@ class chapter2_2 {
         // * Prefix and Suffix Equiality
         let multipleQuotes = [
             "Q1 Towering genius disdains a beaten path. It seeks regions hitherto unexplored",
+            "Q1 Towering genius disdains a beaten path. It seeks regions hitherto unexplored",
             "Q2 Kiss slowly, play hard, forgive quickly, take chances, give everything and have no regrets.",
             "Q3 I don't believe in losses. I believe in lessons.",
+            "Q1 Towering genius disdains a beaten path. It seeks regions hitherto unexplored",
+            "Q1 Towering genius disdains a beaten path. It seeks regions hitherto unexplored",
             "Q4 If you tell the truth you don’t have to remember anything” ~ Mark Twain",
         ]
         var act1SceneCount = 0
         for q in multipleQuotes {
             if q.hasPrefix("Q1 ") {
-                
+                act1SceneCount += 1
             }
-            
         }
+        print("There are \(act1SceneCount)")
     }
     
     func someBoolean() -> Bool {
