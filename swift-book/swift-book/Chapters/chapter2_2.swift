@@ -576,10 +576,18 @@ class chapter2_2 {
         
         // * Prefix and Suffix Equiality
         let multipleQuotes = [
-            "Fear of failure is the only barrier to your success. You need to face your fear is the only way to make progress.",
-            "Kiss slowly, play hard, forgive quickly, take chances, give everything and have no regrets.",
-            "I don't believe in losses. I believe in lessons."
+            "Q1 Towering genius disdains a beaten path. It seeks regions hitherto unexplored",
+            "Q2 Kiss slowly, play hard, forgive quickly, take chances, give everything and have no regrets.",
+            "Q3 I don't believe in losses. I believe in lessons.",
+            "Q4 If you tell the truth you don’t have to remember anything” ~ Mark Twain",
         ]
+        var act1SceneCount = 0
+        for q in multipleQuotes {
+            if q.hasPrefix("Q1 ") {
+                
+            }
+            
+        }
     }
     
     func someBoolean() -> Bool {
