@@ -584,13 +584,13 @@ class chapter2_2 {
             "Q1 Towering genius disdains a beaten path. It seeks regions hitherto unexplored",
             "Q4 If you tell the truth you don’t have to remember anything” ~ Mark Twain",
         ]
-        var act1SceneCount = 0
+        var quoteTypeCount = 0
         for q in multipleQuotes {
             if q.hasPrefix("Q1 ") {
-                act1SceneCount += 1
+                quoteTypeCount += 1
             }
         }
-        print("There are \(act1SceneCount)")
+        print("There are \(quoteTypeCount)")
     }
     
     func someBoolean() -> Bool {
