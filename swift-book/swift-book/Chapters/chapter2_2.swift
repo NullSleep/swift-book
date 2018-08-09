@@ -590,7 +590,7 @@ class chapter2_2 {
                 quoteTypeCount += 1
             }
         }
-        print("There are \(quoteTypeCount)")
+        print("There are \(quoteTypeCount) om the quotes array.")
     }
     
     func someBoolean() -> Bool {
