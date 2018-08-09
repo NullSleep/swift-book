@@ -572,6 +572,14 @@ class chapter2_2 {
             print("These two characters are not equivalent.")
         }
         
+        // String and character comparisons in Swift are not locale-sensitive.
+        
+        // * Prefix and Suffix Equiality
+        let multipleQuotes = [
+            "Fear of failure is the only barrier to your success. You need to face your fear is the only way to make progress.",
+            "Kiss slowly, play hard, forgive quickly, take chances, give everything and have no regrets.",
+            "I don't believe in losses. I believe in lessons."
+        ]
     }
     
     func someBoolean() -> Bool {
