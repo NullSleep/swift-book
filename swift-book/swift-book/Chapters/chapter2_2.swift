@@ -565,7 +565,13 @@ class chapter2_2 {
         }
         
         // Conversely, LATIN CAPITAL LETTER A (U+0041), as used in English, is not equivalent to CYRILLIC CAPITAL LETTER A
-        // (U+0410) as used in Russian. The characters are visually similar, but do not have the same lingustic meaning
+        // (U+0410) as used in Russian. The characters are visually similar, but do not have the same lingustic meaning.
+        let latinCapitalLetterA: Character = "\u{41}"
+        let cyrillicCapitalLetterA: Character = "\u{0410}"
+        if latinCapitalLetterA != cyrillicCapitalLetterA {
+            print("These two characters are not equivalent.")
+        }
+        
     }
     
     func someBoolean() -> Bool {
