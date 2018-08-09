@@ -576,21 +576,36 @@ class chapter2_2 {
         
         // * Prefix and Suffix Equiality
         let multipleQuotes = [
-            "Q1 Towering genius disdains a beaten path. It seeks regions hitherto unexplored",
-            "Q1 Towering genius disdains a beaten path. It seeks regions hitherto unexplored",
-            "Q2 Kiss slowly, play hard, forgive quickly, take chances, give everything and have no regrets.",
-            "Q3 I don't believe in losses. I believe in lessons.",
-            "Q1 Towering genius disdains a beaten path. It seeks regions hitherto unexplored",
-            "Q1 Towering genius disdains a beaten path. It seeks regions hitherto unexplored",
-            "Q4 If you tell the truth you don’t have to remember anything” ~ Mark Twain",
+            "Q1 Towering genius disdains a beaten path. It seeks regions hitherto unexplored. XXX",
+            "Q1 The only true wisdom is in knowing you know nothing. Socrates OOO",
+            "Q2 Kiss slowly, play hard, forgive quickly, take chances, give everything and have no regrets. XXX",
+            "Q3 I don't believe in losses. I believe in lessons. XXX",
+            "Q3 All is paradox. For every idea, there is an equally valid \"anti-idea\". All is everything. All is nothing in the end... Paradox is everything. OOO",
+            "Q3 To be better necessarily means to be different. OOO",
+            "Q4 If you tell the truth you don’t have to remember anything” ~ Mark Twain XXX",
+            "Q4 Sincerity is everything. If you can fake that, you've got it made. XXX"
         ]
+        
+        // Using hasPrefix
         var quoteTypeCount = 0
         for q in multipleQuotes {
             if q.hasPrefix("Q1 ") {
                 quoteTypeCount += 1
             }
         }
-        print("There are \(quoteTypeCount) om the quotes array.")
+        print("There are \(quoteTypeCount) of quote type 1 (Q1)")
+        
+        // Using hasSufix
+        var xCount = 0
+        var oCount = 0
+        for q in multipleQuotes {
+            if q.hasSuffix("XXX") {
+                xCount += 1
+            } else if q.hasSuffix("OOO") {
+                oCount += 1
+            }
+        }
+        print("\(xCount) XXX quotes; \(oCount) OOO quotes")
     }
     
     func someBoolean() -> Bool {
