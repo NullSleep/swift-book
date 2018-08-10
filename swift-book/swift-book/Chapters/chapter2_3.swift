@@ -358,6 +358,15 @@ class chapter2_3 {
         // characters D, o, g, !! (Unicode scalar U+203C) and the 🐶 character (DOG FACE; or Unicode scalar U+1F436)
         let dogString = "Dog!!🐶"
         print(dogString)
+        
+        // * UTF-8 Represnetation *
+        // You can access a UTF-8 representation of a String by iterating over its utf8 property. This property is of type
+        // String.UTF8View, which is a collection of unsigned 8-bit (UInt8) values, one for each byte in the string's
+        // UTF-8 representation
+        
+        // Character:           D (U+0044)  O (U+006F)  G (U+0067)  !! (U+203C)     🐶 (U+1F436)
+        // UTF-8 Code Unit:     68          11          103         226 128 188     240 159 144 182
+        // Position:            0           1           2           3   4   5       6   7   8   9
     }
     
     func generateQuotation() -> String {
