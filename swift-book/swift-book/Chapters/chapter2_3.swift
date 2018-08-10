@@ -313,7 +313,7 @@ class chapter2_3 {
         
         // String and character comparisons in Swift are not locale-sensitive.
         
-        // * Prefix and Suffix Equiality
+        // * Prefix and Suffix Equiality *
         let multipleQuotes = [
             "Q1 Towering genius disdains a beaten path. It seeks regions hitherto unexplored. XXX",
             "Q1 The only true wisdom is in knowing you know nothing. Socrates VVV",
@@ -345,6 +345,19 @@ class chapter2_3 {
             }
         }
         print("\(xCount) XXX quotes; \(oCount) VVV quotes")
+        
+        // The hasPrefix(_:) and hasSuffix(_:) methods perform a character-by-chracgter canonical equivalence comparison
+        // betweeen the extended grapheme clusters in each string.
+        
+        // ** Unicode Representations of String **
+        // When a Unicode string is written to a text file or some other storage, the Unicode scalars in that string
+        // are encoded in one of several Unicode-defined encoding forms. Each form encodes the string in small chunks
+        // known as code units. These include the UTF-8, UTF-16 and UTF32 encodings.
+        
+        // The following are examples of the different represnetations of the varialbe dogString which is made up of the
+        // characters D, o, g, !! (Unicode scalar U+203C) and the 🐶 character (DOG FACE; or Unicode scalar U+1F436)
+        let dogString = "Dog!!🐶"
+        print(dogString)
     }
     
     func generateQuotation() -> String {
