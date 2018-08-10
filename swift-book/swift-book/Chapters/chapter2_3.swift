@@ -14,7 +14,6 @@ class chapter2_3 {
     // An operator is a special symbol or phrase that is used to check, change or combine values.
     
     func execute() {
-        // ** String and Characters **
         // Series of characters and its contents can be accessed in various ways, including as a collection of Character
         // values.
         // Swift String type is bridged with Foundation's NSString class. Foundation also extends String to expose
@@ -317,11 +316,11 @@ class chapter2_3 {
         // * Prefix and Suffix Equiality
         let multipleQuotes = [
             "Q1 Towering genius disdains a beaten path. It seeks regions hitherto unexplored. XXX",
-            "Q1 The only true wisdom is in knowing you know nothing. Socrates OOO",
+            "Q1 The only true wisdom is in knowing you know nothing. Socrates VVV",
             "Q2 Kiss slowly, play hard, forgive quickly, take chances, give everything and have no regrets. XXX",
             "Q3 I don't believe in losses. I believe in lessons. XXX",
-            "Q3 All is paradox. For every idea, there is an equally valid \"anti-idea\". All is everything. All is nothing in the end... Paradox is everything. OOO",
-            "Q3 To be better necessarily means to be different. OOO",
+            "Q3 All is paradox. For every idea, there is an equally valid \"anti-idea\". All is everything. All is nothing in the end... Paradox is everything. VVV",
+            "Q3 To be better necessarily means to be different. VVV",
             "Q4 If you tell the truth you don’t have to remember anything” ~ Mark Twain XXX",
             "Q4 Sincerity is everything. If you can fake that, you've got it made. XXX"
         ]
@@ -341,10 +340,25 @@ class chapter2_3 {
         for q in multipleQuotes {
             if q.hasSuffix("XXX") {
                 xCount += 1
-            } else if q.hasSuffix("OOO") {
+            } else if q.hasSuffix("VVV") {
                 oCount += 1
             }
         }
-        print("\(xCount) XXX quotes; \(oCount) OOO quotes")
+        print("\(xCount) XXX quotes; \(oCount) VVV quotes")
+    }
+    
+    func generateQuotation() -> String {
+        // The lines in the indentation are ignored. But any extra spaces will appear.
+        let quotation = """
+            
+            "Success is not about being intelligent or talented, is about having relentless focus, drive and pushing things forward."
+
+            "The ability to express yourself very well, specially about technical issues is key."
+            
+                   They may forget what you said, but they will never forget how you made them feel.
+
+        """
+        print(quotation)
+        return quotation
     }
 }

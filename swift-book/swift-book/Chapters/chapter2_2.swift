@@ -273,26 +273,9 @@ class chapter2_2 {
             print("ACCESS DENIED")
         }
         print("\n---\n")
-        
-       
     }
     
     func someBoolean() -> Bool {
         return true
-    }
-    
-    func generateQuotation() -> String {
-        // The lines in the indentation are ignored. But any extra spaces will appear.
-        let quotation = """
-            
-            "Success is not about being intelligent or talented, is about having relentless focus, drive and pushing things forward."
-
-            "The ability to express yourself very well, specially about technical issues is key."
-            
-                   They may forget what you said, but they will never forget how you made them feel.
-
-        """
-        print(quotation)
-        return quotation
     }
 }
