@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     private var c1 = chapter1()
     private var c2_1 = chapter2_1()
     private var c2_2 = chapter2_2()
+    private var c2_3 = chapter2_3()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,8 @@ class ViewController: UIViewController {
         // Executing the book's expermients
         // c1.execute()
         // c2_1.execute()
-        c2_2.execute()
+        // c2_2.execute()
+        c2_3.execute()
     }
 
     override func didReceiveMemoryWarning() {
