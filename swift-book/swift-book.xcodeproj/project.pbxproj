@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		235820AE20FDA8020035C9F9 /* chapter2_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235820AD20FDA8020035C9F9 /* chapter2_2.swift */; };
 		235B6C50211D4450004A42FF /* chapter2_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B6C4F211D4450004A42FF /* chapter2_3.swift */; };
+		235B6C52211F32E4004A42FF /* chapter2_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B6C51211F32E4004A42FF /* chapter2_4.swift */; };
 		2370BC3620E892BC00823494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370BC3520E892BC00823494 /* AppDelegate.swift */; };
 		2370BC3820E892BC00823494 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2370BC3720E892BC00823494 /* ViewController.swift */; };
 		2370BC3B20E892BC00823494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2370BC3920E892BC00823494 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		235820AD20FDA8020035C9F9 /* chapter2_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapter2_2.swift; sourceTree = "<group>"; };
 		235B6C4F211D4450004A42FF /* chapter2_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapter2_3.swift; sourceTree = "<group>"; };
+		235B6C51211F32E4004A42FF /* chapter2_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapter2_4.swift; sourceTree = "<group>"; };
 		2370BC3220E892BC00823494 /* swift-book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2370BC3520E892BC00823494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2370BC3720E892BC00823494 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				23D5D5BC20EB3C6E00413515 /* chapter2_1.swift */,
 				235820AD20FDA8020035C9F9 /* chapter2_2.swift */,
 				235B6C4F211D4450004A42FF /* chapter2_3.swift */,
+				235B6C51211F32E4004A42FF /* chapter2_4.swift */,
 			);
 			path = Chapters;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				2370BC4820E893F800823494 /* chapter1.swift in Sources */,
 				235B6C50211D4450004A42FF /* chapter2_3.swift in Sources */,
 				2370BC3620E892BC00823494 /* AppDelegate.swift in Sources */,
+				235B6C52211F32E4004A42FF /* chapter2_4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

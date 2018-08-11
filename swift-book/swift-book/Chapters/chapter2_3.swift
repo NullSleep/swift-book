@@ -367,6 +367,8 @@ class chapter2_3 {
         // Character:           D (U+0044)  O (U+006F)  G (U+0067)  !! (U+203C)     🐶 (U+1F436)
         // UTF-8 Code Unit:     68          111         103         226 128 188     240 159 144 182
         // Position:            0           1           2           3   4   5       6   7   8   9
+        
+        print("\nUTF-8 Code Units:")
         for codeUnit in dogString.utf8 {
             print("\(codeUnit) ", terminator: "")
         }
@@ -380,6 +382,7 @@ class chapter2_3 {
         // UTF-16 Code Unit:    68          111         103         53357           56734
         // Position:            0           1           2           3               4
         
+        print("\n\nUTF-16 Code Units:")
         for codeUnit in dogString.utf16 {
              print("\(codeUnit) ", terminator: "")
         }
@@ -391,11 +394,15 @@ class chapter2_3 {
         
         // You can access a Unicode scalar representation of a String value by iterating over its unicodeScalars property.
         // This property is of type UnicodeScalarView, which is a collection of values of type UnicodeScalar.
+        
+        print("\n\nScalar Code Units:")
         for scalar in dogString.unicodeScalars {
-            print("\(scalar.value)", terminator: "")
+            print("\(scalar.value) ", terminator: "")
+        }
+        print("\n\n")
+        for scalar in dogString.unicodeScalars {
             print("\(scalar)")
         }
-        
     }
     
     func generateQuotation() -> String {
