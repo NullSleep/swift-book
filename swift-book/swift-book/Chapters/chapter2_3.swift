@@ -376,7 +376,6 @@ class chapter2_3 {
         // 182) are a four-byte UTF-8 repesentation of the DOG FACE character.
         
         // * UTF-16 Representation *
-        
         // Character:           D (U+0044)  O (U+006F)  G (U+0067)  !! (U+203C)     🐶 (U+1F436)
         // UTF-16 Code Unit:    68          111         103         53357           56734
         // Position:            0           1           2           3               4
@@ -386,7 +385,16 @@ class chapter2_3 {
         }
         
         // * Unicode Sacalar Representation *
-        // You can access a Unicode scalar representatiomn of a String value by itrtsyion
+        // Character:           D (U+0044)  O (U+006F)  G (U+0067)  !! (U+203C)     🐶 (U+1F436)
+        // Scalar Code Unit:    68          111         103         8252            128054
+        // Position:            0           1           2           3               4
+        
+        // You can access a Unicode scalar representation of a String value by iterating over its unicodeScalars property.
+        // This property is of type UnicodeScalarView, which is a collection of values of type UnicodeScalar.
+        for scalar in dogString.unicodeScalars {
+            print("\(scalar.value)", terminator: "")
+            print("\(scalar)")
+        }
         
     }
     
