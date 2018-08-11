@@ -378,8 +378,12 @@ class chapter2_3 {
         // * UTF-16 Representation *
         
         // Character:           D (U+0044)  O (U+006F)  G (U+0067)  !! (U+203C)     🐶 (U+1F436)
-        // UTF-8 Code Unit:     68          111         103         53357           56734
-        // Position:            0           1           2           3               6   7   8   9
+        // UTF-16 Code Unit:    68          111         103         53357           56734
+        // Position:            0           1           2           3               4
+        
+        for codeUnit in dogString.utf16 {
+             print("\(codeUnit) ", terminator: "")
+        }
         
     }
     
