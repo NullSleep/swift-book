@@ -374,6 +374,13 @@ class chapter2_3 {
         // In the example above, the first three decimal codeUnit values (68, 111, 103) represent the characters D, o, g,
         // whose UTF-8 representation is the as their ASCII representation. The next decimal codeUnit values (226, 128,
         // 182) are a four-byte UTF-8 repesentation of the DOG FACE character.
+        
+        // * UTF-16 Representation *
+        
+        // Character:           D (U+0044)  O (U+006F)  G (U+0067)  !! (U+203C)     🐶 (U+1F436)
+        // UTF-8 Code Unit:     68          111         103         53357           56734
+        // Position:            0           1           2           3               6   7   8   9
+        
     }
     
     func generateQuotation() -> String {
