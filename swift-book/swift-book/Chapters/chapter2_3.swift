@@ -385,6 +385,9 @@ class chapter2_3 {
              print("\(codeUnit) ", terminator: "")
         }
         
+        // * Unicode Sacalar Representation *
+        // You can access a Unicode scalar representatiomn of a String value by itrtsyion
+        
     }
     
     func generateQuotation() -> String {
