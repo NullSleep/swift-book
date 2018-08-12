@@ -10,4 +10,7 @@ import Foundation
 
 class chapter2_4 {
     // MARK: - SUB CHAPTER: COLLECTION TYPES
+    
+     func execute() {
+    }
 }
