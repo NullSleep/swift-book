@@ -21,6 +21,11 @@ class chapter2_4 {
         // This means that you cannot insert a value of the worng type into a collection by mistake. It also means you
         // can be condifent about the type of values you will retrieve from a colleciton.
         
-        // Swift's array, set and dictionary type are implemented as generic collection
+        // Swift's array, set and dictionary type are implemented as generic collectionns.
+        
+        // ** Mutability of Collections **
+        // If you create an array, set, or a dictionary, and assign it to a variable, the collection that is created will
+        // be mutalbe. This means that you can change (or mutate) the collection after it is created by adding, removing,
+        // or changing iterms in the collection.
     }
 }
