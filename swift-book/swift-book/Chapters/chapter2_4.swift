@@ -52,5 +52,14 @@ class chapter2_4 {
         someInts = []
         // someInts is now an empty array, but is still of type [Int]
         print(someInts.count)
+        
+        // MARK: Creating an Array with a Default Value
+        // Swift's Array type also provides an initializer for creating an array of a certain size with all of its values
+        // set to the same default value. You pass this initializer a default value of the appropiate type (called
+        // repeating): and the numnber of times that value is repeated in the new array (called count):
+        let threeDoubles = Array(repeating: 666.0, count: 3)
+        // Prints [666.0, 666.0, 666.0] and each value is of type double
+        print(threeDoubles)
+        
     }
 }

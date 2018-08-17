@@ -35,11 +35,11 @@ class chapter2_1 {
     
     func execute() {
         
-        // MARK: - Constants
+        // MARK: - CONSTANTS
         let maxNumberOfLoginsAttempts = 10
         print(maxNumberOfLoginsAttempts)
         
-        // MARK: - Variables
+        // MARK: - VARIABLES
         var currentLoginAttempt = 0
         currentLoginAttempt = 666
         print(currentLoginAttempt)
@@ -49,7 +49,7 @@ class chapter2_1 {
         x += y + z
         print(String(x))
         
-        // MARK: - Type Annotations
+        // MARK: - TYPE ANNOTATIONS
         // Type annotations can be provided when a constant or variable is declared to be clear about the kind of vlaues
         // the constant or variable can sotre. The colon (:) means '... of type ...'
         var welcomeMessage: String
@@ -64,7 +64,7 @@ class chapter2_1 {
         print("RGB: " + String(red+green+blue))
         print("\n---\n")
         
-        // MARK: - Naming Constants and Variables
+        // MARK: - NAMING CONSTANTS AND VARIABLES
         // Any constant or variable can be named using almost any Unicode character
         let π = 3.141559
         let 大和 = "倭国"
