@@ -10,7 +10,7 @@ import Foundation
 
 class chapter1 {
     
-    // MARK: -  General notes
+    // MARK: - GENERAL NOTES
     
     // Swift features:
     // - Variables are always intialized before use.
@@ -20,7 +20,7 @@ class chapter1 {
     // - Memory is managed automatically.
     // - Error handling allows controlled recovery from unexpected failures.
     
-    // MARK: - Sub-Chapter: Swift Tour
+    // MARK: - CHAPTER: SWIFT TOUR
     
     var philosopher: Philosopher?
     

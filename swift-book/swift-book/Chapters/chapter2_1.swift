@@ -10,7 +10,7 @@ import Foundation
 
 class chapter2_1 {
     
-    // MARK: - General notes
+    // MARK: - GENERAL NOTES
     
     // 4 Ways of initializing an empty array in Swift:
     // - var arr = [Int]() // Shorthantd Syntax
@@ -31,15 +31,15 @@ class chapter2_1 {
     // Likewise, type safety prevents you from accidentally passing an optional String to a piece of code that expect an
     // nonoptional string.
     
-    // MARK: - SUB CHAPTER: THE BASICS
+    // MARK: - CHAPTER: THE BASICS
     
     func execute() {
         
-        // ** Constants **
+        // MARK: - Constants
         let maxNumberOfLoginsAttempts = 10
         print(maxNumberOfLoginsAttempts)
         
-        // ** Variables **
+        // MARK: - Variables
         var currentLoginAttempt = 0
         currentLoginAttempt = 666
         print(currentLoginAttempt)
@@ -49,7 +49,7 @@ class chapter2_1 {
         x += y + z
         print(String(x))
         
-        // ** Type Annotations **
+        // MARK: - Type Annotations
         // Type annotations can be provided when a constant or variable is declared to be clear about the kind of vlaues
         // the constant or variable can sotre. The colon (:) means '... of type ...'
         var welcomeMessage: String
@@ -64,7 +64,7 @@ class chapter2_1 {
         print("RGB: " + String(red+green+blue))
         print("\n---\n")
         
-        // ** Naming Constants and Variables **
+        // MARK: - Naming Constants and Variables
         // Any constant or variable can be named using almost any Unicode character
         let π = 3.141559
         let 大和 = "倭国"
@@ -78,7 +78,7 @@ class chapter2_1 {
         print(friendlyWelcome)
         print("\n---\n")
         
-        // ** Printing Constants and Variables **
+        // MARK: - Printing Constants and Variables
         // The print(_:separator:terminator:) function is a global function that prints one or more values to an
         // appropiate output. The 'separator' and 'terminator' parameters have default values and can be omitted.
         // By default the function terminates the line it prints by adding a line break.
@@ -92,7 +92,7 @@ class chapter2_1 {
         print("This is an awesome thought: \(friendlyWelcome)")
         print("\n---\n")
         
-        // Comments
+        // MARK: Comments
         // Swift supports multiline comments that nested in other multiline comments.
         /* If someone offers you an amazing opportunity and you are not sure you can do it, say yes - then do it later.
             /* Si no cobro lo justo no solo devaluó mi trabajo si no el de todos mis colegas. */
@@ -131,7 +131,7 @@ class chapter2_1 {
         // Swift inferes values using type inference to work out the appropiate type.
         // Swift always chooses Double (rahter than Float) when inferring the type of floating-point numbers.
         
-        // ** Numeric Literals **
+        // MARK: - Numeric Literals
         let decimalInteger = 17
         print(decimalInteger)
         let binaryInteger = 0b10001 // Binaries need a 0b prefix
@@ -161,7 +161,7 @@ class chapter2_1 {
         print(justOverOneMillion)
         print("\n---\n")
         
-        // ** Numeric Type Conversion **
+        // MARK: - Numeric Type Conversion
         // UInt8 cannot be store negaive numbers and so this will report an error
         // let cannotBeNegative: UInt8 = -1
         // Int8 cannot store a number larger than its maximum value and therefor this will report an error
@@ -184,7 +184,7 @@ class chapter2_1 {
         print(integerPi) // it is inferred integerPi is of type Int
         print("\n---\n")
         
-        // ** Type Aliases **
+        // MARK: - Type Aliases
         // Type aliases define an alternative name for an existing type. They are useful to refer to an exisiting
         // type by a name that is contextually more appropiate, such as when working with data of a specific size
         // form an external source
@@ -193,7 +193,7 @@ class chapter2_1 {
         print(maxAmplitudeFound)
         print("\n---\n")
         
-        // ** Booleans **
+        // MARK: - Booleans
         // Both values are infered as Bool from the fact taht they were initialized with Boolean literal values.
         let orangesAreOrange = true
         print(orangesAreOrange)
@@ -247,7 +247,7 @@ class chapter2_1 {
         // complex data structures. If the data structure is likely to persist beyond a temporary scope, modeling it
         // as class or a strucutre is much prefered.
         
-        // ** Optionals **
+        // MARK: - Optionals
         // Used when a value may be absent. An optional represent two  poaibilities: Either there is a value,
         // and the optional can be unwrapped to acces the value, or there ins't a value at all.
         
@@ -258,7 +258,7 @@ class chapter2_1 {
         print(convertedNumber ?? "")
         print("\n---\n")
         
-        // ** nil **
+        // MARK: - nil
         // Variables can be set to a valueless state by assigning it the special value nil
         // nil cannot be used with nonoptional constants and variables. If a constant or variable in the code needs to
         // work with the absence of a value under certain conditions, always declare it as an optional value of the
@@ -287,7 +287,7 @@ class chapter2_1 {
         }
         print("\n---\n")
         
-        // ** Optional Binding **
+        // MARK: - Optional Binding
         // It is used to find out wheter an optional contains a value, and if so, to make that value available as a
         // temporary constant or variable. Optional binding can be used with if and while statements to check for a value
         // inside an optional, and to extract that value into a constant or a variable, as part of a single action.
@@ -318,7 +318,7 @@ class chapter2_1 {
         // statement are available in the lines of code that follow the guard statement.
         print("\n---\n")
         
-        // ** Implicitly Unwrapped Optionals **
+        // MARK: - Implicitly Unwrapped Optionals
         // Optionals indicate if a constant or variable is allowed to have a "no value". Optionals can be checked with
         // an 'if' statement to sse if a value exists, and can be conditionally unwrapped with optional binding to
         // access the optional's value if it does exist.
@@ -347,7 +347,7 @@ class chapter2_1 {
         }
         print("\n---\n")
         
-        // ** Error Handling **
+        // MARK: - Error Handling
         // Error hanlding, allows to determine the underlying case of failure, and, if necessary, to propagate
         // the error to another part of the program. When a function encounters an error condition, it throws an error.
         func canThrowAnError() throws {
@@ -382,7 +382,7 @@ class chapter2_1 {
 //        }
         print("\n---\n")
         
-        // ** Assertions and Preconditions **
+        // MARK: - Assertions and Preconditions
         // Assertions and preconditions are checks that happen at runtime. You use them to make sure an essential
         // condition is satisfied before executing any further code. If the Boolean condition in the assertion or
         // precondition evaluates to true, code execution continues as usual. If the condition evaluates to false
@@ -402,7 +402,7 @@ class chapter2_1 {
         // used freely during the development process without impacting the performance in production.
         print("\n---\n")
         
-        // ** Debugging with Assertiongs
+        // MARK: - Debugging with Assertiongs
         // 'assertion': assert(_:_:file:line) You pass this function an expression that evaluates to true or false
         // and a message to display if the result of the condition is false
         var age = -3
@@ -422,7 +422,7 @@ class chapter2_1 {
         }
         print("\n---\n")
         
-        // ** Enforcing Preconditions **
+        // MARK: - Enforcing Preconditions
         // Use a precondition whenever a condition has the potential to be false, but must be definitely be true fot your
         // code to continue exectuion. Use preconditions for example to check if a subscript is not our of bounds, or to
         // check that a function has been passed a valid value.

@@ -10,19 +10,18 @@ import Foundation
 
 class chapter2_2 {
     
-    // MARK: - SUB CHAPTER: BASIC OPERATORS
+    // MARK: - CHAPTER: BASIC OPERATORS
     
     // An operator is a special symbol or phrase that is used to check, change or combine values.
     
     func execute() {
         
-        // ** Terminology **
+        // MARK: - Terminology
         // · Unary - Operates on a single target: -a, !b, c!
         // · Binary - Operates on two targets: 2 + 3
         // · Ternary - Operates on three targets. Swift has only one ternary operator: a ? b : c
         
-        // ** Assignment Operator **
-        
+        // MARK: - Assignment Operator
         let b = 10
         var a = 5
         a = b
@@ -32,7 +31,7 @@ class chapter2_2 {
         print((x, y))
         print("\n---\n")
         
-        // ** Arithmetic Operators **
+        // MARK: - Arithmetic Operators
         print(1 + 2)
         print(5 - 3)
         print(2 * 3)
@@ -45,7 +44,7 @@ class chapter2_2 {
         print("One of the best ways to find happiness and success in life is to strip" + " away the unnecessary things and focus only on what is needed.")
         print("\n---\n")
         
-        // ** Remainder operator **
+        // MARK: - Remainder operator
         // The reminder operator (a % b) works out how many multiples of b will fit inside a and returns the the value
         // that is left over (known as the remainder)
         // The reminder operator (%) is also knwon as a modulo operator in other languages. However, its behavior in Swift
@@ -69,27 +68,27 @@ class chapter2_2 {
         // same answer.
         // -9 % 4 // -9 = (4 * -2) + -1
         
-        // ** Unary Minus Operator **
+        // MARK: - Unary Minus Operator
         let three = 3
         let minusThree = -three
         let plustThree = -minusThree
         print(plustThree)
         
-        // ** Unary Plus Operator **
+        // MARK: - Unary Plus Operator
         // The unary operator doesn't do anything but it is provided for symmetry with the minus operator
         let minusSix = -6
         let alsoMinusSix = +minusSix
         print(alsoMinusSix)
         print("\n---\n")
         
-        // ** Compound Assigment Operators **
+        // MARK: - Compound Assigment Operators
         // a += 2 is shorthand for a = a + 2
         var ax = 1
         ax += 2
         print(ax)
         print("\n---\n")
         
-        // ** Comparison Operators **
+        // MARK: - Comparison Operators
         print(1 == 1)
         print(2 != 1)
         print(2 > 1)
@@ -171,10 +170,10 @@ class chapter2_2 {
         // If userDefinedColorName where not nil by default userDefinedColorName would be set to userDefinedColorName
         print("\n---\n")
         
-        // ** Range Operators **
+        // MARK: - Range Operators
         // Swift includes serveral range operators which are shortcuts for expressing a range of values.
         
-        // * Closed range operator *
+        // MARK: Closed range operator
         // The closed range operator (a..b) defines a range that runs from a to b, and includes the values a and b. The
         // value of a must not be greater than b.
         for index in 1...5 {
@@ -182,7 +181,7 @@ class chapter2_2 {
         }
         print("\n---\n")
         
-        // * Half Range Operator *
+        // MARK: - Half Range Operator
         // The half range operator (a..<b) defines a range that runs from a to b, but does not include b. The is called
         // half open because it contains its first value, but not the final value.
         // Half open ranges are useful when working with zero based lists such as arrays, where it is useful to count up
@@ -194,7 +193,7 @@ class chapter2_2 {
         }
         print("\n---\n")
         
-        // * One-Sided Ranges *
+        // MARK: - One-Sided Ranges
         // The closed range operator has an alternate form for ranges that continue as far as possible in one direction,
         // for example, a range that inclides all the elements of an array, from index 2 to the end of the array.
         for name in names[2...] {
@@ -216,14 +215,14 @@ class chapter2_2 {
         print(range.contains(-1))
         print("\n---\n")
         
-        // ** Logical Operators **
+        // MARK: - Logical Operators
         // Logical operators modify or combine the Boolean logic values true and false. Swift supports the three standard
         // logical operator found in C-based languages:
         // Logical NOT (!a)
         // Logical AND (a && b)
         // Logical OR (a || b)
         
-        // * Logical NOT Operator *
+        // MARK: Logical NOT Operator
         // (!a) inverts a Boolean value (true becomes false, and false becomes true)
         let allowedEntry = false
         if !allowedEntry { // If not allowedEntrey
@@ -232,7 +231,7 @@ class chapter2_2 {
         // As in this example, careful choice of Boolean constant and variable names can help to keep code readable and
         // concise, while avoiding double negatives or confusing logic statements.
         
-        // * Logical AND Operator *
+        // MARK: Logical AND Operator
         // The logical AND operator (a && b) creates logical expression where both values must be true for the overall
         // expression to also be true. If either value is false, the overall expression will also be false. In fact,
         // if the first value is false, the second value won't even be evaluated. This is known as shot-circuit evaluation.
@@ -244,7 +243,7 @@ class chapter2_2 {
             print("ACCESS DENIED")
         }
         
-        // * Logical OR Operator *
+        // MARK: - Logical OR Operator
         // Use it to create logical expression in which only one of the two values has to be true for the overall
         // expression to be true. If the left side of a Logical OR expresion is true the right side is not evaluated,
         // because it cannot change the outcome of the overall expression.
@@ -256,7 +255,7 @@ class chapter2_2 {
             print("ACCESS DENIED")
         }
         
-        // * Combining Logical Operators *
+        // MARK: Combining Logical Operators
         // If we've entered trhe correct door code and passed the retina scan, or if we have a valid door key,
         // or if we know rhe emergency override password, then allow access.
         if enteredDoorCode && passedRetinaScan || hasDoorKey || knowsOverridePassword {
@@ -265,7 +264,7 @@ class chapter2_2 {
             print("ACCESS DENIED")
         }
         
-        // * Explicit Parentheses *
+        // MARK: Explicit Parentheses
         // Readability is always preferred over brevity.
         if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword {
             print("Welcome!")
