@@ -40,7 +40,17 @@ class chapter2_4 {
         // MARK: Array Type Shorthand Syntax
         // The type of a Swift array is written in full as Array<Element>, where Element is the type of values the array
         // is allow to store. You can also wirte the type of an array in shorthand for as [Element]. Although the two forms
-        // are functionally identical, the shorthand form is prefered and is used throughout this guide when referring to
-        // the type of an arrat.
+        // are functionally identical, the shorthand form is prefered.
+        
+        // MARK: Creating an Empty Array
+        var someInts = [Int]()
+        print("someInts is of type [Int] with \(someInts.count) items.")
+        someInts.append(666)
+        print(someInts.count)
+        // If the context already provides type information, such as a function argument or an already typed variable or
+        // constant, you can create an empty array with an empty array literal
+        someInts = []
+        // someInts is now an empty array, but is still of type [Int]
+        print(someInts.count)
     }
 }
