@@ -61,5 +61,10 @@ class chapter2_4 {
         // Prints [666.0, 666.0, 666.0] and each value is of type double
         print(threeDoubles)
         
+        // MARK: Creating An Array by Adding Two Arrays Together
+        // As long as the arrays have compatible types
+        let anotherThreeDoubles = Array(repeating: 64.0, count: 3)
+        let sixDoubles = threeDoubles + anotherThreeDoubles
+        print(sixDoubles)
     }
 }
