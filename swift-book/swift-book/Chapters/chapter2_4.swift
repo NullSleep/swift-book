@@ -61,10 +61,18 @@ class chapter2_4 {
         // Prints [666.0, 666.0, 666.0] and each value is of type double
         print(threeDoubles)
         
-        // MARK: Creating An Array by Adding Two Arrays Together
+        // MARK: Creating an Array by Adding Two Arrays Together
         // As long as the arrays have compatible types
         let anotherThreeDoubles = Array(repeating: 64.0, count: 3)
         let sixDoubles = threeDoubles + anotherThreeDoubles
         print(sixDoubles)
+        
+        // MARK: Creating an Array with an Array Literal
+        // You can also intialize an array with an array literal, which is shorthand way to wirte one or more values
+        // as an array collection. An array literal is written as a list of values, separated by commas, surrounded by
+        // a pair of square brackets:
+        // [value 1, value 2, value 3]
+        let shopingList: [String] = ["Eggs", "Milk", "Hapiness"]
+        print(shopingList)
     }
 }
