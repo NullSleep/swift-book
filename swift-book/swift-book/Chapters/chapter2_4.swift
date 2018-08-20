@@ -74,5 +74,12 @@ class chapter2_4 {
         // [value 1, value 2, value 3]
         let shopingList: [String] = ["Eggs", "Milk", "Hapiness"]
         print(shopingList)
+        
+        // shopingList is described as 'an array of values' wirtten as [String]
+        // Thanks to Swift's type inference you don't have to write the type of the array if you're initializing it with
+        // an array literal containing values of the same type.
+        // var shopingList = ["Eggs", "Milk", "Hapiness"]
+        
+        
     }
 }
