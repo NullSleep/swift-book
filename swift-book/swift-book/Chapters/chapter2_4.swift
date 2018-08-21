@@ -99,5 +99,9 @@ class chapter2_4 {
         shoppingList += ["Baking Powder"]
         shoppingList += ["NUtella", "Cheese", "Butter"]
         print(shoppingList)
+        
+        // Array in swift are always zero-indexed.
+        let firstItem = shoppingList[0]
+        print(firstItem)
     }
 }
