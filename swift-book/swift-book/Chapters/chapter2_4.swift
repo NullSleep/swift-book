@@ -72,23 +72,27 @@ class chapter2_4 {
         // as an array collection. An array literal is written as a list of values, separated by commas, surrounded by
         // a pair of square brackets:
         // [value 1, value 2, value 3]
-        let shopingList: [String] = ["Eggs", "Milk", "Hapiness"]
-        print(shopingList)
+        let shoppingList: [String] = ["Eggs", "Milk", "Hapiness"]
+        print(shoppingList)
         
-        // shopingList is described as 'an array of values' wirtten as [String]
+        // shoppingList is described as 'an array of values' wirtten as [String]
         // Thanks to Swift's type inference you don't have to write the type of the array if you're initializing it with
         // an array literal containing values of the same type.
-        // var shopingList = ["Eggs", "Milk", "Hapiness"]
+        // var shoppingList = ["Eggs", "Milk", "Hapiness"]
         
         // MARK: Accessing and Modifying an Array
         // Number of items in an arrat
-        print("The shopping list contains \(shopingList.count) items.")
+        print("The shopping list contains \(shoppingList.count) items.")
         
         // Is an array empty
-        if shopingList.isEmpty {
+        if shoppingList.isEmpty {
             print("The shopping list is empty.")
         } else {
             print("The shopping list is not empty")
         }
+        
+        // Adding items to the end of an array
+        shoppingList.append("Flour")
+        print(shoppingList)
     }
 }
