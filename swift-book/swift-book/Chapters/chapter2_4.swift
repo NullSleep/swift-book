@@ -107,5 +107,10 @@ class chapter2_4 {
         // Using the subscript syntax to change an existing value at a given index
         shoppingList[0] = "Six eggs"
         print(shoppingList)
+        
+        // You can also use subscript syntax to change a rane of values at once, even if the replacement set of values
+        // has a different lenght than the range you are replacing.
+        shoppingList[4...6] = ["Bananas", "Apples"]
+        print(shoppingList)
     }
 }
