@@ -80,6 +80,8 @@ class chapter2_4 {
         // an array literal containing values of the same type.
         // var shopingList = ["Eggs", "Milk", "Hapiness"]
         
-        
+        // MARK: Accessing and Modifying an Array
+        // Number of items in an arrat
+        print("The shopping list contains \(shopingList.count) items.")
     }
 }
