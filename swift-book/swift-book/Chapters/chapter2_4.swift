@@ -97,7 +97,7 @@ class chapter2_4 {
         
         // Alternatively, appenad an array of one or more compatible items with the addition assignment operation (+=)
         shoppingList += ["Baking Powder"]
-        shoppingList += ["NUtella", "Cheese", "Butter"]
+        shoppingList += ["Nutella", "Cheese", "Butter"]
         print(shoppingList)
         
         // Array in swift are always zero-indexed.
@@ -108,9 +108,13 @@ class chapter2_4 {
         shoppingList[0] = "Six eggs"
         print(shoppingList)
         
-        // You can also use subscript syntax to change a rane of values at once, even if the replacement set of values
+        // You can also use subscript syntax to change a range of values at once, even if the replacement set of values
         // has a different lenght than the range you are replacing.
         shoppingList[4...6] = ["Bananas", "Apples"]
+        print(shoppingList)
+        
+        // To insert an item into the array at a specified index
+        shoppingList.insert("Milo", at: 0)
         print(shoppingList)
     }
 }
