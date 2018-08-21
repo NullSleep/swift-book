@@ -113,8 +113,14 @@ class chapter2_4 {
         shoppingList[4...6] = ["Bananas", "Apples"]
         print(shoppingList)
         
-        // To insert an item into the array at a specified index
+        // Inserting an item into the array at a specified index
         shoppingList.insert("Milo", at: 0)
         print(shoppingList)
+        
+        // Removing an item in the specified index. * This method returns the removed item.
+        let milo = shoppingList.remove(at: 0)
+        print(milo)
+        print(shoppingList)
+        
     }
 }
