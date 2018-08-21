@@ -72,7 +72,7 @@ class chapter2_4 {
         // as an array collection. An array literal is written as a list of values, separated by commas, surrounded by
         // a pair of square brackets:
         // [value 1, value 2, value 3]
-        let shoppingList: [String] = ["Eggs", "Milk", "Hapiness"]
+        var shoppingList: [String] = ["Eggs", "Milk", "Hapiness"]
         print(shoppingList)
         
         // shoppingList is described as 'an array of values' wirtten as [String]
@@ -93,6 +93,11 @@ class chapter2_4 {
         
         // Adding items to the end of an array
         shoppingList.append("Flour")
+        print(shoppingList)
+        
+        // Alternatively, appenad an array of one or more compatible items with the addition assignment operation (+=)
+        shoppingList += ["Baking Powder"]
+        shoppingList += ["NUtella", "Cheese", "Butter"]
         print(shoppingList)
     }
 }
