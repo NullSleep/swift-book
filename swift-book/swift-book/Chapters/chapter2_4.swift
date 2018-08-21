@@ -72,7 +72,7 @@ class chapter2_4 {
         // as an array collection. An array literal is written as a list of values, separated by commas, surrounded by
         // a pair of square brackets:
         // [value 1, value 2, value 3]
-        var shoppingList: [String] = ["Eggs", "Milk", "Hapiness"]
+        var shoppingList: [String] = ["Eggs", "Milk"]
         print(shoppingList)
         
         // shoppingList is described as 'an array of values' wirtten as [String]
@@ -117,10 +117,16 @@ class chapter2_4 {
         shoppingList.insert("Milo", at: 0)
         print(shoppingList)
         
-        // Removing an item in the specified index. * This method returns the removed item.
+        // Removing an item in the specified index. This method returns the removed item.
         let milo = shoppingList.remove(at: 0)
         print(milo)
         print(shoppingList)
+        print(shoppingList[0])
         
+        // Removing the final item in an array. This method also returns the removed item.
+        let apples = shoppingList.removeLast()
+        print(apples)
+        print(shoppingList)
+        print(shoppingList.last ?? "")
     }
 }
