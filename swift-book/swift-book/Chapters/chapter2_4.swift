@@ -103,5 +103,9 @@ class chapter2_4 {
         // Array in swift are always zero-indexed.
         let firstItem = shoppingList[0]
         print(firstItem)
+        
+        // Using the subscript syntax to change an existing value at a given index
+        shoppingList[0] = "Six eggs"
+        print(shoppingList)
     }
 }
