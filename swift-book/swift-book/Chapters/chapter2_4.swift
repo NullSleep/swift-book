@@ -128,5 +128,16 @@ class chapter2_4 {
         print(apples)
         print(shoppingList)
         print(shoppingList.last ?? "")
+        
+        // MARK: Iterating over an array
+        for item in shoppingList {
+            print(item)
+        }
+        
+        // To have the integer index of each item as well as its value, enumarated() should be used. For each item in
+        // the array, the enumerated() methods returns a tuple composed of an integer and the item.
+        for (index, value) in shoppingList.enumerated() {
+            print("Item \(index + 1): \(value)")
+        }
     }
 }
