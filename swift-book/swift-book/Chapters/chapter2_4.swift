@@ -83,5 +83,12 @@ class chapter2_4 {
         // MARK: Accessing and Modifying an Array
         // Number of items in an arrat
         print("The shopping list contains \(shopingList.count) items.")
+        
+        // Is an array empty
+        if shopingList.isEmpty {
+            print("The shopping list is empty.")
+        } else {
+            print("The shopping list is not empty")
+        }
     }
 }
