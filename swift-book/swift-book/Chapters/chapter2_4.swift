@@ -154,5 +154,8 @@ class chapter2_4 {
         // a set value types or dictionary key types. Enumeration case values without associated values are also
         // hashable by default.
         
+        // You can use your own custom types as set value types or dictionary key types by making them conform to
+        // the Hastable protocol from Swift's standard library.
+        
     }
 }
