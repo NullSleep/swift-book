@@ -155,7 +155,11 @@ class chapter2_4 {
         // hashable by default.
         
         // You can use your own custom types as set value types or dictionary key types by making them conform to
-        // the Hastable protocol from Swift's standard library.
+        // the Hastable protocol from Swift's standard library. Types taht conform to the Hashable protocol must
+        // provide a gettable Int property called hasValue.
+        
+        // MARK: Set Type Syntax
+        
         
     }
 }
