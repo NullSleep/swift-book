@@ -159,6 +159,13 @@ class chapter2_4 {
         // provide a gettable Int property called hasValue.
         
         // MARK: Set Type Syntax
+        // The type of a Swift set is written as Set<Element>, where Element is the type that the set is allowed to store.
+        // Unlike arrays, set do not have an equivalent shorthand form.
+        
+        // MARK: Creating and Initiliazing an Empty Set
+        var letters = Set<Character>()
+        print("Letters is of type Set<Character> with \(letters.count) items.")
+        
         
         
     }
