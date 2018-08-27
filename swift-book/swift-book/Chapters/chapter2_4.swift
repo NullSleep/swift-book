@@ -163,9 +163,19 @@ class chapter2_4 {
         // Unlike arrays, set do not have an equivalent shorthand form.
         
         // MARK: Creating and Initiliazing an Empty Set
+        // The type of the 'letters' variable is inferred to be Set<Chatacter>, from the type of the initializer.
         var letters = Set<Character>()
         print("Letters is of type Set<Character> with \(letters.count) items.")
         
+        // Alternatively, if the context already provides type information, such as a function argument or an already
+        // typed varaible contant, you can create an empty set with an empty array literal.
+        letters.insert("a")
+        print(letters)
+        
+        letters = []
+        // letters is now an empty set, but is still of type Set<Character>
+        print(letters)
+    
         
         
     }
