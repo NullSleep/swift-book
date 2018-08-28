@@ -210,5 +210,10 @@ class chapter2_4 {
             print("I never much cared for that.")
         }
         
+        if favoriteGenres.contains("Funk") {
+            print("I get up on the good foot.")
+        } else {
+            print("It's too funky in here.")
+        }
     }
 }
