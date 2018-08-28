@@ -195,5 +195,14 @@ class chapter2_4 {
         // MARK: Accessing and Modifying a Set
         print("I have \(favoriteGenres.count) favorite music generes")
         
+        if favoriteGenres.isEmpty {
+            print("As far as music goes, I'm not picky.")
+        } else {
+            print("I have particular musci preferences.")
+        }
+        
+        favoriteGenres.insert("Jazz")
+        print(favoriteGenres)
+        
     }
 }
