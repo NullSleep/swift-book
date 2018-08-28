@@ -226,5 +226,11 @@ class chapter2_4 {
         for genre in favoriteGenres.sorted() {
             print("\(genre)")
         }
+        
+        // MARK: Performing Set Operations
+        // You can efficiently perform fundamental set operations, such as comgining two sets together, determining which
+        // values two sets have in common, or determining whether two sets contain all, some, or none of the same values.
+        
+        // MARK: Fundamental Set operations
     }
 }
