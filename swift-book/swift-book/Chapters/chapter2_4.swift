@@ -179,8 +179,8 @@ class chapter2_4 {
         // MARK: Creating a Set with an Array Literal
         // The favoriteGenres variable is declared as "a set of String values", written as Set<String>. Because this
         // particular set has specified a value type of String, it is only allowed to store String values.
-        var favoriteGenres: Set<String> = ["Rock", "Metal", "Retrowave"]
-        print(favoriteGenres)
+        let favGenres: Set<String> = ["Rock", "Metal", "Retrowave"]
+        print(favGenres)
         
         // A set type cannot be inferred from an array literal alone, so the type Set must be explicitly declared.
         // However, because of Swift's type inference, you don't have to write the type of the set ig you're intializing it
@@ -188,6 +188,12 @@ class chapter2_4 {
         // been written in a shorter form instead:
         var favoriteGenres: Set = ["Rock", "Metal", "Retrowave"]
         print(favoriteGenres)
+        
+        // Because all values in the array literal are of the same type, Swift can infer that Set<String> is the correct
+        // type to use for 'favoriteGenres'
+        
+        // MARK: Accessing and Modifying a Set
+        print("I have \(favoriteGenres.count) favorite music generes")
         
     }
 }
