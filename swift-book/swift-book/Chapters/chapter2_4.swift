@@ -176,7 +176,11 @@ class chapter2_4 {
         // letters is now an empty set, but is still of type Set<Character>
         print(letters)
     
-        
+        // MARK: Creating a Set with an Array Literal
+        // The favoriteGenres variable is declared as "a set of String values", written as Set<String>. Because this
+        // particular set has specified a value type of String, it is only allowed to store String values.
+        var favoriteGenres: Set<String> = ["Rock", "Metal", "Retrowave"]
+        print(favoriteGenres)
         
     }
 }
