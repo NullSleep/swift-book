@@ -215,5 +215,16 @@ class chapter2_4 {
         } else {
             print("It's too funky in here.")
         }
+        
+        // MARK: Iterating Over a Set
+        for genre in favoriteGenres {
+            print("\(genre)")
+        }
+        
+        // Swift's type dows not have a defined ordering. To iterate over the values of a set in a specific order, use
+        // the sorted() methods, which return the set's elements as an array sorted using the < operator.
+        for genre in favoriteGenres.sorted() {
+            print("\(genre)")
+        }
     }
 }
