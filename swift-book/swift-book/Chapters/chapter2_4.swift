@@ -182,5 +182,12 @@ class chapter2_4 {
         var favoriteGenres: Set<String> = ["Rock", "Metal", "Retrowave"]
         print(favoriteGenres)
         
+        // A set type cannot be inferred from an array literal alone, so the type Set must be explicitly declared.
+        // However, because of Swift's type inference, you don't have to write the type of the set ig you're intializing it
+        // with an array literal containing values of the same type. The initialization of 'favoritesGenres' could have
+        // been written in a shorter form instead:
+        var favoriteGenres: Set = ["Rock", "Metal", "Retrowave"]
+        print(favoriteGenres)
+        
     }
 }
