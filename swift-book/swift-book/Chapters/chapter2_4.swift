@@ -255,8 +255,15 @@ class chapter2_4 {
         
         // MARK: Set Membership and Equality
         // Use the "is equal" operator (==) to determine whether all of the values of a set are contained in
-        // the sopecific set
-        let houseAnimals: Set = []
+        // the specific set.
+        let houseAnimals: Set = ["🦊", "🦅"]
+        let farmAnimals: Set = ["🦄", "🐛", "🐝", 🐗, 🐔, ]
+        let crityAnimals: Set = [🦈, 🐊]
+        
+        print(houseAnimals.isSubset(of: farmAnimals))
+        print(houseAnimals.isSuperSet(of: houseAnimals))
+        print(houseAnimals.isSubset(of: cityAnimals)
+        )
         
     }
 }
