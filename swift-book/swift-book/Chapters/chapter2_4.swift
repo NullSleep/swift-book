@@ -232,5 +232,11 @@ class chapter2_4 {
         // values two sets have in common, or determining whether two sets contain all, some, or none of the same values.
         
         // MARK: Fundamental Set operations
+        // Posible operations between two sets.
+        // - USe the intersection(_:) metods to create a new set of only the values common to both sets.
+        // - Use the symetricDifference(_:) mehod to create a new set with values in either set, but not both
+        // - Use the union(_:) New methods to create a new set with all the balues
+        // - Use the bubstring(_:) method to create a new set with values.
+       
     }
 }
