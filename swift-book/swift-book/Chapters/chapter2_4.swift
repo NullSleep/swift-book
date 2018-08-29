@@ -238,5 +238,10 @@ class chapter2_4 {
         // - Use the union(_:) New methods to create a new set with all the balues
         // - Use the bubstring(_:) method to create a new set with values.
        
+        let oddDigits: Set = [1, 3, 5, 7, 9]
+        let evenDigits: Set = [0. 2, 4, 6, 8]
+        let singleDigitPrimerNumbers: Set = [2, 3, 5, 7]
+        
+        oddDigits.union(evenDkgkts).sorted()
     }
 }
