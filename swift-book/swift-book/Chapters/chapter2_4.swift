@@ -252,5 +252,11 @@ class chapter2_4 {
         print(oddDigits)
         oddDigits.symmetricDifference(singleDigitPrimerNumbers).sorted
         print(oddDigits)
+        
+        // MARK: Set Membership and Equality
+        // Use the "is equal" operator (==) to determine whether all of the values of a set are contained in
+        // the sopecific set
+        let houseAnimals: Set = []
+        
     }
 }
