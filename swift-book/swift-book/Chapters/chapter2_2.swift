@@ -41,7 +41,7 @@ class chapter2_2 {
         // by default.
         
         // String concatenation
-        print("One of the best ways to find happiness and success in life is to strip" + " away the unnecessary things and focus only on what is needed.")
+        print("BASELINE: A set of software components and documents to that has been formerly reviewed and accepted," + "that serves as the basis for further development or current production, which can be changed only through formal change control procedures.")
         print("\n---\n")
         
         // MARK: - Remainder operator
@@ -100,7 +100,7 @@ class chapter2_2 {
         if name == "world" {
             print("Rule your mind or it will rule you” ~ Buddha")
         } else {
-            print("If you want to grow up, you have to stop apologizing.")
+            print("BATCH PROCESSING: A method of collecting and processing data in which transactions are accumulated and stored until a specified time when it is convenient or necessary to process them as a group.")
         }
         
         // Tuple that have the same number of values can be compared as long as each of the values in the tuple can be

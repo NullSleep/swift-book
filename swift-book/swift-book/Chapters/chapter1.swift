@@ -47,7 +47,7 @@ class chapter1 {
         print(explicitFloat)
         print("\n---\n")
         
-        let label = "Glory to the brave."
+        let label = "Nothing is enough for the man to whom enough is too little."
         let width = 64
         let compuesto = label + String(width)
         print(compuesto)
@@ -201,7 +201,7 @@ class chapter1 {
         print("\n---\n")
         
         let response = greet(person: "Epicurus",
-                             quote: "Success is never final. Failure is never fatal. It is courage that counts.")
+                             quote: "Death does not concern us, because as long as we exist, death is not here. And when it does come, we no longer exist.")
         print(response)
         
         let response2 = secondGreet("Woody Allen",
@@ -234,7 +234,7 @@ class chapter1 {
         print("\n---\n")
         
         let functions = """
-        Functions are acutally a special case of closures: blocks of code than can be called later. The code in closure has access to things like variables and functions that were available in the scope where the closure was created, even if the closure is in a different scope when it is executed-- an example of this can be seen in nested functions. You can write a closure without a name by surrounding code with brace ({}) Use 'in' to separate the argument and return type from the body.
+        Function are acutally a special case of closures: blocks of code than can be called later. The code in closure has access to things like variables and functions that were available in the scope where the closure was created, even if the closure is in a different scope when it is executed-- an example of this can be seen in nested functions. You can write a closure without a name by surrounding code with brace ({}) Use 'in' to separate the argument and return type from the body.
         """
         print(functions)
         let nums = numbers.map({ (number: Int) -> Int in
@@ -274,24 +274,24 @@ class chapter1 {
         print("\n---\n")
         
         // Testing a class with init
-        let nshape = NamedShape(name: "Always and above all control your emotions. Think before you act. Keep calm, cool and collected. Be smart.")
+        let nshape = NamedShape(name: "We have to stop optimizing for programmers and start optimizing for users.")
         print(nshape.name)
         print("\n---\n")
         
         // Sublcassing and overriding functions
-        let sqtest = Square(sideLength: 6.8, name: "Stay hungry. Pray on success.")
+        let sqtest = Square(sideLength: 6.8, name: "“Low-level programming is good for the programmer’s soul.")
         print(sqtest.area())
         print(sqtest.simpleDescription())
         print("\n---\n")
         
         // Testing the subclass circle
-        let circleTest = Circle(radius: 45, name: "If you are depressed you are living in the past. If you are anxious you are living in the future. If you are at peace you are living in the present. Lao Tzu")
+        let circleTest = Circle(radius: 45, name: "If you automate a mess, you get an automated mess.")
         print(circleTest.area())
         print(circleTest.simpleDescription())
         print("\n---\n")
         
         // Testing the subclass equilateral trinagle that has properties with getters and setters
-        let triangle = EquilateralTriangle(sideLength: 2.1, name: "Hide your strength and bide your time")
+        let triangle = EquilateralTriangle(sideLength: 2.1, name: "Before software should be reusable, it should be usable.")
         print(triangle.perimeter)
         triangle.perimeter = 12.6 // The setter of this property will set the sideLength automatically by diving by 3
         // Since the perimiter was changed in the previous line this will mean that the sideLenght was also changed
@@ -299,7 +299,7 @@ class chapter1 {
         print("\n---\n")
         
         // Testing willSet and didSet for properties of a class
-        let triangleAndSquare = TriangleAndSquare(size: 10, name: "You don’t need external “enhancers” you need calm, focus, discipline, confidence and motivation. That is it.")
+        let triangleAndSquare = TriangleAndSquare(size: 10, name: "It is easier to change the specification to fit the program than vice versa.")
         print(triangleAndSquare.square.sideLength)
         print(triangleAndSquare.triangle.sideLength)
         print(triangleAndSquare.triangle.perimeter)
@@ -426,7 +426,7 @@ class chapter1 {
         // Classes, enumerations and structs can all adopt protocols
         // Class that conform with 'ExampleProtocol' protocol.
         class SimpleClass: ExampleProtocol {
-            var simpleDescription: String = "A very simple class ->> Work like you don’t need money, love like you’ve never been hurt, and dance like no one’s watching."
+            var simpleDescription: String = "A very simple class ->> In a room full of top software designers, if two agree on the same thing, that’s a majority."
             var anotherProperty: Int = 21344
             
             func adjust() {
@@ -537,7 +537,7 @@ class chapter1 {
             // This works if the catch 'PrinterError.onFire' isn't triggered first
             // throw PrinterError.outOfPaper
         } catch PrinterError.onFire {
-            print("DANGER the printer is on Fire!!! -> Everything that is worth doing is worth doing right.")
+            print("DANGER the printer is on Fire!!!")
         } catch let printerError as PrinterError {
             print("Printer error: \(printerError)")
         } catch {
@@ -892,7 +892,7 @@ extension Double: ExampleProtocol {
     }
     
     var simpleDescription: String {
-        return "Glory to the brave. The number selected \(absoluteValue)"
+        return "The number selected \(absoluteValue)"
     }
     
     mutating func adjust() {

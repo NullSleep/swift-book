@@ -228,7 +228,7 @@ class chapter2_4 {
         }
         
         // MARK: Performing Set Operations
-        // You can efficiently perform fundamental set operations, such as comgining two sets together, determining which
+        // You can efficiently perform fundamental set operations, such as combining two sets together, determining which
         // values two sets have in common, or determining whether two sets contain all, some, or none of the same values.
         
         // MARK: Fundamental Set operations
@@ -238,31 +238,30 @@ class chapter2_4 {
         // - Use the union(_:) New methods to create a new set with all the balues
         // - Use the bubstring(_:) method to create a new set with values.
        
-        var oddDigits: Set = [1, 3, 5, 7, 9]
+        let oddDigits: Set = [1, 3, 5, 7, 9]
         let evenDigits: Set = [0, 2, 4, 6, 8]
         let singleDigitPrimerNumbers: Set = [2, 3, 5, 7]
         
         print(oddDigits.union(evenDigits).sorted())
-        print(oddDigits.substracting(evenDigits).sorted())
-        print(oddDigits)
-        oddDigits.union(singlDigitPrimeNumbers).sorted()
-        print(oddDigits)
-        oddDigits.substracing(singlDigitPrimeNumbers).sorted()
-        print(oddDigits)
-        oddDigits.symmetricDifference(singleDigitPrimerNumbers).sorted
-        print(oddDigits)
+        print(oddDigits.intersection(evenDigits).sorted())
+        print(oddDigits.subtracting(singleDigitPrimerNumbers).sorted())
+        print(oddDigits.symmetricDifference(singleDigitPrimerNumbers).sorted())
         
         // MARK: Set Membership and Equality
-        // Use the "is equal" operator (==) to determine whether all of the values of a set are contained in
-        // the specific set.
+        // - Use the "is equal" operator (==) to determine whether all of the values of a set are contained in the
+        // specific set.
+        // - Use the isSubset(of:) method to determine whether all of the values of a set are contained in the specific set.
+        // - Use the isSuperset(of:) method to determine whether a set contains all of the values in a specified set.
+        // - Us the isStrictSubset(of:) or isStrictSuperset(of:) methods to determine whether a set is a subset or a
+        // superset, but not equal to, a specified set.
+        // Use the isDisjoint(with:) method to determine whether two sets have no values in common.
+        
         let houseAnimals: Set = ["🦊", "🦅"]
-        let farmAnimals: Set = ["🦄", "🐛", "🐝", 🐗, 🐔, ]
-        let crityAnimals: Set = [🦈, 🐊]
+        let farmAnimals: Set = ["🦄", "🐛", "🐝", "🐧", "🐗", "🦊", "🦅"]
+        let cityAnimals: Set = ["🦉", "🐊"]
         
         print(houseAnimals.isSubset(of: farmAnimals))
-        print(houseAnimals.isSuperSet(of: houseAnimals))
-        print(houseAnimals.isSubset(of: cityAnimals)
-        )
-        
+        print(farmAnimals.isSuperset(of: houseAnimals))
+        print(farmAnimals.isSubset(of: cityAnimals))
     }
 }

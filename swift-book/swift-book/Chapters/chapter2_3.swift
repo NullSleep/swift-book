@@ -31,7 +31,7 @@ class chapter2_3 {
         // includes spaces.
         let quotations = """
 
-        "Most of the financial success is due to your personality and ability to communicate, negotiate and lead. Shockingly only very little is due to technical knowledge."
+        "f you think your users are idiots, only idiots will use it."
 
         "No man has the right to be an amateur in the matter of physical training. It is a shame for a man to grow old without seeing the beauty and strength of which his body is capable."
 
@@ -91,12 +91,12 @@ class chapter2_3 {
         print(catSring)
         
         // * Concatenating Strings and Characters *
-        let string1 = "In order to be irreplaceable, one must always be different"
-        let string2 = "\n\nDon't make someone a priority, when they only make you an option"
+        let string1 = "It’s hardware that makes a machine fast.  It’s software that makes a fast machine slow."
+        let string2 = "\n\nIf people never did silly things, nothing intelligent would ever get done"
         var bigString = string1 + string2
         print(bigString)
         
-        let string3 = "\n\nMinimize your options to minimize the number of decision to take in the day and therefore the draining of will."
+        let string3 = "\n\nPhysics is the universe’s operating system."
         bigString += string3
         print(bigString)
         
@@ -243,7 +243,7 @@ class chapter2_3 {
         // Dictionary and Set all conform to the Collection protocol.
         
         // * Inserting and Removing *
-        var welcome = "The key to happiness and confidence is progress."
+        var welcome = "Standards are always out of date.  That’s what makes them standards"
         welcome.insert("!", at: welcome.endIndex) // Insert(,) only inserts a Character
         print(welcome)
         welcome.insert(contentsOf: " ***", at: welcome.index(before: welcome.endIndex))
@@ -263,7 +263,7 @@ class chapter2_3 {
         // * Substrings *
         // Substrings in Swift have most of the same methods as string, which means uou can work with substrings like
         // strings. Unlike string, substrings are used only for a short amount of time.
-        let greetings = "Weakness of attitude becomes weakness of character"
+        let greetings = "Weakness of attitude becomes weakness of character."
         let indexg = greetings.index(of: "b") ?? greetings.endIndex
         let begining = greetings[..<indexg]
         print(begining)
@@ -284,8 +284,8 @@ class chapter2_3 {
         // greeting uses. In contrats, newString is a string--when it's created from the substring, it has its own storage.
         
         // ** Comparing Strings **
-        let quotation1 = "The lion and tiger might be stronger, but the wolf does not perform in the circus."
-        let quotation2 = "The lion and tiger might be stronger, but the wolf does not perform in the circus."
+        let quotation1 = "TSoftware is a gas; it expands to fill its container."
+        let quotation2 = "Software is a gas; it expands to fill its container."
         if quotation1 == quotation2 {
             print("These two strings are considered equal")
         }
@@ -409,11 +409,11 @@ class chapter2_3 {
         // The lines in the indentation are ignored. But any extra spaces will appear.
         let quotation = """
             
-            "Success is not about being intelligent or talented, is about having relentless focus, drive and pushing things forward."
+            "I do not fear computers. I fear lack of them. — Isaac Asimov"
 
-            "The ability to express yourself very well, specially about technical issues is key."
+            "A computer once beat me at chess, but it was no match for me at kick boxing. - Emo Philips"
             
-                   They may forget what you said, but they will never forget how you made them feel.
+                   Computer Science is no more about computers than astronomy is about telescopes. - Edsger W. Dijkstra
 
         """
         print(quotation)

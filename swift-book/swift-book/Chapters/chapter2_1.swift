@@ -53,7 +53,7 @@ class chapter2_1 {
         // Type annotations can be provided when a constant or variable is declared to be clear about the kind of vlaues
         // the constant or variable can sotre. The colon (:) means '... of type ...'
         var welcomeMessage: String
-        welcomeMessage = "Consentiousness is the one-trait-to-rule-them-all in terms of future success, both career wise and personal. 'Efficient, organized, neat, systematic, committed and always on top of everything.'"
+        welcomeMessage = "AUTHENTICATION: The ability of each party in a transaction to verify the identity of the other parties.'"
         print(welcomeMessage)
         print("\n---\n")
         
@@ -72,9 +72,9 @@ class chapter2_1 {
         print(String(π) + " " + 大和 + " " + 💁👌🎍😍)
         print("\n---\n")
         
-        var friendlyWelcome = "You must stash the surplus. There is no need to spend on outside things."
+        var friendlyWelcome = "AUDIT: An independent examination of software or software documentation to assess compliance with predetermined criteria."
         print(friendlyWelcome)
-        friendlyWelcome = "Keep to yourself, be the absolute best, don’t mix life with work, be funny, un-afraid, humble, train yourself in your free time."
+        friendlyWelcome = "ATTRIBUTE: A piece of information describing part of a particular entity."
         print(friendlyWelcome)
         print("\n---\n")
         
@@ -325,11 +325,11 @@ class chapter2_1 {
         // Sometimes it is clear from a program's structure that an optional will always have a value, after that value
         // is first set. In this cases it is useful to remove the need to check and unwrap the optional's valye every
         // time it is accessed, because it can be safely assumed to have a value all of the time.
-        let possibleString: String? = "An optional string: No matter how you feel, get up. Dress up. Show up. And never give up."
+        let possibleString: String? = "An optional string - BANDWIDTH: The capacity of a communications channel."
         let forcedString: String = possibleString!
         print(forcedString)
         
-        let assumedString: String! = "An implicitly unwrapped optional string: Better to loose a lover than love a looser."
+        let assumedString: String! = "An implicitly unwrapped optional string -  CODE REVIEW: A meeting at which source code is presented for review, comment, or approval."
         let implicitString: String = assumedString
         print(implicitString)
         
@@ -414,9 +414,9 @@ class chapter2_1 {
         
         // Using the assertionFailure(_:file:line) functiom
         if age > 10 {
-            print("This is the real secret of life: to be completely engaged with what you are doing in the here and now. And instead of calling it work, realise it is play.")
+            print("ASSESSMENT: A formal examination of a deliverable, generally by a quality assurance reviewer, for the presence of a specific set of attributes and structural elements. An assessment is not an in-depth examination of content, as the content of a deliverable may be outside the reviewer’s domain of expertise.")
         } else if age > 0 {
-            print("Reduce the number of decisions you make in the morning, to reduce decision fatigue and increase the willpower you have for the rest of the day.")
+            print("ASSUMPTION: A condition that is generally accepted as truth without proof or demonstration.")
         } else {
             assertionFailure("A person's age can't be less than zero.")
         }
