@@ -242,9 +242,8 @@ class chapter2_4 {
         let evenDigits: Set = [0, 2, 4, 6, 8]
         let singleDigitPrimerNumbers: Set = [2, 3, 5, 7]
         
-        oddDigits.union(evenDigits).sorted()
-        print(oddDigits)
-        oddDigits.substraction(evenDigits).sorted()
+        print(oddDigits.union(evenDigits).sorted())
+        print(oddDigits.substracting(evenDigits).sorted())
         print(oddDigits)
         oddDigits.union(singlDigitPrimeNumbers).sorted()
         print(oddDigits)
