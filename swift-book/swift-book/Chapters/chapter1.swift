@@ -25,7 +25,7 @@ class chapter1 {
     var philosopher: Philosopher?
     
     func execute() {
-        print("He who is brave is free.")
+        print("ACCEPTANCE CRITERIA: The criteria that the software component, product, or system must satisfy in order to be accepted by the customer.")
         print("\n---\n")
         
         var bokuNoVar = 45
@@ -55,13 +55,14 @@ class chapter1 {
         
         let apples = 3
         let oranges = 5
-        let manzanasMasAxioma = "Tengo \(apples) manzanas. Tambien: Dare to stand out."
+        let manzanasMasAxioma = "Tengo \(apples) manzanas. ACCEPTANCE PROCESS: The process used to verify that a new or modified software product is fully operational and meets the customer's requirements."
         print(manzanasMasAxioma)
-        let resumenMasAxioma = "Tengo \(apples + oranges) frutas. Tambien: Persistence trumps talent."
+        let resumenMasAxioma = "Tengo \(apples + oranges) frutas. ACCEPTANCE TESTING: Formal testing conducted by the customer to determine whether or not a software product or system satisfies the documented acceptance criteria. Successful completion of acceptance testing defines the point at which the customer will accept the product as a successful implementation."
         print(resumenMasAxioma)
         
         let quotation = """
-        Only the difficult things that push you to the limit and the demand the best are the ones that give pride, true pleasure and long term benefits.
+        ACTIVITY
+        A major unit of work to be completed in achieving the objectives of a software project. An activity incorporates a set of tasks to be completed, consumes resources, and results in work products. An activity may contain other activities in a hierarchical manner. All project activities are described in the Project Plan.
         
         Y todavia tengo \(apples + oranges) furtas.
         """
@@ -118,21 +119,21 @@ class chapter1 {
         // Another way to handle optinal values is to provide a default values using the ?? operator.
         // If the optional value is missing, the default value is used instead.
         let nickname: String? = nil
-        let fullname: String = "Laziness and mediocrity are easy decisions to make, but almost never give anything good specially in the long term."
+        let fullname: String = "ACTOR: A person or system that interacts with the software application in support of a specific process or to perform a specific operation or related set of operations. See Use Case."
         let informalGreeting = "Sup \(nickname ?? fullname)"
         print(informalGreeting)
         print("\n---\n")
         
-        let quote = "Be so good they can’t ignore you."
+        let quote = "ALGORITHM: A set of well-defined rules for the solution to a problem in a finite number of steps. Generally implemented as a logical or mathematical test or calculation. See Business rules."
         switch quote {
-        case "The only way of being is being.":
+        case "ANOMALY":
             print("Knowing is not enough; we must apply. Willing is not is not enough; we must do.")
-        case "A man with no friends is a man with no power.":
+        case "APPLICATION":
             print("Motivation is what gets you started. Habit is what keeps you going.")
         case let x where x.hasSuffix("ignore"):
             print("The word was \(x)")
         default:
-            print("Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before the defeat.")
+            print("ANOMALY: A nice word for 'bug.' Anything observed in the operation of software that deviates from expectations based on design documentation or user references.")
         }
         print("\n---\n")
         
@@ -167,7 +168,7 @@ class chapter1 {
         if let philosopher = philosopher {
             philosopherName = philosopher.name
         }
-        print(philosopherName ?? "Courage is being afraid, but then doing what you have to do anyway.")
+        print(philosopherName ?? "APPLICATION: One or more software executables designed to fulfill a specific set of business functions individually or in cooperation with other applications.")
         print("\n---\n")
         
         // Optionals Sol 2
@@ -233,7 +234,7 @@ class chapter1 {
         print("\n---\n")
         
         let functions = """
-        Function are acutally a speciall case of closures: blocks of code than can be called later. The code in closure has access to things like variables and functions that were available in the scope where the closure was created, even if the closure is in a different scope when it is executed-- an example of this can be seen in nested functions. You can write a closure without a name by surrounding code with brace ({}) Use 'in' to separate the argument and return type from the body.
+        Functions are acutally a special case of closures: blocks of code than can be called later. The code in closure has access to things like variables and functions that were available in the scope where the closure was created, even if the closure is in a different scope when it is executed-- an example of this can be seen in nested functions. You can write a closure without a name by surrounding code with brace ({}) Use 'in' to separate the argument and return type from the body.
         """
         print(functions)
         let nums = numbers.map({ (number: Int) -> Int in
