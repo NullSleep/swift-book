@@ -299,5 +299,12 @@ class chapter2_4 {
         // [key1: value1, key2: value2, key3: value3]
         var airports: [String: String] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
         print(airports)
+        
+        // This dictionary literal contains two String: String pairs. This key-value type matches the type of the airports
+        // variable declaration (a dictionary with only String keys, and only String values), and so the assigment of the
+        // dictionary literal is permitted as a way to intialize the airports dictionary with two intial items.
+        
+        // As with arrays, you don't have to write the type of the dictionary if you're intializing it with a dictionary
+        // literal whose keys and values have consistent types.
     }
 }
