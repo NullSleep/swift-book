@@ -277,5 +277,14 @@ class chapter2_4 {
         // You can also write the type of a dictionary in a shorthand form as [Key: Value]. Although the two forms are
         // functionally identical, the shorthand form is preferred and is used thoughout this guide when referring to the
         // type of a dictionary.
+        
+        // MARK: Creating an Empty Dictionary
+        // Creating an empty dictionary of type [Int: String] to store human-readable names of interger values. Its keys
+        // are of type Int, and its values are of type String.
+        var namesOfIntegers = [Int: String]()
+        print(namesOfIntegers)
+        namesOfIntegers[16] = "sixteen"
+        print(namesOfIntegers)
+        
     }
 }
