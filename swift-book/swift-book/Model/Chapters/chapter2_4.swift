@@ -324,9 +324,33 @@ class chapter2_4 {
         // The value can also the be changed by using the subscript syntax
         airports["LHR"] = "London Heathrow"
         
-        // As an alternative to subscripting use the dictionary's updateValue(_:forKye:) method to set or update the value
-        // for a particular key. Like the subscript examples above, the updateValue(_:forKye:) mehtod sets a value for
-        // a key if noe exists, or updates the value if that key already exists.
+        // As an alternative to subscripting use the dictionary's updateValue(_:forKey:) method to set or update the value
+        // for a particular key. Like the subscript examples above, the updateValue(_:forKey:) mehtod sets a value for
+        // a key if noe exists, or updates the value if that key already exists. Unlike a subscript, however, the
+        // updateValue(_:forKey:) mehtod returns the old value after performing an update. This enables you to check
+        // whether or not an update took place.
+        
+        // The updateValue(_:forKey:) method returns and optional value of the dictionary's value type. For a dictionary
+        // that stores String values, for example, the method returns a value of type String?, or "optional String".
+        // This optional value contains the old value for that key if one existed beofre the update, or nil if no value
+        // existed:
+        if let oldValue = airports.updateValue("Dublin Airport", forKey: "DUB") {
+            print("The old value for DUB was \(oldValue)")
+        }
+        
+        // Using the subscript syntax to retrieve a value. Because it is possible to request a key for which no value
+        // exists, a dictionary's subscript returns and optional value of the dictionary's value type.
+        if let airportName = airports["DUB"] {
+            print("The name of the airport is \(airportName).")
+        } else {
+            print("That airport is not in the airports dictionary.")
+        }
+        
+        // Using the subscript sysntax to remove a kye-value pair from a dictionary
+        airports["APL"] = "Apple international"
+        print(airports)
+        airports["APL"] = nil
+        print(airports)
     }
         
 }
