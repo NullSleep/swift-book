@@ -306,5 +306,19 @@ class chapter2_4 {
         
         // As with arrays, you don't have to write the type of the dictionary if you're intializing it with a dictionary
         // literal whose keys and values have consistent types.
-    }
+        airports = ["YYZ": "Toronto Pearson", "DUB": "Dublin", "BOG": "Bogota"]
+        print(airports)
+        
+        // MARK: Accessing and Modifying a Dictionary
+        print("The airports dictionary cotains \(airports.count) items.")
+        
+        if airports.isEmpty {
+            print("The airports dictionary is empty")
+        } else {
+            print("The airports dictionary is not empty")
+        }
+        
+        // Adding itmes using subscript syntax
+        airports["LHR"] = "London"
+        
 }
