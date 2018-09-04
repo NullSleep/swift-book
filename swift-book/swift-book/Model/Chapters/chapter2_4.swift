@@ -290,5 +290,14 @@ class chapter2_4 {
         // literal, which is written as [:]
         namesOfIntegers = [:]
         print(namesOfIntegers)
+        
+        // MARK: Creating a Dictionary with a Dictionary Literal
+        // You can also intialize a dicationy with a dictionary literal, which has a similar syntax to the the array
+        // literal seen earlier.
+        // A key-value pair is a combination of a key and value. The key-value pairs are wirtten as a list, separated by
+        // commas, surrounded by a pair of square brackets:
+        // [key1: value1, key2: value2, key3: value3]
+        var airports: [String: String] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+        print(airports)
     }
 }
