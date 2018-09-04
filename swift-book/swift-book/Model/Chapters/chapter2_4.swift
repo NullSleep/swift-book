@@ -286,5 +286,9 @@ class chapter2_4 {
         namesOfIntegers[16] = "sixteen"
         print(namesOfIntegers)
         
+        // If the context already provides type information, you can create an empty dictionary with an empty dictionary
+        // literal, which is written as [:]
+        namesOfIntegers = [:]
+        print(namesOfIntegers)
     }
 }
