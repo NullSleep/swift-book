@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Executing the book's expermients
+        // Running the book's expermients
         // c1.execute()
         // c2_1.execute()
         // c2_2.execute()

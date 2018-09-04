@@ -263,5 +263,19 @@ class chapter2_4 {
         print(houseAnimals.isSubset(of: farmAnimals))
         print(farmAnimals.isSuperset(of: houseAnimals))
         print(farmAnimals.isSubset(of: cityAnimals))
+        
+        // MARK: - DICTIONARIES
+        // A dictionary stores associations between keys of the same type and values of the same type in a collection
+        // with no defined ordering. Each values is associated with a uniwue key, which acts as an identifier fot that
+        // value within the dicitonary. Unlike items in an array, items in a dictionary do no have a specified order.
+        // You use a dictionary when you need to look up values based on their identifier, in much the same way that a
+        // real world dictionary is used to look up the definition for a particular word.
+        
+        // MARK: Dictionary Type Shorthand Syntax
+        // The type of a Swift dictioanry is written in full as Dictionary<Key, Value>
+        // A dictioanry Key type must conform to the Hasahble protocol, like a set's value type.
+        // You can also write the type of a dictionary in a shorthand form as [Key: Value]. Although the two forms are
+        // functionally identical, the shorthand form is preferred and is used thoughout this guide when referring to the
+        // type of a dictionary.
     }
 }
