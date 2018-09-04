@@ -321,4 +321,12 @@ class chapter2_4 {
         // Adding itmes using subscript syntax
         airports["LHR"] = "London"
         
+        // The value can also the be changed by using the subscript syntax
+        airports["LHR"] = "London Heathrow"
+        
+        // As an alternative to subscripting use the dictionary's updateValue(_:forKye:) method to set or update the value
+        // for a particular key. Like the subscript examples above, the updateValue(_:forKye:) mehtod sets a value for
+        // a key if noe exists, or updates the value if that key already exists.
+    }
+        
 }
