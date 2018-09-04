@@ -351,6 +351,14 @@ class chapter2_4 {
         print(airports)
         airports["APL"] = nil
         print(airports)
+        
+        // Remove a key-value pair from a dictionary with the removeValue(forKey:) method. This mehtod removes the
+        // key-value pair if it exists and returns the removed value, or returns nil if no value existed
+        if let removedValue = airports.removeValue(forKey: "DUB") {
+            print("The removed airport's name is \(removedValue).")
+        } else {
+            print("The airports dictionary does not contain a value for DUB")
+        }
     }
         
 }
