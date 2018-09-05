@@ -376,9 +376,16 @@ class chapter2_4 {
             print("Airport name: \(airportName)")
         }
         
-        // Gerring all the keys in a dictionary
-        let airportCodes = [String](airports.key)
+        // Gerring all the keys from a dictionary
+        let airportCodes = [String](airports.keys)
         print(airportCodes)
+        
+        // Gerring all the values from a dictionary
+        let airportNames = [String](airports.values)
+        print(airportNames)
+        
+        // Swift's Dictionary type does not have a defined ordering. To iterate over the keys or values of a dictionary
+        // in a specific order, use the sorted() method on its keys or values property.
     }
         
 }
