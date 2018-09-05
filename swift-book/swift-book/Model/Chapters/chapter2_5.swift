@@ -13,5 +13,11 @@ class chapter2_5 {
     // MARK: - CHAPTER: CONTROL FLOW
     
     func execute() {
-    }C
+        
+        // Swift provides a variety of control flow statemnets: while, if, guard, break, continue, for-in
+        
+        // Swift's 'switch' statement is considerably more powerful than its counterpart in many C-like languages. Cases
+        // can match any different patterns
+        
+    }
 }
