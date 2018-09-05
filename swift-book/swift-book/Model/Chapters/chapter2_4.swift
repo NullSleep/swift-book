@@ -359,6 +359,20 @@ class chapter2_4 {
         } else {
             print("The airports dictionary does not contain a value for DUB")
         }
+        
+        // MARK: Iterating Over a Dictionary
+        // Returns a tuple of the key values
+        for (airportCode, airportName) in airports {
+            print("\(airportCode): \(airportName)")
+        }
+        
+        for airportCode in airports.keys {
+            print("Airport code: \(airportCode)")
+        }
+        
+        for airportName in airports.values {
+            print("Airport name: \(airportName)")
+        }
     }
         
 }
