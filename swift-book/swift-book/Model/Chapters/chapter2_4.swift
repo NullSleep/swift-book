@@ -361,18 +361,24 @@ class chapter2_4 {
         }
         
         // MARK: Iterating Over a Dictionary
-        // Returns a tuple of the key values
+        // Iterating over a tuple of the key values in the dictionary
         for (airportCode, airportName) in airports {
             print("\(airportCode): \(airportName)")
         }
         
+        // Iterating in just the keys of the dictionary
         for airportCode in airports.keys {
             print("Airport code: \(airportCode)")
         }
         
+        // Iterating in just the values of the dictionary
         for airportName in airports.values {
             print("Airport name: \(airportName)")
         }
+        
+        // Gerring all the keys in a dictionary
+        let airportCodes = [String](airports.key)
+        print(airportCodes)
     }
         
 }
