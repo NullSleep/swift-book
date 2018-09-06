@@ -62,7 +62,24 @@ class chapter2_5 {
         // Use the half-open range operator (..<) to include the lower bound but not the upper bound.
         let minutes = 60
         for tickMark in 0..<minutes {
-            print("Render the tick mark [\(tickMark)] each minute (60 times")
+            print("Ttick mark [\(tickMark)]")
         }
+        
+        // Use the stride(from:to:by) function to skip unwanted tick marks
+        let minuteInterval = 5
+        for tickMark in stride(from: 0, to: minutes, by: minuteInterval) {
+            print("Ttick mark [\(tickMark)]")
+        }
+        
+        // Closed ranges are also available, by using stride(from:through:by:) instead
+        let hours = 12
+        let hourInterval = 3
+        for tickMark in stride(from: 3, through: hours, by: hourInterval) {
+            print("Ttick mark [\(tickMark)]")
+        }
+        
+        // MARK: WHILE LOOPS
+        // A while loop performs a set of statements until a condition becomes false. These kinds of loops are best
+        // used when the number of iterations is not know before the first iteration begins.
     }
 }
