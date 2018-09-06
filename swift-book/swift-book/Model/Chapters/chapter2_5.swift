@@ -78,8 +78,13 @@ class chapter2_5 {
             print("Ttick mark [\(tickMark)]")
         }
         
-        // MARK: WHILE LOOPS
+        // MARK: - WHILE LOOPS
         // A while loop performs a set of statements until a condition becomes false. These kinds of loops are best
-        // used when the number of iterations is not know before the first iteration begins.
+        // used when the number of iterations is not know before the first iteration begins. Swift provides two kinds
+        // of while loops:
+        // - while evaluates its condition at the start of each pass through.
+        // - repeat-while evaluates its condition at the end of each pass through the loop.
+        
+        // MARK: While
     }
 }
