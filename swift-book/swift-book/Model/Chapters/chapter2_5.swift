@@ -107,6 +107,12 @@ class chapter2_5 {
         board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
         
         // Square 3 contains the bottom of a ladder that mvoe you up to square 11. To represent this, board[03] is equal
-        // to +08, which is equivalent to an integer of value 9
+        // to +08, which is equivalent to an integer of value 8 (the difference beterrn 3 and 11). To align the values and
+        // statements, the unary plus operatior (+i) is expecitly used with the unary minus operator (-i) and numbers
+        // lower rhan 10 are padded with zeros. (Neither stylistic technique is strcitly necessary, but they lead to
+        // neater code.)
+        var square = 0
+        var diceRoll = 0
+        
     }
 }
