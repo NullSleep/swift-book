@@ -94,6 +94,10 @@ class chapter2_5 {
         // - If your turn ends at the bottom of a ladder, you move up that ladder.
         // - If your turn ends at the head of a snake, you move down that snake.
         
-        // The game board is represneted by an array of Int values. Its size is based on a constant called 'finalsquare'
+        // The game board is represneted by an array of Int values. Its size is based on a constant called 'finalsquare',
+        // which is used to intialize the array and also to check for a win condition later in the example. Because the
+        // players start off the board, on "square zero", the board is intialized with 26 zero Int values, not 25.
+        let finalSquare = 25
+        var board = [Int](repeating: 0, count: finalSquare + 1)
     }
 }
