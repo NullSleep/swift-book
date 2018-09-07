@@ -134,5 +134,21 @@ class chapter2_5 {
         // checked to see wheter it has become too large. Whenever this return value equal 7, the dice roll has become
         // too large and is reset to a value of 1. The result is a sequence fo diceRoll values that is always 1, 2, 3, 4,
         // 5, 6, 1, 2 and so on.
+        
+        // A while loop is appropiate in this case, because the lenght of the game is not clear at the start og the
+        // while loop. Instead, the loop is executed until a particular condition is satisfied.
+        
+        // MARK: Repeat-While
+        // Performs a sible pass through the loop block first, before considering the loop's condition. It then continues
+        // to repeat the loop until the condition is false.
+        // The repeat-while loop in Swift is analogous to a do-while loop in other languages.
+        let finalSquare2 = 25
+        var board2 = [Int](repeating: 0, count: finalSquare2 + 1)
+        
+        board2[03] = +08; board2[06] = +11; board2[09] = +09; board2[10] = +02
+        board2[14] = -10; board2[19] = -11; board2[22] = -02; board2[24] = -08
+
+        var square2 = 0
+        var diceRoll2 = 0
     }
 }
