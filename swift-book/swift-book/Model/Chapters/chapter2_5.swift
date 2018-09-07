@@ -86,5 +86,11 @@ class chapter2_5 {
         // - repeat-while evaluates its condition at the end of each pass through the loop.
         
         // MARK: While
+        // Creating a simple game of Snakes and Ladders.
+        // The rules of the game:
+        // - The boards has 25 squares, and the aim is to land on or beyond square 25.
+        // - The player staring squere is "square zero", which is just off the bottom-left corner of the board.
+        // - Each turn, you roll a six-sided dice and move by that number of squares, following the horizonal path
+        //   indicated by the dotted arrow in the assets file.
     }
 }
