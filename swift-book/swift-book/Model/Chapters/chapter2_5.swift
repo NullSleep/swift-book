@@ -103,6 +103,10 @@ class chapter2_5 {
         // Some square are then set to have more specific values for the snakes and ladders. Squares with a ladder base
         // have a positive number to move you up the board, whereas squares with a snake head have a negative number to
         // move yoy back down the board.
-        board[03] = +08; board[06] = +11; board[09] = +09
+        board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
+        board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
+        
+        // Square 3 contains the bottom of a ladder that mvoe you up to square 11. To represent this, board[03] is equal
+        // to +08, which is equivalent to an integer of value 9
     }
 }
