@@ -99,5 +99,10 @@ class chapter2_5 {
         // players start off the board, on "square zero", the board is intialized with 26 zero Int values, not 25.
         let finalSquare = 25
         var board = [Int](repeating: 0, count: finalSquare + 1)
+        
+        // Some square are then set to have more specific values for the snakes and ladders. Squares with a ladder base
+        // have a positive number to move you up the board, whereas squares with a snake head have a negative number to
+        // move yoy back down the board.
+        board[03] = +08; board[06] = +11; board[09] = +09
     }
 }
