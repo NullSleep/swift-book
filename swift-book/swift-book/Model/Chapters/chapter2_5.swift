@@ -113,6 +113,26 @@ class chapter2_5 {
         // neater code.)
         var square = 0
         var diceRoll = 0
+        while square < finalSquare {
+            // Roll the dice
+            diceRoll += 1
+            if diceRoll == 7 {
+                diceRoll = 1
+            }
+            // Move by the rolled amount
+            square += diceRoll
+            
+            if square < board.count {
+                // If we're still on the board, move up or down fot a snake or a ladder
+                square += board[square]
+            }
+        }
+        print("Game over!")
         
+        // The example above use a very simple approach to dice rolling. Instead of generating a random number, it starts
+        // with a diceRoll value of 0. Each time through the while loop, diceRoll is incremented by one and is then
+        // checked to see wheter it has become too large. Whenever this return value equal 7, the dice roll has become
+        // too large and is reset to a value of 1. The result is a sequence fo diceRoll values that is always 1, 2, 3, 4,
+        // 5, 6, 1, 2 and so on.
     }
 }
