@@ -85,12 +85,15 @@ class chapter2_5 {
         // - while evaluates its condition at the start of each pass through.
         // - repeat-while evaluates its condition at the end of each pass through the loop.
         
-        // MARK: While
-        // Creating a simple game of Snakes and Ladders.
+        // MARK: While - Creating a simple game of Snakes and Ladders
         // The rules of the game:
         // - The boards has 25 squares, and the aim is to land on or beyond square 25.
         // - The player staring squere is "square zero", which is just off the bottom-left corner of the board.
         // - Each turn, you roll a six-sided dice and move by that number of squares, following the horizonal path
         //   indicated by the dotted arrow in the assets file.
+        // - If your turn ends at the bottom of a ladder, you move up that ladder.
+        // - If your turn ends at the head of a snake, you move down that snake.
+        
+        // The game board is represneted by an array of Int values. Its size is based on a constant called 'finalsquare'
     }
 }
