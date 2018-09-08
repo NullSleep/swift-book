@@ -162,5 +162,30 @@ class chapter2_5 {
             square2 += diceRoll2
         } while square2 < finalSquare2
         print("Gave over!")
+        
+        // MARK: Conditional Statements
+        // If is the simpliest form of conditional staments.
+        let temperatureInFahrenheit = 90
+        if temperatureInFahrenheit <= 32 {
+            print("It's very cold. Consider weareing a scarf.")
+        } else if temperatureInFahrenheit >= 86 {
+            print("It's really warm.")
+        } else {
+            print("It's not that cold.")
+        }
+        
+        // MARK: Switch
+        // A switch statement provides an alternative to the if statement for responding to multiple potential states
+        // Every switch statement must be exhaustive. That is, every possible value of the type being considered must
+        // be match by one of the switch cases.
+        let someCharacter: Character = "z"
+        switch someCharacter {
+        case "a":
+            print("The first letter of the alphabet")
+        case "z":
+            print("The last letter of the alphabet")
+        default:
+            print("Some other character")
+        }
     }
 }
