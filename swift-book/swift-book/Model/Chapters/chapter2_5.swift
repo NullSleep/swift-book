@@ -150,5 +150,17 @@ class chapter2_5 {
 
         var square2 = 0
         var diceRoll2 = 0
+        repeat {
+            // Move up or down for a snake or ladder
+            square2 += board2[square2]
+            // Roll the dice
+            diceRoll2 += 1
+            if diceRoll2 == 7 {
+                diceRoll2 = 1
+            }
+            // Move by the rolled amount
+            square2 += diceRoll2
+        } while square2 < finalSquare2
+        print("Gave over!")
     }
 }
