@@ -187,5 +187,15 @@ class chapter2_5 {
         default:
             print("Some other character")
         }
+        
+        // MARK: No implicit Fallthrough
+        let annotherCharacter: Character = "a"
+        switch annotherCharacter {
+        case "a":
+        case "A":
+            print("The letter A")
+        default:
+            print("Not the letter A")
+        }
     }
 }
