@@ -189,13 +189,16 @@ class chapter2_5 {
         }
         
         // MARK: No implicit Fallthrough
-        let annotherCharacter: Character = "a"
-        switch annotherCharacter {
-        case "a":
-        case "A":
-            print("The letter A")
-        default:
-            print("Not the letter A")
-        }
+        // This will report a compile-time error because the case "a" does not contain any executable statements. This
+        // approact aboud accidental fallthrough from one case to another and makes for safer code that is clear in its
+        // intent.
+//        let annotherCharacter: Character = "a"
+//        switch annotherCharacter {
+//        case "a":
+//        case "A":
+//            print("The letter A")
+//        default:
+//            print("Not the letter A")
+//        }
     }
 }
