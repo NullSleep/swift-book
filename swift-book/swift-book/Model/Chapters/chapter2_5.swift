@@ -189,6 +189,10 @@ class chapter2_5 {
         }
         
         // MARK: No implicit Fallthrough
+        
+        // Althought break is not required in Swift, you can use a break statement to match and ignore particular case or
+        // to break out of a matched case before that case has completed its execution.
+        
         // This will report a compile-time error because the case "a" does not contain any executable statements. This
         // approact aboud accidental fallthrough from one case to another and makes for safer code that is clear in its
         // intent.
@@ -200,5 +204,14 @@ class chapter2_5 {
 //        default:
 //            print("Not the letter A")
 //        }
+        
+        // To make a switch with a single case that matches botth "a" and "A" we can combine both statements.
+        let annotherCharacter: Character = "a"
+        switch annotherCharacter {
+        case "a", "A":
+            print("The letter A")
+        default:
+            print("Not the letter A")
+        }
     }
 }
