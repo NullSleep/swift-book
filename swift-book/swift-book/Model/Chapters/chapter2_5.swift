@@ -190,9 +190,6 @@ class chapter2_5 {
         
         // MARK: No implicit Fallthrough
         
-        // Althought break is not required in Swift, you can use a break statement to match and ignore particular case or
-        // to break out of a matched case before that case has completed its execution.
-        
         // This will report a compile-time error because the case "a" does not contain any executable statements. This
         // approact aboud accidental fallthrough from one case to another and makes for safer code that is clear in its
         // intent.
@@ -213,5 +210,18 @@ class chapter2_5 {
         default:
             print("Not the letter A")
         }
+        
+        // NOTES:
+        // - For readability a compund case can also be written over multiple lines
+        // - To explicitly fall through at the end of a particular switch case, use the fallthrough keyword.
+        // - Althought break is not required in Swift, you can use a break statement to match and ignore particular case
+        //   or to break out of a matched case before that case has completed its execution.
+        
+        // MARK: Interval Matching
+        // Values in switch cases can be checked for their inclusion in an interval.
+        let approximateCount = 62
+        let countedThings = "moons orbiting Saturn"
+        let naturalCount: Stirng
+        
     }
 }
