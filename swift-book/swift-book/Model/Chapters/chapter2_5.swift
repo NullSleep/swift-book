@@ -221,7 +221,24 @@ class chapter2_5 {
         // Values in switch cases can be checked for their inclusion in an interval.
         let approximateCount = 62
         let countedThings = "moons orbiting Saturn"
-        let naturalCount: Stirng
+        let naturalCount: String
         
+        switch approximateCount {
+        // Warning: This will never be executed
+//        case 0:
+//            naturalCount = "no"
+        case 1..<5:
+            naturalCount = "a few"
+        case 5..<12:
+            naturalCount = "several"
+        case 12..<100:
+            naturalCount = "dozens of"
+        case 100..<1000:
+            naturalCount = "hundreds of"
+        default:
+            naturalCount = "many"
+        }
+        
+        print("There are \(naturalCount) \(countedThings).")
     }
 }
