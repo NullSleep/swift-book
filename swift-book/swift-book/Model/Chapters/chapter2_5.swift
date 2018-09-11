@@ -240,5 +240,25 @@ class chapter2_5 {
         }
         
         print("There are \(naturalCount) \(countedThings).")
+        
+        // MARK: Tuples
+        // Tuples can be used to test multiple values in the same switch statement. Each element of the tuple can be
+        // tested against a different value or interval of values. Alternatively, use the underscore character (_), also
+        // known as the wildcard pattern to match any possible value.
+        let somePoint = (1, 1)
+        switch somePoint {
+        case (0, 0):
+            print("\(somePoint) is at the origin")
+        case (_, 0):
+            print("\(somePoint) is on the x-axis")
+        case (0, _):
+            print("\(somePoint) is on the y-axis")
+        case (-2...2, -2...2):
+            print("\(somePoint) is inside the box")
+        case (0, _):
+            print("\(somePoint) is outside the box")
+        default:
+            print("\(somePoint) is outside the box")
+        }
     }
 }
