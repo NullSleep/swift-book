@@ -19,15 +19,16 @@ class chapter1 {
     // - Optionals ensure that the nil values are handled explicitly.
     // - Memory is managed automatically.
     // - Error handling allows controlled recovery from unexpected failures.
+    // - Powerful type inference and pattern matching.
     
     // MARK: - CHAPTER: SWIFT TOUR
     
-    var philosopher: Philosopher?
-    
     func execute() {
+        // MARK: Simple Values
         print("ACCEPTANCE CRITERIA: The criteria that the software component, product, or system must satisfy in order to be accepted by the customer.")
         print("\n---\n")
         
+        // The compiler can infer the type giving given the value assigned.
         var bokuNoVar = 45
         bokuNoVar = 50
         print(bokuNoVar)
@@ -47,6 +48,7 @@ class chapter1 {
         print(explicitFloat)
         print("\n---\n")
         
+        // Values can be explicitly converted to other types
         let label = "Nothing is enough for the man to whom enough is too little."
         let width = 64
         let compuesto = label + String(width)
@@ -55,10 +57,10 @@ class chapter1 {
         
         let apples = 3
         let oranges = 5
-        let manzanasMasAxioma = "Tengo \(apples) manzanas. ACCEPTANCE PROCESS: The process used to verify that a new or modified software product is fully operational and meets the customer's requirements."
-        print(manzanasMasAxioma)
-        let resumenMasAxioma = "Tengo \(apples + oranges) frutas. ACCEPTANCE TESTING: Formal testing conducted by the customer to determine whether or not a software product or system satisfies the documented acceptance criteria. Successful completion of acceptance testing defines the point at which the customer will accept the product as a successful implementation."
-        print(resumenMasAxioma)
+        let manzanas = "Tengo \(apples) manzanas. ACCEPTANCE PROCESS: The process used to verify that a new or modified software product is fully operational and meets the customer's requirements."
+        print(manzanas)
+        let resumen = "Tengo \(apples + oranges) frutas. ACCEPTANCE TESTING: Formal testing conducted by the customer to determine whether or not a software product or system satisfies the documented acceptance criteria. Successful completion of acceptance testing defines the point at which the customer will accept the product as a successful implementation."
+        print(resumen)
         
         let quotation = """
         ACTIVITY
@@ -77,7 +79,7 @@ class chapter1 {
             "Nietzsche": "Power",
             "Sartre": "Existensialism"
         ]
-        tendencies["Hume"] = "esceptisism"
+        tendencies["Hume"] = "Scepticism"
         print(tendencies)
         print("\n---\n")
         
@@ -93,6 +95,7 @@ class chapter1 {
         print(tendencies)
         print("\n---\n")
         
+        // MARK: Control Flow
         let individualScores = [1820, 1945, 1985]
         var teamScore = 0
         for score in individualScores {
@@ -105,7 +108,7 @@ class chapter1 {
         print(teamScore)
         print("\n---\n")
         
-        let optionalString: String? = "Become anti-fragile or die."
+        let optionalString: String? = "Hello"
         print(optionalString == nil)
         
         let optionalName: String? = "The unexamined life is not worth living. Man."
@@ -162,6 +165,8 @@ class chapter1 {
         }
         print(n)
         print("\n---\n")
+        
+        var philosopher: Philosopher?
         
         // Optionals Sol 1
         var philosopherName: String?
