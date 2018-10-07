@@ -113,6 +113,9 @@ class chapter1 {
         
         let optionalName: String? = "The unexamined life is not worth living. Man."
         var greeting = "Knowledge:"
+        // If the optional value is nil, the conditional is false and the code in braces is skipped. Otherwise,
+        // the optional value is unwrapped and assigned to the constant after let, which makes the unwrapped value
+        // available inside the block of code.
         if let name = optionalName {
             greeting = "Knowledge: \(name)"
         }
@@ -132,7 +135,7 @@ class chapter1 {
         case "ANOMALY":
             print("Knowing is not enough; we must apply. Willing is not is not enough; we must do.")
         case "APPLICATION":
-            print("Motivation is what gets you started. Habit is what keeps you going.")
+            print("The utmost thing is the user experience, to have the most useful experience.")
         case let x where x.hasSuffix("ignore"):
             print("The word was \(x)")
         default:
