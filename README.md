@@ -132,9 +132,11 @@ var waldo = array[2]
 ```
 
 ### Dictionary Quick Examples
+```swift
 var dict = Dictionary<String, String> = ["Ford": "Focus", "Mazda": "Miata", "Tesla": "Model 3", "Chevrolet": "Impala"]
 dict["Ford"] = "Mustang"
 dict["Chevrolet"] = nil // delete Chevrolet
 for (car, model) in dic {
   print("Car: \(car), model: \(model)")
 }
+```
