@@ -99,7 +99,7 @@ var tip = Double(string: tipString)
 var person1 = "Ray"
 var person2 = "Brian"
 var array: [String] = [person1, person2]
-array += ["Waldo"]
+array += ["Waldo"] // other option array.append("Waldo")
 for person in array {
     print("person: \(person)")
 }
@@ -110,6 +110,6 @@ var emptyDict = [String: String]()
 var dict: [String: String] = ["Ford": "Focus", "Mazda": "Miata", "Tesla": "Model 3", "Chevrolet": "Impala"]
 dict["Ford"] = "Mustang"
 dict["Chevrolet"] = nil // delete Chevrolet
-for (car, model) in dict {
-    print("Car: \(car), model: \(model)")
+for (brand, model) in dict {
+    print("Brand: \(brand), model: \(model)")
 }

@@ -1,7 +1,8 @@
 # Swift Book
-Notes and experiments on the Swift 4.0 Programming Language book by Apple.
+Notes and experiments on the Swift 4.2 Programming Language book by Apple.
 
 ## Swift Cheat Sheet and Quick Reference
+Based on Ray Wenderlich' cheat sheet and updated to Swift 4.2
 
 ### Class Implementation
 ```swift
@@ -96,7 +97,7 @@ switch val {
 }
 
 // Omits upper value, use ... to include
-for i in 0..3 {
+for i in 0..<3 {
   print(i)
 }
 ```
@@ -107,11 +108,11 @@ var personOne = "Ray"
 var personTwo = "Brian"
 var combinedString = "\(personOne): Hello, \(personTwo)!"
 var tipString = "2499"
-var tipInt = tipString.toInt()
+var tipInt = Int(tipString)
 
 extension Double {
   init(string: String) {
-    self = Double(string.bridgeToObjectiveC().doubleValue)
+    self = Double(string._bridgeToObjectiveC().doubleValue)
   }
 }
 
@@ -123,20 +124,23 @@ var tip = Double(string: tipString)
 ```swift
 var person1 = "Ray"
 var person2 = "Brian"
-var array: String[] = [person1, person2]
-array += "Waldo"
+var array: [String] = [person1, person2]
+array += ["Waldo"] // other option array.append("Waldo")
 for person in array {
-  println("person: \(person)")
+  print("person: \(person)")
 }
 var waldo = array[2]
 ```
 
 ### Dictionary Quick Examples
 ```swift
-var dict = Dictionary<String, String> = ["Ford": "Focus", "Mazda": "Miata", "Tesla": "Model 3", "Chevrolet": "Impala"]
+
+var emptyDict = [String: String]()
+
+var dict: [String: String] = ["Ford": "Focus", "Mazda": "Miata", "Tesla": "Model 3", "Chevrolet": "Impala"]
 dict["Ford"] = "Mustang"
 dict["Chevrolet"] = nil // delete Chevrolet
-for (car, model) in dic {
-  print("Car: \(car), model: \(model)")
+for (brand, model) in dict {
+  print("Brand: \(brand), model: \(model)")
 }
 ```
