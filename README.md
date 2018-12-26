@@ -2,20 +2,20 @@
 Notes and experiments on the Swift 4.2 Programming Language book by Apple.
 
 ## Swift Cheat Sheet and Quick Reference
-Based on Ray Wenderlich' cheat sheet and updated to Swift 4.2
+Based on Ray Wenderlich's cheat sheet and updated to Swift 4.2
 
 ### Class Implementation
 ```swift
 class MyClass: OptionalSuperClass, OptionalProtocol1, OptionalProtocol2 {
   var myProperty: String
-  var myOptionalPrortery: String?
+  var myOptionalProperty: String?
   // More properties...
 
   init() {
     myProperty = "Foo"
   }
 
-  // More mehtods...
+  // More methods...
 }
 ```
 
@@ -78,7 +78,7 @@ if let definiteDouble = optionalDouble {
 | ClassName     | UIView, UIButton, etc   |
 
 ### Control Flow
-```swfit
+```swift
 var condition = true
 if condition {
   // Do something
@@ -120,7 +120,7 @@ tipString = "24.99"
 var tip = Double(string: tipString)
 ```
 
-### Array Quick Exmaples
+### Array Quick Examples
 ```swift
 var person1 = "Ray"
 var person2 = "Brian"
