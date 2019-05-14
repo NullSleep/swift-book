@@ -2,7 +2,7 @@
 
  # What's new in Swift 5.0
  
- * Based from the following [repo](sourcerepo)
+ * Based on the following [repo](https://github.com/twostraws/whats-new-in-swift-5-0)
  
  This playground is designed to showcase new features introduced with Swift 5.0.
  
