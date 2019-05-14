@@ -7,10 +7,7 @@
  This playground is designed to showcase new features introduced with Swift 5.0.
  
  ## Contents
- * [Raw strings]
+ * [Raw strings](Raw%20Strings)
+ 
  
 */
-
-import UIKit
-
-var str = "Hello, playground"
