@@ -8,6 +8,16 @@
  
  ## Contents
  * [Raw strings](Raw%20Strings)
+ * [A standard result page]()
+ * [Customizing string interpolation]()
+ * [Dynamic callable types]()
+ * [Handling future enum cases]()
+ * [Flattening nested optionals resulting from try?]()
+ * [Checking for integer multiples]()
+ * [Transforming and unwrapping dictionary values with compactMapValues()]()
  
+ &nbsp;
  
+ [Next >](@next)
 */
+
