@@ -4,7 +4,7 @@
  ## Raw strings
  [SE-0200](https://github.com/apple/swift-evolution/blob/master/proposals/0200-raw-string-escaping.md) added the ability to create raw strings, where backslashes and quote marks are interpreted as those literal symbols rather than escapes characters or string terminators. This makes a number of use cases more easy, but regular expression in particular will benefit.
  
- To use raw strings, place one or more `#`symbols before your strings, like this:
+ To use raw strings, place one or more `#` symbols before your strings, like this:
 */
     let rain = #"The "rain" in "Spain" falls mainly on Spaniards."#
 /*:
@@ -19,15 +19,15 @@
     let answer = 42
     let dontpanic = #"The answer to life, the universe, and everything is \#(answer)."#
 /*:
- Notice how I've used '\#(answer)' to use string interpolation - a regular '\(answer)' will be interpreted as characters in the string, so when you want string interpolation to happen in a raw string you must add the extra '#'.
+ Notice how I've used `\#(answer)` to use string interpolation - a regular `\(answer)` will be interpreted as characters in the string, so when you want string interpolation to happen in a raw string you must add the extra `#`.
  
- One of the intersting features of Swift's raw strings is the use of hash symbols at the start and end, because you can use more than one in the unlikely event you'll need to. It's hard to provide a good example here because it really ought to be extremely rare, but consider this string: **My dog said "woof"#gooddog**. Because there's no space before the hash, Swift will see '#' and inmediately interpret it as the string terminator. In this situation we need to change our delimiter from '#' to '##', like this:
+ One of the intersting features of Swift's raw strings is the use of hash symbols at the start and end, because you can use more than one in the unlikely event you'll need to. It's hard to provide a good example here because it really ought to be extremely rare, but consider this string: **My dog said "woof"#gooddog**. Because there's no space before the hash, Swift will see '#' and inmediately interpret it as the string terminator. In this situation we need to change our delimiter from `#` to '`##`, like this:
 */
     let str = ##"My dog said "woof"#gooddog"##
 /*:
  Notice how the number of hashes at the end must match the number at the start.
  
- Raw string are fully compativle with Swift's multi-line string system - just use '#"""' to start, then '"""#'to end, like this:
+ Raw string are fully compativle with Swift's multi-line string system - just use `#"""` to start, then `"""#`to end, like this:
 */
     let multiline = #"""
     The answer to life,
@@ -35,7 +35,7 @@
     and everything is \#(answer).
     """#
 /*:
- Being able to do without lots of backlashes will prove particularly useful in regular expressions. For example, writing a simple regex to find keypaths such as '\Person.name' used to look like this:
+ Being able to do without lots of backlashes will prove particularly useful in regular expressions. For example, writing a simple regex to find keypaths such as `\Person.name` used to look like this:
 */
     let regex1 = "\\\\[A-Z]+[A-Za-z]+\\.[a-z]+"
 /*:

@@ -1,7 +1,7 @@
 /*:
  [<Previous](@previous)         [Home](Introduction)        [Next >](@next)
 
- ## A standard Result type
+ ## A Standard Result Type
  
  [SE-0235](https://github.com/apple/swift-evolution/blob/master/proposals/0235-add-result.md) introduces a `Result` type into the standard library, giving us a simpler, cleaner way of handling errors in complex code such as asynchronous APIs.
  
@@ -49,5 +49,11 @@ fetchUnreadCount1(from: "https://www.hackingwithswift.com") { result in
         print("\(count) unread messages")
     }
 }
+/*:
+ Second, `Result` has an initializer that accepts a thorwing closure: of the closure returns a value succeessfully that gets used for the `success` case, otherwise the thown error is placed into the `failure` case.
+ 
+ For example:
+*/
+let result = Result { try String(contentsOfFile: "") }
  
 //: [Next](@next)
