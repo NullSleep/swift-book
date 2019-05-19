@@ -54,6 +54,34 @@ fetchUnreadCount1(from: "https://www.hackingwithswift.com") { result in
  
  For example:
 */
-let result = Result { try String(contentsOfFile: "") }
+let result = Result { try String(contentsOfFile: "some file paht") }
+/*:
+ Third, rahter than using a specific error enum that you've created, you can also use the general `Error` protocol. In fact, the Swift Evolution propsal says "it's expected that most uses of Resul will use `Swift.Error` as the `Error` type argument."
  
+ So, rather than using `Result<Int, NetworkError>` you could use `Result<Int, Error>`. Although this means you lose the safety of type throws, you gain, the ability to throw a variaty of different error enums - which you prefer really depends on your coding sytle.
+ 
+ ## Transforming Result
+ 
+ `Result` has four other methods that may prove useful: `map()`, `flatMap()`, `mapError()`, and `flatMapError()`. Each of these give you the ability to transform either the success or error somehow, and the first two work similarly to the methods of the same name on `Optional`.
+ 
+ The `map()` method looks inside the `Result`, and transforms the success value into a different kind of value using a closure you specify. However, if it finds failure instead, it just uses that directly and ignores your transformation.
+ 
+ To demostrate this, we're going to write some code that generates random numbers between 0 and a maximum then calculate the factors of that number. If the user requests a random number below zero, or if the number happens to be prime -i.e., it has no factors except itself and 1 - then we'll consider those to be failures.
+ 
+ We might start by writing code to model the two possible failure cases: the user has tried to generate a random number below 0, and the number that was generated was prime:
+ */
+enum FactorError: Error {
+    case belowMinum
+    case isPrime
+}
+//: Next, we'd write a function that accepts a maximum number, and returns either a random number or an error:
+func generateRandomNumber(maximum: Int) -> Result<Int, FactorError> {
+    if maximum < 0 {
+        // Creating a range below 0 will crash, so refuse
+        return .failure(.belowMinum)
+    } else {
+        let number = Int.random(in: 0...maximum)
+        return .success(number)
+    }
+}
 //: [Next](@next)
